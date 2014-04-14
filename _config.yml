@@ -1,0 +1,3 @@
+destination: ./www
+markdown: kramdown
+encoding: utf-8
