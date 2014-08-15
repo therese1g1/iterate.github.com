@@ -3,7 +3,7 @@ iterate.github.com
 
 Homepage of Iterate.
 
-To test locally, you need to install [Jekyll](https://github.com/mojombo/jekyll/wiki/install),
+To test locally, you need to install [Jekyll](http://jekyllrb.com/docs/installation/),
 and then you can do `jekyll serve --watch` in the root directory.
 
 We only use Jekyll to get "layouts", everything else is just static pages.
