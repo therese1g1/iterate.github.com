@@ -1,1 +1,1 @@
-web: env GEM_HOME=./.gems ./.gems/bin/jekyll serve --no-watch --port 5000 --host 0.0.0.0
+web: bundle exec puma -t 8:32 -w 3 -p $PORT
