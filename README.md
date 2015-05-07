@@ -12,4 +12,4 @@ We only use Jekyll to get "layouts", everything else is just static pages.
 Deployment
 ==========
 
-When code gets into the master branch, a hook in GitHub notifies a Jenkins instance which deploys the new version immediately.
+When code gets into the master branch, a hook in GitHub notifies a Jenkins instance which deploys the new version immediately-isj.
