@@ -1,16 +1,19 @@
-iterate.github.com
-==================
+# iterate.github.com
 
 Homepage of Iterate.
 
-To test locally, you need to install [Jekyll](http://jekyllrb.com/docs/installation/),
-and then you can do `jekyll serve --watch` in the root directory.
+## Dependencies
 
-We only use Jekyll to get "layouts", everything else is just static pages.
+- Ruby >= 2.2.2
+- Middleman 3.3.12
+- Bourbon
+- Neat
+- Bitter
+- Sass
 
+## Build instructions
 
-Deployment
-==========
-
-When code gets into the master branch, a hook in GitHub notifies a Jenkins instance which deploys the new version immediately-isj.
- 
+´´´bundle install´´
+´´´middleman build´´
+or
+´´´middleman server´´
