@@ -4,8 +4,16 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    %title= current_page.data.title || "The Middleman"
+    %meta{name: "description", content: "."}
+    %meta{property: "og:url", content: "http://info.iterate.no/lean-startup-skolen/"}
+	%meta{property: "og:type", content: "website"}
+	%meta{property: "og:title", content: current_page.data.title | "Iterate"}
+	%meta{property: "og:description", content: "."}
+	%meta{property: "og:image", content: ""}
+
+    %title= current_page.data.title | "Iterate"
     = stylesheet_link_tag "application"
+    = stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
 
   %body{class: page_classes}
     = yield

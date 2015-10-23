@@ -25,13 +25,14 @@ h1 {
   font-weight: $heading-font-weight;
   font-style: $heading-font-style;
   line-height: 1;
+  color: $white;
 }
 
 h2 {
   font-size: 0.875em;
   color: $blue;
   font-family: $strong-font-family;
-  font-weight: $stro;
+  font-weight: $strong-font-weight;
   text-transform: uppercase;
   letter-spacing: 1;
   line-height: $heading-line-height;
@@ -58,6 +59,7 @@ h4 {
 p {
   margin: 0 0 $small-spacing;
   line-height: $long-form-line-height;
+  color: $base-font-color;
 }
 
 a {

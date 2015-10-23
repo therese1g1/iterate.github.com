@@ -40,14 +40,14 @@ $white: #FFF;
 $orange: #F56A2A;
 
 // Font Colors
-$base-background-color: $light-grey;
+$base-background-color: $light-gray;
 $base-font-color: $dark-gray;
 $action-color: $orange;
 
 // Border
 $base-border-color: #C4CFD4;
 $base-border: 1px solid $base-border-color;
-$base-divider: 1px solid transparentize($base-border-color, 0.2)
+$base-divider: 1px solid transparentize($base-border-color, 0.2);
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
