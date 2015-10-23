@@ -1,13 +1,28 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: "Planer-Regular";
+$base-font-weight: normal;
+$base-font-style: normal;
+
+$em-font-family: "Planer-Italic";
+$em-font-weight: normal;
+$em-font-style: normal;
+
+$strong-font-family: "Planer-DemiBold";
+$strong-font-weight: normal;
+$strong-font-style: normal;
+
+$heading-font-family: "NoyhBold";
+$heading-font-weight: normal;
+$heading-font-style: normal;
+
+$quote-font-family: $em-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
 
 // Line height
-$base-line-height: 1.5;
-$heading-line-height: 1.2;
+$base-line-height: 1.6;
+$heading-line-height: 1.3;
 
 // Other Sizes
 $base-border-radius: 3px;
