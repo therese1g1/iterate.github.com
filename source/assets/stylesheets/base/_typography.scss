@@ -13,14 +13,51 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
+h1 {
+  font-size: 10.375em;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  font-style: $heading-font-style;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 0.875em;
+  color: $blue;
+  font-family: $strong-font-family;
+  font-weight: $stro;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  line-height: $heading-line-height;
+}
+
+h3 {
+  font-size: 4em;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  color: $medium-gray;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: $heading-line-height;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  text-transform: uppercase;
+}
+
 p {
   margin: 0 0 $small-spacing;
+  line-height: $long-form-line-height;
 }
 
 a {
@@ -40,8 +77,26 @@ a {
   }
 }
 
+.name-small, .title-small {
+  text-transform: uppercase;
+  color: $medium-gray;
+  font-size: 0.75em;
+  line-height: $base-line-height;
+}
+
+.kontakt-information-tiny {
+  font-size: 0.68em;
+  line-height: $base-line-height;
+}
+
+i {
+  font-size: 1.125em;
+  line-height: 1;
+  color: $medium-gray;
+}
+
 hr {
-  border-bottom: $base-border;
+  border-bottom: $base-divider;
   border-left: none;
   border-right: none;
   border-top: none;

@@ -21,8 +21,9 @@ $quote-font-family: $em-font-family;
 $base-font-size: 1em;
 
 // Line height
-$base-line-height: 1.6;
-$heading-line-height: 1.3;
+$base-line-height: 1.3;
+$heading-line-height: 1.2;
+$long-form-line-height: 1.6;
 
 // Other Sizes
 $base-border-radius: 4px;
@@ -46,7 +47,7 @@ $action-color: $orange;
 // Border
 $base-border-color: #C4CFD4;
 $base-border: 1px solid $base-border-color;
-$base-devider: 1px solid transparentize($base-border-color, 0.2)
+$base-divider: 1px solid transparentize($base-border-color, 0.2)
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
