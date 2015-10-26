@@ -34,12 +34,7 @@ title: Frokostseminar Lean Cortado Del 2
           %li Hvilke roller må dekkes?
           %li Hvem skal ha ansvaret for hva?
 
-        %h2 Om foredragsholderen
-        %h3
-          = data.people.indahl.name
-
-        %p 
-          = data.people.indahl.bio
+        = partial 'partials/people-bio.html.haml', :locals => { :employee => "indahl" }
 
       %aside
         %p.infobox Det er mulig å stille spørsmål på forhånd til temaet

@@ -1,0 +1,24 @@
+%h2 Om foredragsholderen
+
+%h3
+  = data.people[employee].name
+
+%p 
+  = data.people[employee].bio
+
+%p 
+  - data.people[employee].skills.each do | s |
+    %span= s + ', '
+
+%p 
+  - data.people[employee].clients.each do | s |
+    %span= s + ', '
+
+- work_experience = Date.today.year.to_i - data.people[employee].year.to_i
+
+%p= work_experience
+
+%p
+  %a{:href => 'mailto:' + data.people[employee].email, :title => data.people[employee].email }= data.people[employee].email
+  |
+  %span= data.people[employee].phone
