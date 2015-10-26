@@ -1,0 +1,44 @@
+{
+	"indahl": {
+		"name" : "Torve Indahl",
+		"title" : "Partner, entreprenør",
+		"email" : "torve@iterate.no",
+		"phone" : "+47 91 35 22 99",
+		"twitter" : "http://twitter.no/torve",
+		"linkedin" : "http://#",
+		"year" : "1990",
+		"mugshot" : "torve.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["lean", "forretningsmodell", "joint ventures"],
+  	"cients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "torve.jpg"
+	}, 
+	"haugeto": {
+		"name" : "Anders Haugeto",
+		"title" : "Partner, rådgiver",
+		"email" : "haugeto@iterate.no",
+		"phone" : "+47 95 02 03 37",
+		"twitter" : "http://twitter.no/hauge2",
+		"linkedin" : "http://#",
+		"year" : "1990",
+		"mugshot" : "haugeto.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["lean", "forretningsmodell", "joint ventures"],
+  	"cients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "torve.jpg"
+	},
+	"kornli": {
+		"name" : "Iselin Kornli",
+		"title" : "Forretningsutvikler",
+		"email" : "iselin@iterate.no",
+		"phone" : "+47 99 56 99 38",
+		"twitter" : "http://twitter.no/#",
+		"linkedin" : "http://#",
+		"year" : "2012",
+		"mugshot" : "iselin.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["lean", "forretningsmodell", "joint ventures"],
+  	"cients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "torve.jpg"
+	}
+}
