@@ -1,3 +1,5 @@
+%img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/torve-portrait.jpg') }
+
 %h2 Om foredragsholderen
 
 %h3
@@ -6,13 +8,13 @@
 %p 
   = data.people[employee].bio
 
-%p 
-  - data.people[employee].skills.each do | s |
-    %span= s + ', '
+%p.skills 
+  - data.people[employee].skills.each do | skill |
+    %span= skill + ', '
 
-%p 
-  - data.people[employee].clients.each do | s |
-    %span= s + ', '
+%p.clients
+  - data.people[employee].clients.each do | client |
+    %span= client + ', '
 
 - work_experience = Date.today.year.to_i - data.people[employee].year.to_i
 

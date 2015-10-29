@@ -1,3 +1,22 @@
+///////////////// TEMPLATE -- USE THIS FOR COPY & PASTE /////////////////
+//
+// " ": { 													// your last name; lowercase
+//   "name" : " ", 									// your full name; capitalcase
+//   "title" : " ",									// the job title you'd like to use
+//   "email" : " ",									// your email adress
+//   "phone" : " ",									// your mobile number
+//   "twitter" : "http://#",				// full link to your twitter profile
+//   "linkedin" : "http://#",				// full link to your linkedin profile, the one you see in your profile card, not the page URL!
+//   "year" : " ", 									// the year you started your first job, used to calculate your experience in years
+//   "mugshot" : "x.jpg", 					// the filename of your employee photo in source/assets/images/mugshots
+//   "bio" : " ",										// a short bio including one fun fact
+//   "skills" : [" ", " ", " "],		// your best-selling skills, e.g. devops, javascript, user research; comma separated list; case insensitive
+//   "clients" : [" ", " ", " "],		// your most impressive clients, e.g. gjensidige, aller, telenor; comma separated list; case insensitive
+//   "photo" : " "									// the filename of your full protrait photo in source/assets/images/portraits
+// }, 															// don't forget the comma! ;)
+//
+/////////////////////////////////////////////////////////////////////////
+
 {
 	"indahl": {
 		"name" : "Torve Indahl",
@@ -11,7 +30,7 @@
 		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
   	"skills" : ["lean", "forretningsmodell", "joint ventures"],
   	"clients" : ["HFN", "Aller", "Telenor"],
-  	"photo" : "torve.jpg"
+  	"photo" : "torve-portrait.jpg"
 	}, 
 	"haugeto": {
 		"name" : "Anders Haugeto",
@@ -25,7 +44,7 @@
 		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
   	"skills" : ["lean", "forretningsmodell", "joint ventures"],
   	"clients" : ["HFN", "Aller", "Telenor"],
-  	"photo" : "torve.jpg"
+  	"photo" : "haugeto.jpg"
 	},
 	"kornli": {
 		"name" : "Iselin Kornli",
@@ -39,6 +58,48 @@
 		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
   	"skills" : ["lean", "forretningsmodell", "joint ventures"],
   	"clients" : ["HFN", "Aller", "Telenor"],
-  	"photo" : "torve.jpg"
-	}
+  	"photo" : "iselin.jpg"
+	},
+	"barlindhaug": {
+		"name" : "Lars Barlindhaug",
+		"title" : "Systemutvikler",
+		"email" : "barlindhaug@iterate.no",
+		"phone" : "+47 92 65 35 67",
+		"twitter" : "http://twitter.no/#",
+		"linkedin" : "http://#",
+		"year" : "2012",
+		"mugshot" : "lars.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["javascript", "front-end", "mobil"],
+  	"clients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "lars.jpg"
+  },
+  "moseby": {
+		"name" : "Susanne Moseby",
+		"title" : "Systemutvikler",
+		"email" : "susannmo@iterate.no",
+		"phone" : "+47 95 93 54 63",
+		"twitter" : "http://twitter.no/#",
+		"linkedin" : "http://#",
+		"year" : "2012",
+		"mugshot" : "susanne.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["javascript", "front-end", "mobil"],
+  	"clients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "susanne.jpg"
+  },
+  "maheswaran": {
+		"name" : "Osmund Maheswaran",
+		"title" : "Systemutvikler",
+		"email" : "osmund@iterate.no",
+		"phone" : "+47 95 76 37 05",
+		"twitter" : "http://twitter.no/#",
+		"linkedin" : "http://#",
+		"year" : "2012",
+		"mugshot" : "osmund.jpg",
+		"bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+  	"skills" : ["javascript", "front-end", "mobil"],
+  	"clients" : ["HFN", "Aller", "Telenor"],
+  	"photo" : "osmund.jpg"
+  }
 }
