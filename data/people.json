@@ -31,7 +31,7 @@
   	"skills" : [],
   	"clients" : [],
   	"photo" : "torve-portrait.jpg"
-	}, 
+	},
 	"indahl": {
 		"name" : "Torve Indahl",
 		"title" : "Partner, entreprenør",
@@ -45,7 +45,7 @@
   	"skills" : ["lean", "forretningsmodell", "joint ventures"],
   	"clients" : ["HFN", "Aller", "Telenor"],
   	"photo" : "torve-portrait.jpg"
-	}, 
+	},
 	"haugeto": {
 		"name" : "Anders Haugeto",
 		"title" : "Partner, rådgiver",
@@ -129,5 +129,19 @@
   	"skills" : ["javascript", "java", "python", "dev-ops", "perl"],
   	"clients" : ["Amedia", "GET", "Telenor"],
   	"photo" : "klette.jpg"
-  }
+  },
+  "lien": {
+                "name" : "Magnus Lien",
+                "title" : "Systemutvikler",
+                "email" : "magnus.lien@iterate.no",
+                "phone" : "+47 41 41 95 94",
+                "twitter" : "http://twitter.com/limagnus",
+                "linkedin" : "http://#",
+                "year" : "2015",
+                "mugshot" : "magnusl.jpg",
+                "bio" : ".",
+                "skills" : ["javascript", "frontend", "mobil"],
+                "clients" : ["Amedia", "Remove", "S-OL"],
+                "photo" : "magnusl.jpg",
+  },
 }
