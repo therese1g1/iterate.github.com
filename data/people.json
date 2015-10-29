@@ -115,5 +115,19 @@
   	"skills" : ["javascript", "front-end", "mobil"],
   	"clients" : ["HFN", "Aller", "Telenor"],
   	"photo" : "osmund.jpg"
+  },
+    "klette": {
+		"name" : "Kristian Klette",
+		"title" : "Systemutvikler",
+		"email" : "klette@iterate.no",
+		"phone" : "+47 97 74 82 39",
+		"twitter" : "http://twitter.com/klette",
+		"linkedin" : "http://linkedin.com/klette",
+		"year" : "2011",
+		"mugshot" : "klette.jpg",
+		"bio" : ".",
+  	"skills" : ["javascript", "java", "python", "dev-ops", "perl"],
+  	"clients" : ["Amedia", "GET", "Telenor"],
+  	"photo" : "klette.jpg"
   }
 }
