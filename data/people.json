@@ -18,6 +18,20 @@
 /////////////////////////////////////////////////////////////////////////
 
 {
+	"assum": {
+		"name" : "Erik Assum",
+		"title" : "Systemutvikler",
+		"email" : "erik@iterate.no",
+		"phone" : "+47 93 81 94 42",
+		"twitter" : "http://twitter.no/slipset",
+		"linkedin" : "https://no.linkedin.com/in/erikassum",
+		"year" : "1970",
+		"mugshot" : "https://en.gravatar.com/userimage/47572737/ad9e31ef761cd3b4c3e841ae0a33ffb9.jpeg",
+		"bio" : "",
+  	"skills" : [],
+  	"clients" : [],
+  	"photo" : "torve-portrait.jpg"
+	}, 
 	"indahl": {
 		"name" : "Torve Indahl",
 		"title" : "Partner, entreprenør",
