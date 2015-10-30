@@ -172,5 +172,19 @@
         "clients" : ["amedia", "gjensidige", "spk", "ericsson", "fifa",
             "handelsbanken", "sony ericsson"],
         "photo" : "viktor.jpg"
-    }, 	
+    },
+        "varland": {
+        "name" : "Magnus Motzfeldt Eide",
+        "title" : "Systemutvikler",
+        "email" : "eide@iterate.no",
+        "phone" : "+47 481 78 789",
+        "twitter" : "https://twitter.com/m_eide",
+        "linkedin" : "no.linkedin.com/in/motzfeldt",
+        "year" : "2012",
+        "mugshot" : "eide.jpg",
+        "bio" : "",
+        "skills" : ["web", "development", "devops"],
+        "clients" : ["Telenor", "Norwegian", "Cisco", "Escenic"],
+        "photo" : "eide.jpg"
+    }, 
 }
