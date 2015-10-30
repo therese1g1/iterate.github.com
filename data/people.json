@@ -1,19 +1,19 @@
 ///////////////// TEMPLATE -- USE THIS FOR COPY & PASTE /////////////////
 //
-// " ": { 													// your last name; lowercase
-//   "name" : " ", 									// your full name; capitalcase
-//   "title" : " ",									// the job title you'd like to use
-//   "email" : " ",									// your email adress
-//   "phone" : " ",									// your mobile number
+// " ": { 									// your last name; lowercase
+//   "name" : " ", 							// your full name; capitalcase
+//   "title" : " ",							// the job title you'd like to use
+//   "email" : " ",							// your email adress
+//   "phone" : " ",							// your mobile number
 //   "twitter" : "http://#",				// full link to your twitter profile
 //   "linkedin" : "http://#",				// full link to your linkedin profile, the one you see in your profile card, not the page URL!
-//   "year" : " ", 									// the year you started your first job, used to calculate your experience in years
+//   "year" : " ", 							// the year you started your first job, used to calculate your experience in years
 //   "mugshot" : "x.jpg", 					// the filename of your employee photo in source/assets/images/mugshots
-//   "bio" : " ",										// a short bio including one fun fact
-//   "skills" : [" ", " ", " "],		// your best-selling skills, e.g. devops, javascript, user research; comma separated list; case insensitive
-//   "clients" : [" ", " ", " "],		// your most impressive clients, e.g. gjensidige, aller, telenor; comma separated list; case insensitive
-//   "photo" : " "									// the filename of your full protrait photo in source/assets/images/portraits
-// }, 															// don't forget the comma! ;)
+//   "bio" : " ",							// a short bio including one fun fact
+//   "skills" : [" ", " ", " "],		    // your best-selling skills, e.g. devops, javascript, user research; comma separated list; case insensitive
+//   "clients" : [" ", " ", " "],		    // your most impressive clients, e.g. gjensidige, aller, telenor; comma separated list; case insensitive
+//   "photo" : " "							// the filename of your full protrait photo in source/assets/images/portraits
+// }, 										// don't forget the comma! ;)
 //
 /////////////////////////////////////////////////////////////////////////
 
@@ -187,4 +187,18 @@
         "clients" : ["Telenor", "Norwegian", "Cisco", "Escenic"],
         "photo" : "eide.jpg"
     }, 
+    "leisse": {
+        "name" : "Alexandra Leisse",
+        "title" : "Interaksjonsdesigner",
+        "email" : "alexandra@iterate.no",
+        "phone" : "+47 99 27 10 36",
+        "twitter" : "https://twitter.com/troubalex",
+        "linkedin" : "no.linkedin.com/in/alexandraleisse",
+        "year" : "2001",
+        "mugshot" : "alex.jpg",
+        "bio" : "..",
+        "skills" : ["brukeropplevelse", "rapid prototyping", "konseptutvikling", "behovsanalyse", "lean ux", "brukertesting"],
+        "clients" : ["Nokia", "gjensidige", "sats elixia", "røde kors"],
+        "photo" : "alexandra-portrait.jpg"
+    },
 }
