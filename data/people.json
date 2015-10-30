@@ -201,4 +201,18 @@
         "clients" : ["Nokia", "gjensidige", "sats elixia", "røde kors"],
         "photo" : "alexandra-portrait.jpg"
     },
+    "skifjeld": {
+        "name" : "Henrik Glasø Skifjeld",
+        "title" : "Systemutvikler",
+        "email" : "henrik@iterate.no",
+        "phone" : "+47 938 44 501",
+        "twitter" : "http://twitter.com/henrik_gs",
+        "linkedin" : "https://no.linkedin.com/pub/henrik-glasø-skifjeld/50/818/aba",
+        "year" : "2014",
+        "mugshot" : "Henrik.jpg",
+        "bio" : "...",
+        "skills" : ["frontend", "web", "javascript", "java"],
+        "clients" : ["Røde Kors", "Gjensidige"],
+        "photo" : "Henrik.jpg"
+    },
 }
