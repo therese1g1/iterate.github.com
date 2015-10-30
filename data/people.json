@@ -144,4 +144,19 @@
                 "clients" : ["Amedia", "Remove", "S-OL"],
                 "photo" : "magnusl.jpg",
   },
+  "varland": {
+   "name" : "Viktor Varland",
+   "title" : "Systemutvikler",
+   "email" : "viktor@iterate.no",
+   "phone" : "+47 48 10 20 15",
+   "twitter" : "https://twitter.com/varlx",
+   "linkedin" : "no.linkedin.com/in/viktorvarland",
+   "year" : "2005",
+   "mugshot" : "viktor.jpg",
+   "bio" : "Min filosofi er transparens; teknologi til arbeidsmåte. Ende til ende.",
+   "skills" : ["web", "development"],
+   "clients" : ["amedia", "gjensidige", "spk", "ericsson", 
+   		"fifa", "handelsbanken", "sony ericsson"],
+   "photo" : "viktor.jpg"
+ }, 	
 }
