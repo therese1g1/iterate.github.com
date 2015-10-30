@@ -173,7 +173,7 @@
             "handelsbanken", "sony ericsson"],
         "photo" : "viktor.jpg"
     },
-        "varland": {
+    "eide": {
         "name" : "Magnus Motzfeldt Eide",
         "title" : "Systemutvikler",
         "email" : "eide@iterate.no",
