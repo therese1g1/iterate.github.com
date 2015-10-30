@@ -1,3 +1,4 @@
+/*
 ///////////////// TEMPLATE -- USE THIS FOR COPY & PASTE /////////////////
 //
 // " ": { 									// your last name; lowercase
@@ -16,6 +17,7 @@
 // }, 										// don't forget the comma! ;)
 //
 /////////////////////////////////////////////////////////////////////////
+*/
 
 {
     "assum": {
@@ -142,7 +144,7 @@
         "bio" : ".",
         "skills" : ["javascript", "frontend", "mobil"],
         "clients" : ["Amedia", "Remove", "S-OL"],
-        "photo" : "magnusl.jpg",
+        "photo" : "magnusl.jpg"
     },
     "ruud": {
         "name" : "Pål Ruud",
@@ -214,5 +216,5 @@
         "skills" : ["frontend", "web", "javascript", "java"],
         "clients" : ["Røde Kors", "Gjensidige"],
         "photo" : "Henrik.jpg"
-    },
+    }
 }
