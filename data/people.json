@@ -144,6 +144,20 @@
         "clients" : ["Amedia", "Remove", "S-OL"],
         "photo" : "magnusl.jpg",
     },
+    "ruud": {
+        "name" : "Pål Ruud",
+        "title" : "Systemutvikler",
+        "email" : "pal.ruud@iterate.no",
+        "phone" : "+47 90 62 19 06",
+        "twitter" : "https://twitter.com/ruudud",
+        "linkedin" : "no.linkedin.com/in/ruudud",
+        "year" : "2011",
+        "mugshot" : "palru.jpg",
+        "bio" : "",
+        "skills" : ["web", "development", "change", "devops"],
+        "clients" : ["Amedia", "Telenor", "Get", "Jotta"],
+        "photo" : "paal.jpg"
+    },
     "varland": {
         "name" : "Viktor Varland",
         "title" : "Systemutvikler",
@@ -155,8 +169,8 @@
         "mugshot" : "viktor.jpg",
         "bio" : "Min filosofi er transparens; teknologi til arbeidsmåte. Ende til ende.",
         "skills" : ["web", "development"],
-        "clients" : ["amedia", "gjensidige", "spk", "ericsson", 
-            "fifa", "handelsbanken", "sony ericsson"],
-            "photo" : "viktor.jpg"
+        "clients" : ["amedia", "gjensidige", "spk", "ericsson", "fifa",
+            "handelsbanken", "sony ericsson"],
+        "photo" : "viktor.jpg"
     }, 	
 }
