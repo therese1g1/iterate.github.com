@@ -203,6 +203,20 @@
         "clients" : ["Nokia", "gjensidige", "sats elixia", "røde kors"],
         "photo" : "alexandra-portrait.jpg"
     },
+    "midtsund": {
+        "name" : "Martin Akre Midtsund",
+        "title" : "Systemutvikler",
+        "email" : "martin@iterate.no",
+        "phone" : "+47 416 71 501",
+        "twitter" : "https://twitter.com/martinmidtsund",
+        "linkedin" : "https://www.linkedin.com/in/martinmidtsund",
+        "year" : "2013",
+        "mugshot" : "martin.jpg",
+        "bio" : "...",
+        "skills" : ["web", "development"],
+        "clients" : ["Telenor", "Røde Kors", "Veidekke", "NRK", "Sparebank1"],
+        "photo" : "martin.jpg"
+    },
     "skifjeld": {
         "name" : "Henrik Glasø Skifjeld",
         "title" : "Systemutvikler",
