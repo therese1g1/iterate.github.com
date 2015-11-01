@@ -230,5 +230,19 @@
         "skills" : ["frontend", "web", "javascript", "java"],
         "clients" : ["Røde Kors", "Gjensidige"],
         "photo" : "Henrik.jpg"
+    },
+    "aaberg": {
+        "name" : "Jørgen Aaberg",
+        "title" : "Systemutvikler",
+        "email" : "jorgen@iterate.no",
+        "phone" : "+47 988 66 209",
+        "twitter" : "http://twitter.com/jorgenaaberg",
+        "linkedin" : "https://no.linkedin.com/in/jorgenaaberg",
+        "year" : "2014",
+        "mugshot" : "jorgen.jpg",
+        "bio" : "...",
+        "skills" : ["web", "javascript", "lean startup", "mvp"],
+        "clients" : ["Telenor", "S-OL", "SpareBank 1"],
+        "photo" : "jorgen.jpg"
     }
 }
