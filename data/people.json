@@ -132,6 +132,20 @@
         "clients" : ["Amedia", "GET", "Telenor"],
         "photo" : "klette.jpg"
     },
+    "berg": {
+      "name" : "Morten Slaatten Berg",
+      "title" : "Systemutvikler",
+      "email" : "morten@iterate.no",
+      "phone" : "+47 95 81 25 99",
+      "twitter" : "https://twitter.com/mortenberg",
+      "linkedin" : "https://no.linkedin.com/in/mortenberg",
+      "year" : "2005",
+      "mugshot" : "morten.jpg",
+      "bio" : ".",
+      "skills" : ["java", "development", "integration", "change"],
+      "clients" : ["Statens pensjonskasse", "Sparebank 1", "Color Line"],
+      "photo" : "morten.jpg"
+    },
     "lien": {
         "name" : "Magnus Lien",
         "title" : "Systemutvikler",
