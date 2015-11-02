@@ -20,6 +20,20 @@
 */
 
 {
+    "vraalsen": {
+        "name" : "Fredrik Vraalsen",
+        "title" : "Systemutvikler",
+        "email" : "vraalsen@iterate.no",
+        "phone" : "+47 98 46 22 55",
+        "twitter" : "www.twitter.com/fredriv",
+        "linkedin" : "",
+        "year" : "1976",
+        "mugshot" : "fredrikv.jpg",
+        "bio" : "Dad, Scala developer, sci-fi fan, photo geek, cycling enthusiast, member of The Secret World Illuminati",
+        "skills" : ["Scala", "Java", "functional programming"],
+        "clients" : ["Hafslund", "Amedia", "Veidekke", "Bertel O. Steen"],
+        "photo" : "fredrikv.jpg"
+    },
     "dæhlen": {
         "name" : "Magnús Dæhlen",
         "title" : "Systemutvikler",
