@@ -65,12 +65,14 @@ p {
 a {
   color: $action-color;
   text-decoration: none;
-  transition: color 0.1s linear;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    border-bottom: 1px solid $action-color;
+    transition: border-color 0.3s ease-in-out;
   }
 
   &:active,
@@ -79,7 +81,27 @@ a {
   }
 }
 
-.name-small, .title-small {
+a.icon {
+  color: $medium-gray;
+  border-bottom: none;
+  transition: color 0.3s ease-in-out;
+
+  &:active,
+  &:focus,
+  &:hover {  
+    color: $action-color;
+    transition: color 0.3s ease-in-out;
+    border-bottom: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.name-small, 
+.title-small {
   text-transform: uppercase;
   color: $medium-gray;
   font-size: 0.75em;

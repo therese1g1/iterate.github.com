@@ -3,17 +3,7 @@ body {
   color: $medium-gray;
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
-  }
+.container {
+  @include outer-container;
 }
+

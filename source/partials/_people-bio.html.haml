@@ -1,26 +1,42 @@
-%img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/torve-portrait.jpg') }
+.people-bio-box
 
-%h2 Om foredragsholderen
+  %img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/torve-portrait.jpg') }
 
-%h3
-  = data.people[employee].name
+  .container
+    .employee-details
+      %h2
+        = headline
 
-%p 
-  = data.people[employee].bio
+      %h3
+        = data.people[employee].name
 
-%p.skills 
-  - data.people[employee].skills.each do | skill |
-    %span= skill + ', '
+      %p 
+        = data.people[employee].bio
 
-%p.clients
-  - data.people[employee].clients.each do | client |
-    %span= client + ', '
+      %p
+        .skills
+          %i.fa.fa-tags
+          - data.people[employee].skills.each do | skill |
+            %span= skill + ', '
 
-- work_experience = Date.today.year.to_i - data.people[employee].year.to_i
+        .clients
+          %i.fa.fa-tags
+          - data.people[employee].clients.each do | client |
+            %span= client + ', '
 
-%p= work_experience
+        - work_experience = (Date.today.year.to_i - data.people[employee].year.to_i).to_s + ' år med arbeidserfaring'
 
-%p
-  %a{:href => 'mailto:' + data.people[employee].email, :title => data.people[employee].email }= data.people[employee].email
-  |
-  %span= data.people[employee].phone
+        .experience
+          %i.fa.fa-briefcase
+          = work_experience
+
+      %p
+        %a{:href => 'mailto:' + data.people[employee].email, :title => data.people[employee].email }= data.people[employee].email
+        |
+        %span= data.people[employee].phone
+
+      %p
+        %a{:href => data.people[employee].twitter, :class => 'icon' }
+          %i.fa.fa-twitter
+        %a{:href => data.people[employee].linkedin,  :class => 'icon' }
+          %i.fa.fa-linkedin-square
