@@ -314,5 +314,19 @@
         "skills" : ["prosjektledelse", "lean", "lean startup"],
         "clients" : ["Gjensidige", "Statnett", "Veidekke", "Color Line"],
         "photo" : "rune.jpg"
+    },
+    "brynjar": {
+        "name" : "Brynjar Rongved",
+        "title" : "Systemutvikler",
+        "email" : "brynjar@iterate.no",
+        "phone" : "+47 901 36 197",
+        "twitter" : "http://twitter.com/brynjar_rongved",
+        "linkedin" : "https://no.linkedin.com/pub/brynjar-rongved/16/476/3a",
+        "year" : "2014",
+        "mugshot" : "brynjar.jpg",
+        "bio" : "...",
+        "skills" : ["web", "javascript" "node.js"],
+        "clients" : ["SOL", "Telenor", "Amedia", "Apps AS"],
+        "photo" : "brynjar.jpg"
     }
 }
