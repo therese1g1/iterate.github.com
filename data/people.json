@@ -211,10 +211,10 @@
         "linkedin" : "no.linkedin.com/in/ruudud",
         "year" : "2011",
         "mugshot" : "palru.jpg",
-        "bio" : "",
+        "bio" : "Utvikler i alle lag -- fra prosess, mennesker og produkt, til frontend, backend og drift. Fun-fact: overbeviste Kent Beck om at Aeropress gir en bedre kopp kaffe enn presskanne.",
         "skills" : ["web", "development", "change", "devops"],
         "clients" : ["Amedia", "Telenor", "Get", "Jotta"],
-        "photo" : "paal.jpg"
+        "photo" : "palru-portrait.jpg"
     },
     "varland": {
         "name" : "Viktor Varland",
