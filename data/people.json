@@ -273,6 +273,20 @@
         "clients" : ["Telenor", "Røde Kors", "Veidekke", "NRK", "Sparebank1"],
         "photo" : "martin.jpg"
     },
+    "kvarud": {
+        "name" : "Stein Kvarud",
+        "title" : "Partner, Systemutvikler",
+        "email" : "stein@iterate.no",
+        "phone" : "+47 91 62 56 56",
+        "twitter" : "https://twitter.com/steinkvarud",
+        "linkedin" : "https://www.linkedin.com/in/steinkvarud",
+        "year" : "2004",
+        "mugshot" : "stein.jpg",
+        "bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+        "skills" : ["devops", "java", "continuous delivery"],
+        "clients" : ["Color Line", "Get", "If"],
+        "photo" : ""
+    },
     "skifjeld": {
         "name" : "Henrik Glasø Skifjeld",
         "title" : "Systemutvikler",
