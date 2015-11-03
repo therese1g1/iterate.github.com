@@ -90,6 +90,20 @@
         "clients" : ["HFN", "Aller", "Telenor"],
         "photo" : "haugeto.jpg"
     },
+    "johansen": {
+        "name" : "Sindre Ilebekk Johansen",
+        "title" : "Systemutvikler",
+        "email" : "sindre@iterate.no",
+        "phone" : "+47 91 57 47 83",
+        "twitter" : "https://twitter.com/sindreij",
+        "linkedin" : "https://no.linkedin.com/in/sindrejohansen",
+        "year" : "1990",
+        "mugshot" : "sindre.jpeg",
+        "bio" : "",
+        "skills" : ["fullstack", "development", "javascript"],
+        "clients" : ["Amedia"],
+        "photo" : "sindre.jpg"
+    },
     "kornli": {
         "name" : "Iselin Kornli",
         "title" : "Forretningsutvikler",
