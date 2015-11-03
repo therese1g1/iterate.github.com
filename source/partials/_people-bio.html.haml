@@ -13,7 +13,7 @@
       %p 
         = data.people[employee].bio
 
-      %p
+      .inner-section
         .skills
           %i.fa.fa-tags
           - data.people[employee].skills.each do | skill |
@@ -30,13 +30,17 @@
           %i.fa.fa-briefcase
           = work_experience
 
-      %p
-        %a{:href => 'mailto:' + data.people[employee].email, :title => data.people[employee].email }= data.people[employee].email
-        |
-        %span= data.people[employee].phone
+      .inner-section
+        %ul.horizontal-list
+          %li.contact-details
+            %a{:href => 'mailto:' + data.people[employee].email, :title => data.people[employee].email }= data.people[employee].email
+          %li.contact-details= data.people[employee].phone
 
-      %p
-        %a{:href => data.people[employee].twitter, :class => 'icon' }
-          %i.fa.fa-twitter
-        %a{:href => data.people[employee].linkedin,  :class => 'icon' }
-          %i.fa.fa-linkedin-square
+      .inner-section
+        %ul.horizontal-list
+          %li
+            %a{:href => data.people[employee].twitter, :class => 'icon' }
+              %i.fa.fa-twitter
+          %li
+            %a{:href => data.people[employee].linkedin,  :class => 'icon' }
+              %i.fa.fa-linkedin-square

@@ -34,7 +34,7 @@ h2 {
   font-family: $strong-font-family;
   font-weight: $strong-font-weight;
   text-transform: uppercase;
-  letter-spacing: 1;
+  letter-spacing: .1em;
   line-height: $heading-line-height;
 }
 
@@ -81,7 +81,8 @@ a {
   }
 }
 
-a.icon {
+/* link styles for font awesome icons - used on employee cards and bio sections */
+.icon {
   color: $medium-gray;
   border-bottom: none;
   transition: color 0.3s ease-in-out;
@@ -116,7 +117,7 @@ a.icon {
 i {
   font-size: 1.125em;
   line-height: 1;
-  color: $medium-gray;
+  padding-right: .5em;
 }
 
 hr {
