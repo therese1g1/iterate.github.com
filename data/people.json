@@ -300,5 +300,19 @@
         "skills" : ["web", "javascript", "lean startup", "mvp"],
         "clients" : ["Telenor", "S-OL", "SpareBank 1"],
         "photo" : "jorgen.jpg"
+    },
+    "larsen": {
+        "name" : "Rune Larsen",
+        "title" : "Partner, Prosjektleder",
+        "email" : "rune@iterate.no",
+        "phone" : "+47 917 78 534",
+        "twitter" : "http://twitter.com/runeball",
+        "linkedin" : "https://no.linkedin.com/in/RuneLarsenIterate",
+        "year" : "2001",
+        "mugshot" : "rune.jpg",
+        "bio" : "Rune har utviklerbakgrunn har han god kjennskap til alle steg i utviklingsprosessen, helt fra en idé på forretningssiden til deployment og mottak av løsning. Runes bakgrunn som systemutvikler og prosjektleder har gitt ham en dyp forståelse for prosjekter og prosesser, og et solid grunnlag for å jobbe med implementering av Lean-prinsipper i utviklingsløpet.",
+        "skills" : ["prosjektledelse", "lean", "lean startup"],
+        "clients" : ["Gjensidige", "Statnett", "Veidekke", "Color Line"],
+        "photo" : "rune.jpg"
     }
 }
