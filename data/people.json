@@ -328,5 +328,19 @@
         "skills" : ["web", "javascript", "node.js"],
         "clients" : ["SOL", "Telenor", "Amedia", "Apps AS"],
         "photo" : "brynjar.jpg"
+    },
+    "weel": {
+        "name" : "Morten Weel Johnsen",
+        "title" : "Systemutvikler",
+        "email" : "mortjohn@iterate.no",
+        "phone" : "+47 450 33 346",
+        "twitter" : "http://twitter.com/mwjohnse",
+        "linkedin" : "https://no.linkedin.com/pub/morten-weel-johnsen/14/10b/521",
+        "year" : "2011",
+        "mugshot" : "mortjohn.jpg",
+        "bio" : "...",
+        "skills" : [ "web", "frontend", "backend" "javascript", "android"],
+        "clients" : ["Cisco", "Telenor Digital", "Comoyo", "Color Line"],
+        "photo" : "mortjohn.jpg"
     }
 }
