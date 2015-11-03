@@ -325,7 +325,7 @@
         "year" : "2014",
         "mugshot" : "brynjar.jpg",
         "bio" : "...",
-        "skills" : ["web", "javascript" "node.js"],
+        "skills" : ["web", "javascript", "node.js"],
         "clients" : ["SOL", "Telenor", "Amedia", "Apps AS"],
         "photo" : "brynjar.jpg"
     }
