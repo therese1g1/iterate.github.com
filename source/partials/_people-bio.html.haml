@@ -1,17 +1,15 @@
 .people-bio-box
 
-  %img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/torve-portrait.jpg') }
+  %img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/' + data.people[employee].photo) }
 
   .container
     .employee-details
-      %h2
-        = headline
+      %h2= headline
 
-      %h3
-        = data.people[employee].name
+      %h3= data.people[employee].name
 
-      %p 
-        = data.people[employee].bio
+      - if data.people[employee].bio.length > 0
+        %p= data.people[employee].bio
 
       .inner-section
         .skills
@@ -42,3 +40,7 @@
           %li
             %a{:href => data.people[employee].linkedin,  :class => 'icon' }
               %i.fa.fa-linkedin-square
+          - if data.people[employee].github.length > 0
+            %li 
+              %a{:href => data.people[employee].github,  :class => 'icon' }
+                %i.fa.fa-github

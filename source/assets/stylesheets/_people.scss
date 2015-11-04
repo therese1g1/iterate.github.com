@@ -6,11 +6,11 @@
 .employee-full-portrait {
   float: right;
   margin-right: 0;
-  height: 53.75em;
+  width: 38vw;
 }
 
 .employee-details {
-  padding-top: 5em;
+  padding: 5em 0;
   @include span-columns (7);
 }
 
@@ -31,12 +31,11 @@
   }
 }
 
-
 .contact-details {
   font-family: $deco-font-family;
   font-style: $deco-font-style;
   font-weight: $deco-font-weight;
-  
+
   &:first-child:after {
   content: '|';
   padding-left: 0.3em
