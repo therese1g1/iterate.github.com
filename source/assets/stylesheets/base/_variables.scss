@@ -1,28 +1,15 @@
 // Body Font Styles
-$base-font-family: "Open Sans", sans-serif;
-$base-font-weight: 400;
+$base-font-family: "Planer-Regular", sans-serif;
+$base-font-weight: normal;
 $base-font-style: normal;
 
-$em-font-family: "Open Sans", sans-serif;
-$em-font-weight: 400;
+$em-font-family: "Planer-Italic", sans-serif;
+$em-font-weight: normal;
 $em-font-style: italic;
 
-$strong-font-family: "Open Sans", sans-serif;
-$strong-font-weight: 700;
+$strong-font-family: "Planer-DemiBold", sans-serif;
+$strong-font-weight: normal;
 $strong-font-style: normal;
-
-// Heading Font Styles
-$heading-font-family: "Planer-Regular", sans-serif;
-$heading-font-weight: normal;
-$heading-font-style: normal;
-
-$quote-font-family: "Planer-Italic", sans-serif;
-$quote-font-weight: normal;
-$quote-font-style: normal;
-
-$heading-strong-font-family: "Planer-DemiBold", sans-serif;
-$heading-strong-font-weight: normal;
-$heading-strong-font-style: normal;
 
 // Hero Font Styles
 $hero-font-family: "NoyhBold", Futura, sans-serif;
@@ -30,9 +17,9 @@ $hero-font-weight: normal;
 $hero-font-style: normal;
 
 // Deco Font Styles
-$deco-font-family: $heading-font-family;
-$deco-font-weight: $heading-font-weight;
-$deco-font-style: $heading-font-style;
+$deco-font-family: $base-font-family;
+$deco-font-weight: $base-font-weight;
+$deco-font-style: $base-font-style;
 
 // Responsive Typography 
 // Viewport sizes and font ranges

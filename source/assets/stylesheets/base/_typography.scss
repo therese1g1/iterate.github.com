@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
-
 body {
   @include font-feature-settings("kern", "liga", "pnum");
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -31,30 +29,30 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 0.8em;
   color: $blue;
-  font-family: $heading-strong-font-family;
-  font-weight: $heading-strong-font-weight;
+  font-family: $strong-font-family;
+  font-weight: $strong-font-weight;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: .02em;
   line-height: $heading-line-height;
 }
 
 h3 {
   font-size: 3.375em;
   line-height: $base-line-height;
-  font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-  font-style: $heading-font-style;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
   color: $medium-gray;
 }
 
 h4 {
   font-size: 1.5em;
   line-height: $heading-line-height;
-  font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-  font-style: $heading-font-style;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
   text-transform: uppercase;
 }
 
@@ -62,6 +60,7 @@ p {
   margin: 0 0 $small-spacing;
   line-height: $long-form-line-height;
   color: $base-font-color;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 .name-small, 
@@ -78,7 +77,6 @@ p {
 }
 
 // Link styles
-
 a {
   color: $action-color;
   text-decoration: none;
