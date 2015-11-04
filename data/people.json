@@ -353,7 +353,7 @@
         "year" : "2011",
         "mugshot" : "mortjohn.jpg",
         "bio" : "...",
-        "skills" : [ "web", "frontend", "backend" "javascript", "android"],
+        "skills" : [ "web", "frontend", "backend", "javascript", "android"],
         "clients" : ["Cisco", "Telenor Digital", "Comoyo", "Color Line"],
         "photo" : "mortjohn.jpg"
     }
