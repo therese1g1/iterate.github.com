@@ -37,4 +37,4 @@ Vendor stylesheets and JavaScripts should go in each of their `/vendor/` directo
 
 ## Credits
 
-[![thoughtbot](http://images.thoughtbot.com/bourbon/thoughtbot-logo.svg)](http://thoughtbot.com)
+[thoughtbot](http://thoughtbot.com)
