@@ -17,6 +17,9 @@
 .skills, 
 .clients, 
 .experience {
+  font-family: $deco-font-family;
+  font-style: $deco-font-style;
+  font-weight: $deco-font-weight;
   text-transform: uppercase;
   color: $medium-gray;
   line-height: 1.6;
@@ -28,7 +31,14 @@
   }
 }
 
-.contact-details:first-child:after {
+
+.contact-details {
+  font-family: $deco-font-family;
+  font-style: $deco-font-style;
+  font-weight: $deco-font-weight;
+  
+  &:first-child:after {
   content: '|';
   padding-left: 0.3em
+}
 }

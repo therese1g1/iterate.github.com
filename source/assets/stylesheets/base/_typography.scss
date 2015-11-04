@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
@@ -20,39 +22,39 @@ h6 {
 }
 
 h1 {
-  font-size: 10.375em;
-  font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-  font-style: $heading-font-style;
+  font-size: 11.391em;
+  font-family: $hero-font-family;
+  font-weight: $hero-font-weight;
+  font-style: $hero-font-style;
   line-height: 1;
   color: $white;
 }
 
 h2 {
-  font-size: 0.875em;
+  font-size: 1em;
   color: $blue;
-  font-family: $strong-font-family;
-  font-weight: $strong-font-weight;
+  font-family: $heading-strong-font-family;
+  font-weight: $heading-strong-font-weight;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   line-height: $heading-line-height;
 }
 
 h3 {
-  font-size: 4em;
+  font-size: 3.375em;
   line-height: $base-line-height;
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  font-style: $base-font-style;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  font-style: $heading-font-style;
   color: $medium-gray;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-size: 1.5em;
   line-height: $heading-line-height;
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  font-style: $base-font-style;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  font-style: $heading-font-style;
   text-transform: uppercase;
 }
 
@@ -61,6 +63,21 @@ p {
   line-height: $long-form-line-height;
   color: $base-font-color;
 }
+
+.name-small, 
+.title-small {
+  text-transform: uppercase;
+  color: $medium-gray;
+  font-size: 0.618em;
+  line-height: $base-line-height;
+}
+
+.kontakt-information-tiny {
+  font-size: 0.618em;
+  line-height: $base-line-height;
+}
+
+// Link styles
 
 a {
   color: $action-color;
@@ -81,7 +98,7 @@ a {
   }
 }
 
-/* link styles for font awesome icons - used on employee cards and bio sections */
+// Link styles for font awesome icons - used on employee cards and bio sections
 .icon {
   color: $medium-gray;
   border-bottom: none;
@@ -101,22 +118,9 @@ a {
   }
 }
 
-.name-small, 
-.title-small {
-  text-transform: uppercase;
-  color: $medium-gray;
-  font-size: 0.75em;
-  line-height: $base-line-height;
-}
-
-.kontakt-information-tiny {
-  font-size: 0.68em;
-  line-height: $base-line-height;
-}
-
-i {
-  font-size: 1.125em;
-  line-height: 1;
+.fa {
+  font-size: 1.125em !important;
+  line-height: 1 !important;
   padding-right: .5em;
 }
 
