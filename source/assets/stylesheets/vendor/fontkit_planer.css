@@ -24,42 +24,11 @@
  * Licensed pageviews: 10,000
  * 
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3014760
- * 
- *
- *
- * @license Noyh font
- * MyFonts Webfont Build ID 3096140, 2015-09-23T06:48:06-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- *
- * Webfont: NoyhBold by Typesketchbook
- * URL: http://www.myfonts.com/fonts/typesketchbook/noyh/bold/
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3096140
- * Licensed pageviews: 10,000
- * Webfonts copyright: Copyright (c) 2014 by Typesketchbook. All rights reserved.
- * 
- * © 2015 MyFonts Inc
-*/
+**/
 
-/* Kit IDs */
-@import url("//hello.myfonts.net/count/2f3e4c");
+/* Kit ID */
 @import url("//hello.myfonts.net/count/2e0068");
 
-@font-face {
-  font-family: "NoyhBold";
-  font-style: normal;
-  font-weight: normal;
-  src:  font_url('2F3E4C_3_0.eot');
-  src:  font_url('2F3E4C_3_0.eot?#iefix') format('embedded-opentype'),
-  		font_url('2F3E4C_3_0.woff2') format('woff2'),
-  		font_url('2F3E4C_3_0.woff') format('woff'),
-  		font_url('2F3E4C_3_0.ttf') format('truetype');
-  }
 @font-face {
   font-family:"Planer-Regular";
   font-style:normal;
