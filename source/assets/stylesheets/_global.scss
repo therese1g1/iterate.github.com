@@ -3,8 +3,17 @@ body {
   color: $medium-gray;
 }
 
+section {
+  padding: $large-spacing;
+  border: 1px solid red;
+}
+
 .container {
   @include outer-container;
+}
+
+.two-columns {
+  @include span-columns(6)
 }
 
 /* list of font awesome icons linking to twitter etc */
@@ -16,4 +25,8 @@ ul.horizontal-list li {
 /* sections inside elements - used on bio element for example */
 .inner-section {
   margin: $base-spacing 0;
+}
+
+.centered {
+  text-align: center;
 }

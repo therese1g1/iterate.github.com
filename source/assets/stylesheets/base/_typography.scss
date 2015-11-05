@@ -1,5 +1,5 @@
 body {
-  @include font-feature-settings("kern", "liga", "pnum");
+  @include font-feature-settings("kern" false, "liga", "pnum");
   -webkit-font-smoothing: subpixel-antialiased;
   color: $base-font-color;
   font-family: $base-font-family;
@@ -16,7 +16,7 @@ h6 {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0;
 }
 
 h1 {
@@ -36,6 +36,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: .02em;
   line-height: $heading-line-height;
+  padding-bottom: $large-spacing;
 }
 
 h3 {

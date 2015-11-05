@@ -38,8 +38,9 @@ $long-form-line-height: 1.6;
 
 // Other Sizes
 $base-border-radius: 4px;
-$base-spacing: $base-line-height * 1.4em;
+$base-spacing: $base-line-height * $golden * 1em;
 $small-spacing: $base-spacing / 2;
+$large-spacing: $base-spacing * 2;
 $base-z-index: 0;
 
 // Colors

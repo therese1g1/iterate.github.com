@@ -1,0 +1,26 @@
+// toggles background color on customer quotes section in partials
+.white {
+  background-color: $white;
+}
+.gray {
+  background-color: $light-gray;
+}
+
+.quote {
+  font-size: modular-scale(1);
+}
+
+.customer {
+  border-top: $base-border;
+  padding-top: $base-spacing;
+  font-size: modular-scale(-1);
+  line-height: 1.6;
+}
+
+.customer-name {
+  text-transform: uppercase;
+}
+
+.customer-jobtitle {
+  color: $action-color;
+}
