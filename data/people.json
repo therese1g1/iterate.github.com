@@ -367,6 +367,20 @@
         "clients" : ["SOL", "Telenor", "Amedia", "Apps AS"],
         "photo" : "brynjar.jpg"
     },
+    "ivaruf": {
+        "name" : "Ivar Fredriksen",
+        "title" : "Systemutvikler",
+        "email" : "ivar@iterate.no",
+        "phone" : "+47 414 53 510",
+        "twitter" : "http://twitter.com/ivaruf",
+        "linkedin" : "https://no.linkedin.com/pub/ivar-fredriksen/18/b7b/b7a",
+        "year" : "2010",
+        "mugshot" : "ivar.jpg",
+        "bio" : "...",
+        "skills" : ["frontend", "backend", "java", "javascript", "web", "development"],
+        "clients" : ["Get", "NRK", "Broadnet", "Jotta", "Eika", "Oslo kommune", "Fronter"],
+        "photo" : "ivar.jpg"
+    },
     "weel": {
         "name" : "Morten Weel Johnsen",
         "title" : "Systemutvikler",
