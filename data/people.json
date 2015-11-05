@@ -411,5 +411,20 @@
         "skills" : [ "web", "frontend", "backend", "javascript"],
         "clients" : ["Gjensidige", "HFN", "Sportsfronter"],
         "photo" : ""
+    },
+    "bergestad": {
+        "name" : "Stig Bergestad",
+        "title" : "Systemutvikler",
+        "email" : "stigberg@iterate.no",
+        "phone" : "+47 4110 35 15",
+        "twitter" : "",
+        "linkedin" : "https://no.linkedin.com/pub/stig-bergestad/a/3a7/284",
+        "github" : "",
+        "year" : "2007",
+        "mugshot" : "stigberg.jpg",
+        "bio" : "Likes kitteez. Fun-fact: Likes doggseez too.",
+        "skills" : [ "backend", "frontend", "tdd", "java", "devops"],
+        "clients" : ["Norwegian", "Tele2", "Telenor", "SLF", "Veidekke"],
+        "photo" : ""
     }
 }
