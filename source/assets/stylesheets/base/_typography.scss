@@ -64,6 +64,13 @@ p {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+.ingress {
+  font-size: modular-scale(1);
+  font-family: $em-font-family;
+  font-style: $em-font-style;
+  font-weight: $em-font-weight;
+}
+
 .name-small, 
 .title-small {
   text-transform: uppercase;

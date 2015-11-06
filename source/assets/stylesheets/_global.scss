@@ -11,8 +11,22 @@ section {
   @include span-columns(6)
 }
 
+.eight-cols-centered {
+  @include span-columns(8);
+  @include shift(2);
+}
+
 .has-padding-bottom {
   padding-bottom: $base-spacing;
+}
+
+.bullet-list {
+  @extend %default-ul;
+
+  & li {
+    line-height: $long-form-line-height;
+    font-size: modular-scale(0);
+  }
 }
 
 /* list of font awesome icons linking to twitter etc */
