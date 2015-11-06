@@ -1,4 +1,5 @@
-// set gray or white to toggle background color when calling partial
+- # set :locals => { :background_color => "$COLOR" } to gray or white to toggle background color when calling the partial
+
 %div{ :class => background_color }
 
   %section
@@ -6,14 +7,14 @@
 
     .two-columns
       %p.quote
-        Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        = lorem.sentences 2
       %ul.customer
         %li.customer-name Chuck Norris
         %li.customer-jobtitle VP of General Awesomeness
 
     .two-columns
       %p.quote
-        Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        = lorem.sentences 2
       %ul.customer
         %li.customer-name Lord D. Vader
         %li.customer-jobtitle Death Star Lead, Emperor, Dark Side
