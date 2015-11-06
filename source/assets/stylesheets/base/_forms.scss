@@ -1,8 +1,7 @@
 fieldset {
-  background-color: lighten($base-border-color, 10%);
-  border: $base-border;
-  margin: 0 0 $small-spacing;
-  padding: $base-spacing;
+  border:none;
+  padding: 0;
+  display: table;
 }
 
 input,
@@ -14,8 +13,11 @@ select {
 }
 
 label {
-  font-weight: 600;
+  font-family: $strong-font-family;
+  font-weight: $base-font-weight;
+  font-size: modular-scale(-1);
   margin-bottom: $small-spacing / 2;
+  text-transform: uppercase;
 
   &.required::after {
     content: "*";
@@ -29,7 +31,7 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
+  background-color: $white;
   border: $base-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;

@@ -8,13 +8,13 @@ title: Frokostseminar Lean Cortado Del 2
       %h1 Lean Cortado
       %h2 Frokostseminarer om Lean Startup i Norske virksomheter   
 
-    = partial 'partials/registration-form.html'
+    = partial 'partials/registration-form', :locals => { :width => 'full'}
 
   .white
     %section
       %h2.centered Lean Cortado Del 2
       %h3.centered Organisering og ansvarsområder
-      .eight-cols-centered
+      .eight-columns-centered
         %p.ingress I del 1 av Lean Cortado hadde vi fokus på visjon og forutsetninger for å øke sjansen for at man skal lykkes med innovasjon. I del 2 vil vi sette fokuset på Organisering og ansvarsområder:
 
         %ul.bullet-list
@@ -27,10 +27,10 @@ title: Frokostseminar Lean Cortado Del 2
           %li Hvem skal ha ansvaret for hva?
 
   - # set to gray or white to control background-color of the partial
-  = partial 'partials/customer-quotes-events', :locals => { :background_color => "gray" } 
+  = partial 'partials/customer-quotes-events', :locals => { :background_color => 'gray' } 
 
   - # fetches employee data from people.json and sets a headline where approriate
-  = partial 'partials/people-bio.html.haml', :locals => { :employee => "indahl", :headline => "om foredragsholderen" } 
+  = partial 'partials/people-bio', :locals => { :employee => 'indahl', :headline => 'om foredragsholderen' } 
 
   %section
     .two-columns
@@ -41,7 +41,7 @@ title: Frokostseminar Lean Cortado Del 2
           %li 26. okt 2015 -- kl 08:15 til 09:00
           %li Grensen 9B
 
-      = partial 'partials/registration-form.html'  
+      = partial 'partials/registration-form'  
 
     .two-columns
       .has-padding-bottom

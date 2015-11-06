@@ -11,7 +11,11 @@ section {
   @include span-columns(6)
 }
 
-.eight-cols-centered {
+.three-columns {
+  @include span-columns(4)
+}
+
+.eight-columns-centered {
   @include span-columns(8);
   @include shift(2);
 }
