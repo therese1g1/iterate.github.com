@@ -427,19 +427,19 @@
         "clients" : ["Norwegian", "Tele2", "Telenor", "SLF", "Veidekke"],
         "photo" : ""
     },
-    “corell”: {
-        "name" : “Dag Corell”,
+    "corell": {
+        "name" : "Dag Corell",
         "title" : "Systemutvikler",
-        "email" : “dag@iterate.no",
-        "phone" : "+47 928 02 322”,
+        "email" : "dag@iterate.no",
+        "phone" : "+47 928 02 322",
         "twitter" : "",
         "linkedin" : "https://www.linkedin.com/in/dagcorell",
         "github" : "",
-        "year" : “2013”,
+        "year" : "2013",
         "mugshot" : "dag.jpg",
         "bio" : "",
-        "skills" : [ “java”, “backend”, “development”, "java"],
-        "clients" : [“SPK”],
+        "skills" : [ "java", "backend", "development", "java"],
+        "clients" : ["SPK"],
         "photo" : ""
     }
 }
