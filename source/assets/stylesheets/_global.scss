@@ -4,11 +4,8 @@ body {
 }
 
 section {
-  padding: $large-spacing;
-  border: 1px solid red;
-}
-
-.container {
+  padding: $extra-large-spacing 0;
+  border: red solid 1px;
   @include outer-container;
 }
 

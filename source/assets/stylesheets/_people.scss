@@ -1,6 +1,14 @@
 .people-bio-box{
   background-color: $white;
   width: 100vw;
+
+  section {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    padding-bottom: $base-spacing;
+  }
 }
 
 .employee-full-portrait {
