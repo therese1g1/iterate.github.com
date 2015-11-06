@@ -6,13 +6,7 @@ title: Frokostseminar Lean Cortado Del 2
   %section
     .header
       %h1 Lean Cortado
-      %h2 Frokostseminarer om Lean Startup i Norske virksomheter
-      %p 
-        Del 2 med Torve Indahl
-        %br
-        26. okt 2015 &mdash; kl 08:15 til 09:00
-        %br
-        Grensen 9B      
+      %h2 Frokostseminarer om Lean Startup i Norske virksomheter   
 
     = partial 'partials/registration-form.html'
 
@@ -32,29 +26,40 @@ title: Frokostseminar Lean Cortado Del 2
       %li Hvilke roller må dekkes?
       %li Hvem skal ha ansvaret for hva?
 
+  - # set to gray or white to control background-color of the partial
+  = partial 'partials/customer-quotes-events', :locals => { :background_color => "gray" } 
 
-  = partial 'partials/customer-quotes-events', :locals => { :background_color => "gray" }
-
-  = partial 'partials/people-bio.html.haml', :locals => { :employee => "indahl", :headline => "om foredragsholderen" }
+  - # fetches employee data from people.json and sets a headline where approriate
+  = partial 'partials/people-bio.html.haml', :locals => { :employee => "indahl", :headline => "om foredragsholderen" } 
 
   %section
-    %h4 Lean Cortado serie
+    .two-columns
+      .has-padding-bottom
+        %h4 Lean Cortdado del 2
+        %ul 
+          %li Frokostseminar med Torve Indahl
+          %li 26. okt 2015 -- kl 08:15 til 09:00
+          %li Grensen 9B
 
-    %p Frokostseminaret er det andre i en serie på syv seminarer om Lean Startup og Garasjen - Iterate sitt konsept for entreprenørskap i norske virksomheter. Vi kommer med ferske caser, ferske bakevarer, faglige anbefalinger og kruttsterk kaffe.
+      = partial 'partials/registration-form.html'  
 
-    %p Det er mulig å delta i enkle seminarer.  Vi bygger Lean Cortado serien på en måte som gir deg mulighet til god læring i hver del.
+    .two-columns
+      .has-padding-bottom
+        %h4 Lean Cortado serie
 
-    %ul
-      %li Del 1 - Visjon og målsetninger
-      %li Del 2 - Organisering og ansvarsområder
-      %li Del 3 - Rapportering (dato: TBA)
-      %li Del 4 - Kompetanseheving (dato: TBA)
-      %li Del 5 - Kundesegmenter og marketing (dato: TBA)
-      %li Del 6 - Prototyping og MVP (dato: TBA)
-      %li Del 7 - Skalering (dato: TBA)
+        %p Frokostseminaret er det andre i en serie på syv seminarer om Lean Startup og Garasjen - Iterate sitt konsept for entreprenørskap i norske virksomheter. Vi kommer med ferske caser, ferske bakevarer, faglige anbefalinger og kruttsterk kaffe.
 
-    %h4 Hvorfor satser Iterate på Lean Startup?
-    %p Norge er på vei inn i ny
-    normalsituasjon. I etterdønningene fra finanskrisen i 2009 ble
-    organisasjonene trimmet og det ble satt mer fokus på kjernebusiness.
-    Samtidig er behovet for nyskapning større enn noensinne.
+        %p Det er mulig å delta i enkle seminarer.  Vi bygger Lean Cortado serien på en måte som gir deg mulighet til god læring i hver del.
+
+        %ul
+          %li Del 1 - Visjon og målsetninger
+          %li Del 2 - Organisering og ansvarsområder
+          %li Del 3 - Rapportering (dato: TBA)
+          %li Del 4 - Kompetanseheving (dato: TBA)
+          %li Del 5 - Kundesegmenter og marketing (dato: TBA)
+          %li Del 6 - Prototyping og MVP (dato: TBA)
+          %li Del 7 - Skalering (dato: TBA)
+
+      .has-padding-bottom
+        %h4 Hvorfor satser Iterate på Lean Startup?
+        %p Norge er på vei inn i ny normalsituasjon. I etterdønningene fra finanskrisen i 2009 ble organisasjonene trimmet og det ble satt mer fokus på kjernebusiness. Samtidig er behovet for nyskapning større enn noensinne.

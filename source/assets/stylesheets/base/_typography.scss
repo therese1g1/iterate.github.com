@@ -17,6 +17,7 @@ h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0;
+  padding-bottom: $base-spacing;
 }
 
 h1 {
@@ -46,16 +47,14 @@ h3 {
   font-weight: $base-font-weight;
   font-style: $base-font-style;
   color: $medium-gray;
-  padding-bottom: $base-spacing;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: modular-scale(1);
   line-height: $heading-line-height;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   font-style: $base-font-style;
-  text-transform: uppercase;
 }
 
 p {
