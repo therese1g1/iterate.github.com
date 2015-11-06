@@ -10,11 +10,12 @@
 
 .quote {
   font-size: modular-scale(1);
+  padding-bottom: $base-spacing;
 }
 
 .customer {
   border-top: $base-border;
-  padding-top: $base-spacing;
+  padding-top: $small-spacing;
   font-size: modular-scale(-1);
   line-height: 1.6;
 }
