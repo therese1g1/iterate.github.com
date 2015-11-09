@@ -1,0 +1,15 @@
+#registration-form {
+
+  fieldset{
+    @include row();
+  }
+
+  button {
+    margin-bottom: $base-spacing / 2;
+    margin-top: $base-spacing / 2;
+  }
+
+  .form-element {
+    @include span-columns(4);
+  }
+}

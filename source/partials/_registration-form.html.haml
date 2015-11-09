@@ -1,11 +1,11 @@
 = form_tag 'https://formkeep.com/f/355b4335b124', :id => 'registration-form', :method => 'POST' do
   = field_set_tag do
-    %span
+    %div.form-element
       = label_tag 'navn', :class => 'label-name'
       = text_field_tag :name => 'name'
-    %span
+    %div.form-element
       = label_tag 'epost', :class => 'email'
       = email_field_tag :name => 'email'
-    %span
+    %div.form-element
       %button 
         Meld meg på

@@ -8,7 +8,7 @@ title: Frokostseminar Lean Cortado Del 2
       %h1 Lean Cortado
       %h2 Frokostseminarer om Lean Startup i Norske virksomheter   
 
-    = partial 'partials/registration-form', :locals => { :width => 'full'}
+    = partial 'partials/registration-form' 
 
   .white
     %section
@@ -38,10 +38,11 @@ title: Frokostseminar Lean Cortado Del 2
         %h4 Lean Cortdado del 2
         %ul 
           %li Frokostseminar med Torve Indahl
-          %li 26. okt 2015 -- kl 08:15 til 09:00
+          %li 26. okt 2015 &mdash; kl 08:15 til 09:00
           %li Grensen 9B
 
-      = partial 'partials/registration-form'  
+      .fills-parent
+        = partial 'partials/registration-form'
 
     .two-columns
       .has-padding-bottom

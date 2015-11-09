@@ -24,6 +24,10 @@ section {
   padding-bottom: $base-spacing;
 }
 
+.fills-parent {
+  @include fill-parent;
+}
+
 .bullet-list {
   @extend %default-ul;
 
