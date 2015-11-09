@@ -1,7 +1,12 @@
 #registration-form {
 
-  fieldset{
-    @include row();
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
   }
 
   button {
@@ -10,6 +15,13 @@
   }
 
   .form-element {
-    @include span-columns(4);
+    flex-grow: 3;
+    margin-right: $base-spacing;
+    min-width: 25vw;
+
+    &::last-cild{
+      flex-grow: 1;
+    }
+
   }
 }
