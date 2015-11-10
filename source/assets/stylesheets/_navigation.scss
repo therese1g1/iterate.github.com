@@ -15,41 +15,38 @@ ul.main-navigation {
 
   li {
     margin: 0 $small-spacing;
+    text-transform: uppercase;
+    font-size: modular-scale(-1);
+    font-family: $strong-font-family;
 
     &:first-child {
       flex-grow: 2;
     }
 
     a {
-      text-transform: uppercase;
-      color: $base-font-color;
-      font-size: modular-scale(-1);
-      font-family: $strong-font-family;
       border-bottom: transparent;
+      color: $base-font-color;
 
       &:hover {
       border-bottom: 2px solid $action-color;
       padding-bottom: $small-spacing / 2;
       color: $action-color;
       }
+    }
 
-/* TODO: ugly nesting needs cleaning up */
+    .link-with-logo {
+      border-bottom: none;
 
-      &.link-with-logo {
+      &:hover,
+      &:active{
         border-bottom: none;
-
-        &:hover,
-        &:active{
-          border-bottom: none;
-        }
       }
     }
+    .active {
+      border-bottom: 2px solid $blue;
+      padding-bottom: $small-spacing / 2;
+    }
   }
-}
-
-.active {
-  border-bottom: 2px solid $medium-gray;
-  padding-bottom: $small-spacing / 2;
 }
 
 .navigation-bar-logo {
