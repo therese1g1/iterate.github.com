@@ -1,0 +1,57 @@
+.lean-cortado {
+  #navigation-bar {
+    background-color: $white;
+  }
+}
+
+
+ul.main-navigation {
+  padding: $base-spacing 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    margin: 0 $small-spacing;
+
+    &:first-child {
+      flex-grow: 2;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $base-font-color;
+      font-size: modular-scale(-1);
+      font-family: $strong-font-family;
+      border-bottom: transparent;
+
+      &:hover {
+      border-bottom: 2px solid $action-color;
+      padding-bottom: $small-spacing / 2;
+      color: $action-color;
+      }
+
+/* TODO: ugly nesting needs cleaning up */
+
+      &.link-with-logo {
+        border-bottom: none;
+
+        &:hover,
+        &:active{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid $medium-gray;
+  padding-bottom: $small-spacing / 2;
+}
+
+.navigation-bar-logo {
+  height: modular-scale(1);
+}

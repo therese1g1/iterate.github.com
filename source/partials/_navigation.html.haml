@@ -1,0 +1,12 @@
+%div#navigation-bar
+  .wrapper
+    %ul.main-navigation
+      %li 
+        = link_to '/', :class => 'link-with-logo' do
+          %img{ :src => image_path('logo.png'), :class => 'navigation-bar-logo', :title => 'Iterate logo' }
+      %li= nav_link 'Mennesker', '/people'
+      %li= nav_link 'Om oss', '/about'
+      %li= nav_link 'Arrangementer', '/lean-cortado'
+      %li= nav_link 'Referanser', '/cases'
+      %li= nav_link 'Lean Startup', '/lean-startup'
+      %li= nav_link 'Blogg', '/blog/'

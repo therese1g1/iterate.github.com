@@ -7,6 +7,10 @@ section {
   @include outer-container;
 }
 
+.wrapper {
+  @include outer-container;
+}
+
 .two-columns {
   @include span-columns(6)
 }
