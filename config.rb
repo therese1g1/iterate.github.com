@@ -35,8 +35,8 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
-  deploy.remote   = 'origin' 
-  deploy.branch   = 'shinies'
+  deploy.remote   = "origin" 
+  deploy.branch   = "shinies"
   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end

@@ -158,6 +158,7 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-deploy
   middleman-livereload
+  middleman-navigation
   neat
   puma
   rack-contrib
