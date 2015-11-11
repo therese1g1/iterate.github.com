@@ -12,7 +12,8 @@ section {
 }
 
 .two-columns {
-  @include span-columns(6)
+  @include span-columns(6);
+  @include reset-display;
 }
 
 .three-columns {

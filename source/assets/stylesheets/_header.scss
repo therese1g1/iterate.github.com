@@ -1,0 +1,13 @@
+.header { 
+
+  background-image: url(image_path('banners/lean-cortado-banner.jpg')); 
+  /* TODO automate based on either frontmatter or page classes */
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  section {
+    padding-bottom: $base-spacing * $base-line-height;
+  }
+}
