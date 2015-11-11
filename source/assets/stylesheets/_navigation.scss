@@ -17,7 +17,7 @@ ul.main-navigation {
     margin: 0 $small-spacing;
     padding: $small-spacing 0;
     text-transform: uppercase;
-    color: $base-font-color;
+    color: lighten($base-font-color, 10%);
     font-size: modular-scale(-1);
     font-family: $strong-font-family;;
 
@@ -33,7 +33,7 @@ ul.main-navigation {
     a {
       border-bottom: transparent;
       padding-bottom: $small-spacing / 2;
-      color: $base-font-color;
+      color: lighten($base-font-color, 10%);
       display: block;
 
       &:hover {
