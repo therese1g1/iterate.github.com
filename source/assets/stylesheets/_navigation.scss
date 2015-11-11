@@ -6,31 +6,39 @@
 
 
 ul.main-navigation {
-  padding: $base-spacing 0;
+  padding: $small-spacing 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   li {
     margin: 0 $small-spacing;
+    padding: $small-spacing 0;
     text-transform: uppercase;
+    color: $base-font-color;
     font-size: modular-scale(-1);
-    font-family: $strong-font-family;
+    font-family: $strong-font-family;;
 
     &:first-child {
       flex-grow: 2;
     }
 
+    &.active {
+      border-bottom: 2px solid $blue;
+      padding-bottom: $small-spacing / 2;
+    }
+
     a {
       border-bottom: transparent;
+      padding-bottom: $small-spacing / 2;
       color: $base-font-color;
+      display: block;
 
       &:hover {
-      border-bottom: 2px solid $action-color;
-      padding-bottom: $small-spacing / 2;
-      color: $action-color;
+        border-bottom: 2px solid $action-color;
+        color: $action-color;
       }
     }
 
@@ -41,10 +49,6 @@ ul.main-navigation {
       &:active{
         border-bottom: none;
       }
-    }
-    .active {
-      border-bottom: 2px solid $blue;
-      padding-bottom: $small-spacing / 2;
     }
   }
 }

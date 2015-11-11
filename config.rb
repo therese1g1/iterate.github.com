@@ -41,6 +41,7 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
+
 helpers do
   def nav_link(link_text, page_url, options = {})
     options[:class] ||= ""
@@ -49,7 +50,12 @@ helpers do
     else
       current_url = current_page.url
     end
-    options[:class] << " active" if page_url == current_url
-    link_to(link_text, page_url, options)
+    if page_url != current_url
+      content_tag :li do
+        link_to(link_text, page_url, options)
+      end
+    else
+      content_tag :li, link_text, :class => 'active'
+    end
   end
 end
