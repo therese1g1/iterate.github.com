@@ -21,7 +21,7 @@ h6 {
 }
 
 h1 {
-  font-size: 13.5vw;
+  @include responsive-font(13.5vw, 60px, 175px);
   font-family: $hero-font-family;
   font-weight: $hero-font-weight;
   font-style: $hero-font-style;
