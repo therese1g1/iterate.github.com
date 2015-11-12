@@ -2,7 +2,7 @@
 $base-font-family: "Planer-Regular", sans-serif;
 $base-font-weight: normal;
 $base-font-style: normal;
-$base-font-size: 1.4vw;
+$base-font-size: 18px;
 
 $em-font-family: "Planer-Italic", sans-serif;
 $em-font-weight: normal;
@@ -36,10 +36,10 @@ $long-form-line-height: 1.6;
 
 // Other Sizes
 $base-border-radius: 4px;
-$base-spacing: strip-units($base-font-size) * $golden * 1rem;
-$small-spacing: $base-spacing / 2;
-$large-spacing: $base-spacing * 2;
-$extra-large-spacing: $base-spacing * 3;
+$base-spacing: modular-scale(2);
+$small-spacing: modular-scale(0);
+$large-spacing: modular-scale(5);
+$extra-large-spacing: modular-scale(7);
 $base-z-index: 0;
 
 // Colors

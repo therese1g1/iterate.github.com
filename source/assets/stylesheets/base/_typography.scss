@@ -21,16 +21,17 @@ h6 {
 }
 
 h1 {
-  font-size: 11.391em;
+  font-size: 13.5vw;
   font-family: $hero-font-family;
   font-weight: $hero-font-weight;
   font-style: $hero-font-style;
   line-height: 1;
   color: $white;
+  padding-bottom: rem($base-spacing);
 }
 
 h2 {
-  font-size: 0.8em;
+  font-size: modular-scale(-1);
   color: $blue;
   font-family: $strong-font-family;
   font-weight: $strong-font-weight;
@@ -41,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.375em;
+  font-size: modular-scale(5);
   line-height: $base-line-height;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
@@ -50,7 +51,7 @@ h3 {
 }
 
 h4 {
-  font-size: modular-scale(1);
+  font-size: modular-scale(2);
   line-height: $heading-line-height;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
@@ -75,12 +76,12 @@ p {
 .title-small {
   text-transform: uppercase;
   color: $medium-gray;
-  font-size: 0.618em;
+  font-size: modular-scale(-1);
   line-height: $base-line-height;
 }
 
 .kontakt-information-tiny {
-  font-size: 0.618em;
+  font-size: modular-scale(-2);
   line-height: $base-line-height;
 }
 
@@ -125,7 +126,7 @@ a {
 }
 
 .fa {
-  font-size: 1.125em !important;
+  font-size: modular-scale(1) !important;
   line-height: 1 !important;
   padding-right: .5em;
 }
