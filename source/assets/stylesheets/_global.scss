@@ -11,6 +11,10 @@ section {
   @include outer-container;
 }
 
+.two-thirds-layout {
+  @include span-columns(9);
+}
+
 .two-columns {
   @include span-columns(6);
   @include reset-display;
@@ -27,6 +31,14 @@ section {
 
 .has-padding-bottom {
   padding-bottom: $base-spacing;
+}
+
+.has-padding-top {
+  padding-bottom: $base-spacing;
+}
+.has-padding-top-bottom {
+  @extend .has-padding-bottom;
+  @extend .has-padding-top;
 }
 
 .fills-parent {
