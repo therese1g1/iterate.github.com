@@ -15,7 +15,8 @@ select {
 label {
   font-family: $strong-font-family;
   font-weight: $base-font-weight;
-  font-size: modular-scale(-1);
+  font-size: modular-scale(-2);
+  letter-spacing: 2px;
   margin-bottom: $small-spacing / 2;
   text-transform: uppercase;
 

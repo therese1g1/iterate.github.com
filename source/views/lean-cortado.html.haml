@@ -15,12 +15,12 @@ header-img: lean-cortado-banner
           %li Grensen 9B
 
   .wrapper.has-padding-top-bottom
-    = partial 'partials/registration-form'
+    = partial 'partials/registration-form', :locals => { :flavor => 'registration-form-horizontal' }
 
   .white
     %section
-      %h2.centered Lean Cortado Del 2
-      %h3.centered Organisering og ansvarsområder
+      %h2.text-centered Lean Cortado Del 2
+      %h3.text-centered Organisering og ansvarsområder
       .eight-columns-centered
         %p.ingress I del 1 av Lean Cortado hadde vi fokus på visjon og forutsetninger for å øke sjansen for at man skal lykkes med innovasjon. I del 2 vil vi sette fokuset på Organisering og ansvarsområder:
 
@@ -48,7 +48,7 @@ header-img: lean-cortado-banner
           %li 26. okt 2015 &mdash; kl 08:15 til 09:00
           %li Grensen 9B
 
-      = partial 'partials/registration-form'
+      = partial 'partials/registration-form', :locals => { :flavor => 'registration-form-vertical' }
 
     .two-columns
       .has-padding-bottom

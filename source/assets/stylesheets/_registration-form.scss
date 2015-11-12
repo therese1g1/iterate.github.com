@@ -1,30 +1,28 @@
-#registration-form {
+.registration-form-horizontal {
+  padding: $base-spacing 0;
 
-  padding-top: $base-spacing; 
+  .form-element{
+    @extend .three-columns;
 
-  .flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-
-  }
-
-  button {
-    margin-bottom: $base-spacing / 2;
-    margin-top: $base-spacing / 2;
-  }
-
-  .form-element {
-    flex-grow: 3;
-    margin-right: $base-spacing;
-    min-width: 25vw;
-    max-width: 27vw;
-
-    &::last-cild{
-      flex-grow: 1;
+    input {
+      margin-bottom: 0;
     }
+    button {
+      vertical-align: bottom;
+    }
+  }
+}
 
+.registration-form-vertical {
+
+  .form-element{
+    @include span-columns(4 of 6);
+
+    input {
+      margin-bottom: $small-spacing;
+    }
+  }
+  .form-element:nth-child(2) {
+    margin-bottom: $small-spacing;
   }
 }
