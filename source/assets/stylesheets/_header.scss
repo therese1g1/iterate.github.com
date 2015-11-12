@@ -17,10 +17,10 @@
   padding-bottom: $base-spacing;
   font-size: modular-scale(2);
   font-family: $base-font-family;
-  color: lighten($base-font-color, 10%);
+  color: $lightened-base-color;
 }
 
 .event-details {
   font-size: modular-scale(1);
-  color: lighten($base-font-color, 10%);
+  color: $lightened-base-color;
 }

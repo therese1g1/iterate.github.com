@@ -53,6 +53,7 @@ $orange: #F56A2A;
 $base-background-color: $light-gray;
 $base-font-color: $dark-gray;
 $action-color: $orange;
+$lightened-base-color: lighten($base-font-color, 0.1);
 
 // Border
 $base-border-color: #C4CFD4;
