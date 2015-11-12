@@ -456,5 +456,20 @@
         "skills" : [ "backend", "frontend", "tdd", "java", "javascript", "devops", "continuous delivery"],
         "clients" : ["Norwegian Air Shuttle"],
         "photo" : ""
+    },
+    "vifstad": {
+        "name" : "Karine Gran Vifstad",
+        "title" : "Systemutvikler",
+        "email" : "karine@iterate.no",
+        "phone" : "+47 950 80 838",
+        "twitter" : "",
+        "linkedin" : "https://no.linkedin.com/in/karinegranvifstad",
+        "github" : "https://github.com/karinevifstad"
+        "year" : "2015",
+        "mugshot" : "karine.jpg",
+        "bio" : "Jeg startet i Iterate i høst og har allerede fått Lage, Leke og Lære masse. Mitt beste eksempel på dette: Da vi lagde et piano av fem bananer, et Arduino-kit og noen linjer med Clojure. Fordi vi kan. Fun fact: Drev aktivt med klatring i 3 år for å bli kvitt høydeskrekken. Funka ikke særlig kjempebra.",
+        "skills" : ["web", "frontend", "javascript", "java"],
+        "clients" : ["Telenor Digital", "S-OL"],
+        "photo" : "karine.jpg"
     }
 }
