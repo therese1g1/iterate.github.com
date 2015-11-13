@@ -1,11 +1,15 @@
 .registration-form-horizontal {
   padding: $base-spacing 0;
+  width: 47em;
+  margin: 0 auto;
 
   .form-element{
-    @extend .three-columns;
+    display: table-cell;
+    vertical-align: bottom;
 
     input {
-      margin-bottom: 0;
+      width: 17em;
+      margin: 0 $base-spacing 0 0;
     }
     button {
       vertical-align: bottom;

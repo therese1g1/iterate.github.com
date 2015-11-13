@@ -34,11 +34,11 @@ section {
 }
 
 .has-padding-top {
-  padding-bottom: $base-spacing;
+  padding-top: $base-spacing;
 }
 .has-padding-top-bottom {
-  @extend .has-padding-bottom;
-  @extend .has-padding-top;
+  padding-bottom: $base-spacing;
+  padding-top: $base-spacing;
 }
 
 .fills-parent {
