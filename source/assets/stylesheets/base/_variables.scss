@@ -17,6 +17,11 @@ $hero-font-family: "NoyhBold", Futura, sans-serif;
 $hero-font-weight: normal;
 $hero-font-style: normal;
 
+// Tiny Font Styles
+$tiny-font-family: "Open Sans", sans-serif;
+$tiny-font-style: normal;
+// set weight to 400 for normal and 700 for bold
+
 // Deco Font Styles
 $deco-font-family: $base-font-family;
 $deco-font-weight: $base-font-weight;
@@ -53,7 +58,7 @@ $orange: #F56A2A;
 $base-background-color: $light-gray;
 $base-font-color: $dark-gray;
 $action-color: $orange;
-$lightened-base-color: lighten($base-font-color, 0.1);
+$lightened-base-color: lighten($base-font-color, 10%);
 
 // Border
 $base-border-color: #C4CFD4;

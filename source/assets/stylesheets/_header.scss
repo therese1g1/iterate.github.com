@@ -18,9 +18,11 @@
   font-size: modular-scale(2);
   font-family: $base-font-family;
   color: $lightened-base-color;
+  line-height: 1.4;
 }
 
 .event-details {
-  font-size: modular-scale(1);
+  font-size: modular-scale(2);
   color: $lightened-base-color;
+  line-height: 1.6;
 }

@@ -3,6 +3,7 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  line-height: $long-form-line-height;
 
   &%default-ul {
     list-style-type: disc;

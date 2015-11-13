@@ -13,12 +13,13 @@ select {
 }
 
 label {
-  font-family: $strong-font-family;
-  font-weight: $base-font-weight;
+  font-family: $tiny-font-family;
+  font-weight: 700;
   font-size: modular-scale(-2);
   letter-spacing: 2px;
   margin-bottom: $small-spacing / 2;
   text-transform: uppercase;
+  color: $lightened-base-color;
 
   &.required::after {
     content: "*";
