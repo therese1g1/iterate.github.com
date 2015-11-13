@@ -1,13 +1,12 @@
 %div{ :class => flavor }
 
   = form_tag 'https://formkeep.com/f/355b4335b124', :id => 'registration-form', :method => 'POST' do
-    = field_set_tag do
-      .form-element
-        = label_tag 'navn', :class => 'label-name'
-        = text_field_tag :name => 'name'
-      .form-element
-        = label_tag 'epost', :class => 'email'
-        = email_field_tag :name => 'email'
-      .form-element
-        %button 
-          Meld meg på
+    = input_tag :hidden, :name => 'utf8', :value => '✓'
+    .form-element
+      = label_tag 'navn', :class => 'label-name'
+      = text_field_tag 'name'
+    .form-element
+      = label_tag 'epost', :class => 'email'
+      = email_field_tag 'email'
+    .form-element
+      = submit_tag 'Meld meg på', :class => 'button'
