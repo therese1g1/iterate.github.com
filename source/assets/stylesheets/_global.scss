@@ -7,8 +7,16 @@ section {
   @include outer-container;
 }
 
+footer {
+  background-color: $dark-gray;
+}
+
 .wrapper {
   @include outer-container;
+}
+
+.row {
+  @include row();
 }
 
 .two-thirds-layout {
@@ -20,7 +28,11 @@ section {
 }
 
 .three-columns {
-  @include span-columns(4)
+  @include span-columns(4);
+}
+
+.four-columns {
+  @include span-columns(3);
 }
 
 .eight-columns-centered {

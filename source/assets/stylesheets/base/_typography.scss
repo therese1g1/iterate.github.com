@@ -79,11 +79,12 @@ p {
   color: $medium-gray;
   font-family: $tiny-font-family;
   font-weight: 700;
-  font-size: modular-scale(-1);
+  font-size: modular-scale(-2);
   line-height: $base-line-height;
+  letter-spacing: 2px;
 }
 
-.kontakt-information-tiny {
+.contact-information-tiny {
   font-size: modular-scale(-2);
   font-family: $tiny-font-family;
   font-weight: 400;

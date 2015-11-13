@@ -1,0 +1,46 @@
+.logo,
+.address,
+.social-media,
+.blog {
+  @extend .four-columns;
+  @extend .contact-information-tiny;
+  color: lighten($medium-gray, 20%);
+}
+
+footer .title-small {
+  color: $white;
+  font-weight: 400;
+}
+
+.logo p {
+  color: $white;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: modular-scale(2);
+  letter-spacing: .7px;
+}
+
+.blog-list li {
+  margin-bottom: modular-scale(-2);
+}
+
+.newsletter {
+  @include span-columns(9);
+  @include shift(3);
+  margin-top: $large-spacing;
+  display: table;
+}
+
+.newsletter-cta {
+  @include span-columns(3 of 9);
+  @extend .contact-information-tiny;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.newsletter-input{
+  @include span-columns(6 of 9);
+  /*width: 26.66em;*/
+  display: table-cell;
+  vertical-align: middle;
+}

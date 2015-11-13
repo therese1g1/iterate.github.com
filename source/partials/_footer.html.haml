@@ -1,0 +1,49 @@
+%section.footer
+  .row.first
+    .logo 
+      %p iterate
+
+    .address  
+      %h5.title-small.has-padding-bottom
+        Besøksadresse
+      %ul
+        %li Iterate AS
+        %li Grensen 9B, 0159 Oslo
+        %li + 47 22 44 79 18
+        %li mail@iterate.no
+
+    .social-media
+      %h5.title-small.has-padding-bottom
+        Følg oss
+      %ul
+        %li= link_to 'Twitter','https://twitter.com/iterate_no', :class => 'twitter'
+        %li= link_to 'Linkedin', 'https://www.linkedin.com/company/iterate', :class => 'linkedin'
+        %li= link_to 'Facebook', 'https://www.facebook.com/iteratenorge', :class => 'facebook'
+        %li= link_to 'Instagram', 'http://instagram.com/iterate_no', :class => 'instagram'
+
+    .blog
+      %h5.title-small.has-padding-bottom
+        Det siste fra bloggen
+      %ul.blog-list
+        %li 
+          = link_to 'Dapibus Tellus Etiam', '/#' 
+          %br
+          %span.blog-post-date 24. des 2015
+        %li 
+          = link_to 'Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.', '/#'
+          %br
+          %span.blog-post-date 24. des 2015
+        %li 
+          = link_to 'Sit Commodo Adipiscing Dapibus Ultricies', '/#'
+          %br
+          %span.blog-post-date 24. des 2015
+        %li
+          = link_to 'Les mer', 'http://blog.iterate.no/'
+
+  .row.second
+    .newsletter
+      .newsletter-cta.title-small
+        %span Abonnér på vår nyhetsbrev
+      .newsletter-input
+        = email_field_tag 'email', :class => 'dark'
+

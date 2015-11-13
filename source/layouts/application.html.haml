@@ -11,6 +11,9 @@
     = stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
 
   %body{class: page_classes}
-    = partial 'partials/navigation'
+    %nav#navigation-bar
+      = partial 'partials/navigation'
     = yield
+    %footer
+      = partial 'partials/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
