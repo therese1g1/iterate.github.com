@@ -15,10 +15,17 @@
   float: right;
   margin-right: 0;
   width: 38vw;
+  @include media($mobile) {
+    display: none;
+  }
 }
 
 .employee-details {
   @include span-columns (7);
+  @include media($mobile) {
+    @include span-columns(2);
+    padding: 0 $base-spacing;
+  }
 }
 
 .skills, 
