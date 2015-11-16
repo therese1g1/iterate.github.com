@@ -20,6 +20,48 @@ footer .title-small {
   letter-spacing: .7px;
 }
 
+/* SoMe links + icons */
+
+.twitter,
+.linkedin,
+.facebook,
+.instagram {
+  color: lighten($medium-gray, 20%);
+  border-bottom: 1px solid transparent;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $action-color;
+    border-bottom: 1px solid transparent;
+  }
+}
+.some-icons {
+  font-family: 'FontAwesome';
+  font-size: modular-scale(-1);
+  margin-right: modular-scale(-1);
+}
+
+.twitter::before {
+  @extend .some-icons;
+  content: '\f099';
+}
+
+.linkedin::before {
+  @extend .some-icons;
+  content: '\f08c';
+}
+
+.facebook::before {
+  @extend .some-icons;
+  content: '\f082';
+}
+
+.instagram::before {
+  @extend .some-icons;
+  content: '\f16d';
+}
+
 .blog-list li {
   margin-bottom: modular-scale(-2);
 }
@@ -36,6 +78,7 @@ footer .title-small {
   @extend .contact-information-tiny;
   display: table-cell;
   vertical-align: middle;
+  float: none;
 }
 
 .newsletter-input{
@@ -43,4 +86,30 @@ footer .title-small {
   /*width: 26.66em;*/
   display: table-cell;
   vertical-align: middle;
+  float: none;
+
+  input {
+    margin-bottom: 0;
+    height: modular-scale(4);
+  }
+}
+
+/* Dark input field only used in the footer */
+input.input-dark {
+  padding: 0 $base-spacing;
+  background-color: darken($dark-gray, 5%);
+  border-color: lighten($dark-gray, 2%);
+  color: $white;
+  font-family: $tiny-font-family;
+  font-size: modular-scale(-1);
+
+  &:hover {
+    border-color: lighten($dark-gray, 5%);
+  }
+
+  &:focus {
+    border-color: lighten($dark-gray, 20%);
+    box-shadow: $form-box-shadow-focus-dark;
+    outline: none;
+  }
 }
