@@ -9,7 +9,6 @@
 }
 
 .quote {
-  font-size: modular-scale(1);
   padding-bottom: $base-spacing;
 }
 
@@ -22,6 +21,7 @@
 
 .customer-name {
   text-transform: uppercase;
+  color: $medium-gray;
 }
 
 .customer-jobtitle {

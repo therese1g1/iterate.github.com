@@ -52,6 +52,11 @@ footer {
   padding-top: $base-spacing;
 }
 
+.has-padding-left-right {
+  padding-left: $base-spacing;
+  padding-right: $base-spacing; 
+}
+
 .fills-parent {
   @include fill-parent;
 }

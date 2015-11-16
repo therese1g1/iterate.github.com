@@ -73,6 +73,11 @@ p {
   font-weight: $em-font-weight;
 }
 
+.quote {
+  font-size: modular-scale(2);
+  color: $base-font-color;
+}
+
 .name-small, 
 .title-small {
   text-transform: uppercase;
