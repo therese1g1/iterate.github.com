@@ -1,18 +1,26 @@
 .registration-form-horizontal {
+  
   padding: $base-spacing 0;
-  width: 47em;
-  margin: 0 auto;
+  @include fill-parent;
 
-  .form-element{
-    display: table-cell;
-    vertical-align: bottom;
-
-    input {
-      width: 17em;
-      margin: 0 $base-spacing 0 0;
+  .form-element {
+    @include span-columns(4 of 12);
+    margin-bottom: 0;
+    display: block;
+    @include media($mobile) {
+      @include span-columns(3);
+      @include omega();
     }
-    .button {
-        width: auto;
+  }
+
+  .form-element:last-child {
+    @include omega();
+  }
+
+  .button {
+    @include media($mobile) {
+      margin-top: $small-spacing;
+      @include fill-parent;
     }
   }
 }
@@ -20,7 +28,11 @@
 .registration-form-vertical {
 
   .form-element{
-    @include span-columns(4 of 6);
+    @include span-columns(5 of 6);
+    @include media($mobile) {
+      @include span-columns(3);
+      @include omega();
+    }
 
     input {
       margin-bottom: $small-spacing;
@@ -28,5 +40,11 @@
   }
   .form-element:last-child {
     margin-top: $small-spacing;
+  }
+  .button {
+    @include media($mobile) {
+      margin-top: $small-spacing;
+      @include fill-parent;
+    }
   }
 }

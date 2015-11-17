@@ -11,24 +11,15 @@ footer {
   background-color: $dark-gray;
 }
 
-.mobile-styles {
-  @include media($mobile){
-    @include span-columns(2);
-    @include omega();
-    padding: 0 $base-spacing;
-
-    &:last-child{
-      margin-top: $large-spacing;
-    }
-  }
-}
-
-.wrapper {
+.form-wrapper {
+  background-color: $light-gray;
   @include outer-container;
   @include media($mobile){
-    @include span-columns(2);
+    @include span-columns(3);
     @include omega();
+    @include clearfix;
     padding: 0 $base-spacing;
+    float: none;
 
     &:last-child{
       margin-top: $large-spacing;
@@ -81,6 +72,10 @@ footer {
       margin-top: $large-spacing;
     }
   }
+}
+
+.has-table-context {
+  @include display-context(table);
 }
 
 .has-padding-bottom {

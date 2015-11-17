@@ -14,8 +14,8 @@ header-img: lean-cortado-banner
           %li 26. okt 2015 &mdash; kl 08:15 til 09:00
           %li Grensen 9B
 
-  .wrapper.has-padding-top-bottom
-    = partial 'partials/registration-form', :locals => { :flavor => 'registration-form-horizontal' }
+  .form-wrapper.has-padding-top-bottom
+    = partial 'partials/registration-form', :class => 'has-table-context', :locals => { :flavor => 'registration-form-horizontal' }
 
   .white
     %section
@@ -48,7 +48,7 @@ header-img: lean-cortado-banner
           %li 26. okt 2015 &mdash; kl 08:15 til 09:00
           %li Grensen 9B
 
-      = partial 'partials/registration-form', :locals => { :flavor => 'registration-form-vertical' }
+      = partial 'partials/registration-form', :class => 'has-table-context', :locals => { :flavor => 'registration-form-vertical' }
 
     .two-columns
       .has-padding-bottom
