@@ -18,6 +18,7 @@
   }
 
   .button {
+    margin-top: 1.3em;
     @include media($mobile) {
       margin-top: $small-spacing;
       @include fill-parent;
