@@ -7,15 +7,23 @@
   color: lighten($medium-gray, 20%);
   @include media($mobile) {
     @include span-columns(1);
-    @include omega(2n);
+    @include omega(3n);
 
-    &:nth-child(even) {
-      margin-bottom: $base-spacing;
+    &:nth-child(3) {
+      margin-bottom: $large-spacing;
       padding: 0 $small-spacing 0 0;
     }
-    &:nth-child(odd) {
+    &:nth-child(1) {
       padding: 0 0 0 $small-spacing;
     }
+  }
+}
+
+.blog {
+  @include media($mobile) {
+    @include span-columns(2);
+    @include shift(1);
+
   }
 }
 

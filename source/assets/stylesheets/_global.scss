@@ -43,14 +43,14 @@ footer {
 .two-thirds-layout {
   @include span-columns(9);
   @include media($mobile) {
-    @include span-columns(2);
+    @include span-columns(3);
   }
 }
 
 .two-columns {
   @include span-columns(6);
   @include media($mobile){
-    @include span-columns(2);
+    @include span-columns(3);
     @include omega();
     padding: 0 $base-spacing;
 
@@ -72,7 +72,7 @@ footer {
   @include span-columns(8);
   @include shift(2);
   @include media($mobile){
-    @include span-columns(2);
+    @include span-columns(3);
     @include shift(0);
     @include omega();
     padding: 0 $base-spacing;
