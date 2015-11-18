@@ -1,0 +1,10 @@
+// Modular scales => http://www.modularscale.com
+
+
+@mixin desktop-font-scale($increment) {
+  font-size: modular-scale($increment, 18px 60px, $golden);
+}
+
+@mixin mobile-font-scale($increment) { 
+  font-size: modular-scale($increment, 15px 60px, $perfect-fourth);
+}

@@ -5,9 +5,12 @@
 @import "vendor/responsive-font";
 
 @import "bourbon/bourbon";
-@import "base/base";
 @import "grid-settings";
 @import "neat/neat";
+
+@import "mixins/scales";
+
+@import "base/base";
 
 @import "global";
 @import "header";

@@ -23,14 +23,20 @@
 
 .header h2 {
   padding-bottom: $base-spacing;
-  font-size: modular-scale(2);
+  @include desktop-font-scale(2);
+  @include media($mobile) {
+      @include mobile-font-scale(2);
+    }
   font-family: $base-font-family;
   color: $lightened-base-color;
   line-height: 1.4;
 }
 
 .event-details {
-  font-size: modular-scale(2);
+  @include desktop-font-scale(2);
+  @include media($mobile) {
+      @include mobile-font-scale(2);
+  }
   color: $lightened-base-color;
   line-height: 1.6;
 }

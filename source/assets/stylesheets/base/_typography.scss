@@ -3,7 +3,10 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   color: $base-font-color;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  @include desktop-font-scale(0);
+    @include media($mobile) {
+      @include mobile-font-scale(0);
+    }
   line-height: $base-line-height;
 }
 
@@ -31,7 +34,10 @@ h1 {
 }
 
 h2 {
-  font-size: modular-scale(-1);
+  @include desktop-font-scale(-1);
+  @include media($mobile) {
+      @include mobile-font-scale(0);
+    }
   color: $blue;
   font-family: $strong-font-family;
   font-weight: $strong-font-weight;
@@ -42,7 +48,10 @@ h2 {
 }
 
 h3 {
-  font-size: modular-scale(5);
+  @include desktop-font-scale(5);
+  @include media($mobile) {
+      @include mobile-font-scale(5);
+    }
   line-height: $base-line-height;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
@@ -51,7 +60,10 @@ h3 {
 }
 
 h4 {
-  font-size: modular-scale(2);
+  @include desktop-font-scale(2);
+  @include media($mobile) {
+      @include mobile-font-scale(2);
+    }
   line-height: $heading-line-height;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
@@ -64,10 +76,23 @@ p {
   line-height: $long-form-line-height;
   color: $base-font-color;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  @include media($mobile) {
+    @include mobile-font-scale(0);
+  }
+}
+
+ul {
+  @include desktop-font-scale(0);
+  @include media($mobile) {
+    @include mobile-font-scale(0);
+  }
 }
 
 .ingress {
-  font-size: modular-scale(1);
+  @include desktop-font-scale(1);
+  @include media($mobile) {
+      @include mobile-font-scale(1);
+    }
   font-family: $em-font-family;
   font-style: $em-font-style;
   font-weight: $em-font-weight;
@@ -75,6 +100,9 @@ p {
 
 .quote {
   font-size: modular-scale(2);
+  @include media($mobile) {
+      @include mobile-font-scale(2);
+    }
   color: $base-font-color;
 }
 
@@ -85,12 +113,18 @@ p {
   font-family: $tiny-font-family;
   font-weight: 700;
   font-size: modular-scale(-2);
+  @include media($mobile) {
+      @include mobile-font-scale(-1);
+    }
   line-height: $base-line-height;
   letter-spacing: 2px;
 }
 
 .contact-information-tiny {
   font-size: modular-scale(-2);
+  @include media($mobile) {
+      @include mobile-font-scale(-1);
+    }
   font-family: $tiny-font-family;
   font-weight: 400;
   line-height: $base-line-height;
@@ -138,6 +172,9 @@ a {
 
 .fa {
   font-size: modular-scale(0) !important;
+  @include media($mobile) {
+      @include mobile-font-scale(0);
+    }
   line-height: 1 !important;
   padding-right: .5em;
 }
