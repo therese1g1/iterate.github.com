@@ -114,9 +114,9 @@ ul.main-navigation {
       @include mobile-font-scale(4);
       @include span-columns(2);
       @include omega();
-      position: relative;
-      top: 30%;
-      height: 60%;
+      position: absolute;
+      top: 15%;
+      height: 100%;
 
 
       li {
