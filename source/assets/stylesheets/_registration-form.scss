@@ -1,6 +1,5 @@
 .registration-form-horizontal {
-  
-  padding: $base-spacing 0;
+  padding: 0 $base-spacing;
   @include fill-parent;
 
   .form-element {

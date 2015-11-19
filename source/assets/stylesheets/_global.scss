@@ -3,8 +3,11 @@ body {
 }
 
 section {
-  padding: $extra-large-spacing 0;
   @include outer-container;
+  @include media($mobile) {
+    padding: $large-spacing 0;
+  }
+  padding: $extra-large-spacing 0;
 }
 
 footer {
@@ -67,10 +70,6 @@ footer {
     @include shift(0);
     @include omega();
     padding: 0 $base-spacing;
-
-    &:last-child{
-      margin-top: $large-spacing;
-    }
   }
 }
 
@@ -85,14 +84,21 @@ footer {
 .has-padding-top {
   padding-top: $base-spacing;
 }
+
 .has-padding-top-bottom {
-  padding-bottom: $base-spacing;
-  padding-top: $base-spacing;
+  padding: $large-spacing 0;
 }
 
 .has-padding-left-right {
   padding-left: $base-spacing;
   padding-right: $base-spacing; 
+}
+
+.ingress {
+  margin-top: $large-spacing;
+  @include media($mobile) {
+    margin-top: $small-spacing;
+  }
 }
 
 .fills-parent {

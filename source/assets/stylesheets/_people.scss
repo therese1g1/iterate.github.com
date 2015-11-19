@@ -4,6 +4,9 @@
 
   section {
     padding-bottom: 0;
+    @include media($mobile) {
+      padding-bottom: $large-spacing;
+    }
   }
 
   h2 {
