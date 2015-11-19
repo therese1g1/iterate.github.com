@@ -1,10 +1,10 @@
 @import "neat/neat-helpers";
 
-$visual-grid : false;
+$visual-grid : true;
 $column: modular-scale(5);
 $gutter: modular-scale(2);
 $max-width: em(980, 18);
-$mobile: new-breakpoint(min-width 320px max-width 480px 3);
+$mobile: new-breakpoint(min-width 320px max-width 480px 2);
 $landscape: new-breakpoint(min-width 480px 4);
 $tablet: new-breakpoint(min-width 760px 8);
 $desktop: new-breakpoint(min-width 960px 12);

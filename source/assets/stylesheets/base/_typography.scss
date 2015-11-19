@@ -7,6 +7,7 @@ body {
     @include media($mobile) {
       @include mobile-font-scale(0);
     }
+  font-size: 18px;
   line-height: $base-line-height;
 }
 

@@ -7,15 +7,15 @@
   color: lighten($medium-gray, 20%);
   @include media($mobile) {
     @include span-columns(1);
-    @include omega(3n);
+    @include omega(2n);
 
-    &:nth-child(3) {
+    /* &:nth-child(2) {
       margin-bottom: $large-spacing;
       padding: 0 $small-spacing 0 0;
     }
     &:nth-child(1) {
       padding: 0 0 0 $small-spacing;
-    }
+    } */
   }
 }
 
@@ -87,59 +87,4 @@ footer .title-small {
 
 .blog-list li {
   margin-bottom: modular-scale(-2);
-}
-
-.newsletter {
-  @include span-columns(9);
-  @include shift(3);
-  margin-top: $large-spacing;
-  display: table;
-  @include media($mobile) {
-    @include shift(0);
-  }
-}
-
-.newsletter-cta {
-  @include span-columns(3 of 9);
-  @extend .contact-information-tiny;
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-  @include media($mobile) {
-    @include span-columns(2 of 2);
-    @include omega();
-  }
-}
-
-.newsletter-input{
-  @include span-columns(6 of 9);
-  /*width: 26.66em;*/
-  display: table-cell;
-  vertical-align: middle;
-  float: none;
-
-  input {
-    margin-bottom: 0;
-    height: modular-scale(4);
-  }
-}
-
-/* Dark input field only used in the footer */
-input.input-dark {
-  padding: 0 $base-spacing;
-  background-color: darken($dark-gray, 5%);
-  border-color: lighten($dark-gray, 2%);
-  color: $white;
-  font-family: $tiny-font-family;
-  font-size: modular-scale(-1);
-
-  &:hover {
-    border-color: lighten($dark-gray, 5%);
-  }
-
-  &:focus {
-    border-color: lighten($dark-gray, 20%);
-    box-shadow: $form-box-shadow-focus-dark;
-    outline: none;
-  }
 }
