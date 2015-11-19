@@ -5,24 +5,32 @@
   @extend .four-columns;
   @extend .contact-information-tiny;
   color: lighten($medium-gray, 20%);
+  
   @include media($mobile) {
-    @include span-columns(1);
-    @include omega(2n);
+    @include span-columns(2);
+    @include omega();
+    margin-top: $base-spacing;
+    padding: 0 $base-spacing;
+  }
 
-    /* &:nth-child(2) {
-      margin-bottom: $large-spacing;
-      padding: 0 $small-spacing 0 0;
+  li {
+    @include desktop-font-scale(-2);
+    @include media($mobile) {
+      @include mobile-font-scale(-1);
     }
-    &:nth-child(1) {
-      padding: 0 0 0 $small-spacing;
-    } */
+  }
+}
+
+.logo {
+  @include media($mobile) {
+    @include span-columns(2);
+    @include omega();
   }
 }
 
 .blog {
   @include media($mobile) {
     @include span-columns(2);
-    @include shift(1);
 
   }
 }
@@ -36,7 +44,10 @@ footer .title-small {
   color: $white;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  font-size: modular-scale(2);
+  @include desktop-font-scale(1);
+  @include media($mobile) {
+      @include mobile-font-scale(2);
+    }
   letter-spacing: .7px;
   @include media($mobile) {
     margin-top: -($small-spacing);
@@ -61,7 +72,10 @@ footer .title-small {
 }
 .some-icons {
   font-family: 'FontAwesome';
-  font-size: modular-scale(-1);
+  @include desktop-font-scale(-1);
+  @include media($mobile) {
+      @include mobile-font-scale(0);
+    }
   margin-right: modular-scale(-1);
 }
 

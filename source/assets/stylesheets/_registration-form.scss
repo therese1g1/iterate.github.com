@@ -7,7 +7,7 @@
     margin-bottom: 0;
     display: block;
     @include media($mobile) {
-      @include span-columns(3);
+      @include span-columns(2);
       @include omega();
     }
   }
@@ -30,7 +30,7 @@
   .form-element{
     @include span-columns(5 of 6);
     @include media($mobile) {
-      @include span-columns(3);
+      @include span-columns(2);
       @include omega();
     }
 
