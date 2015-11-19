@@ -10,6 +10,7 @@ section {
   }
 }
 
+
 footer {
   background-color: $dark-gray;
 }
@@ -32,6 +33,7 @@ footer {
 
 .row {
   @include row();
+  @include outer-container(em(980, 18));
 }
 
 .two-thirds-layout {

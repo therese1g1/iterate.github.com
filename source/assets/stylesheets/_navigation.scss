@@ -4,9 +4,44 @@
   }
 }
 
+.link-with-logo,
+.navigation-bar-logo {
+  border-bottom: none;
+  margin-top: $base-spacing;
+
+  &:hover,
+  &:active{
+    border-bottom: none;
+  }
+
+  @include media($mobile) {
+    margin-left: $small-spacing;
+  }
+}
+
+button.menu {
+  display: none;
+  @include media($mobile) { // makes menu button appear on mobile
+    @include mobile-font-scale(-1);
+    line-height: 1.6;
+    height: auto;
+    font-family: $tiny-font-family;
+    font-weight: 400;
+    display: block;
+    color: $base-font-color;
+    text-shadow: none;
+    background-color: transparent;
+    border: 1px solid $medium-gray;
+    padding: $small-spacing;
+    float: right;
+    margin: $small-spacing $base-spacing;
+
+  }
+}
 
 ul.main-navigation {
-  @include outer-container(em(980, 18));
+  @include span-columns(10);
+  @include shift(2);
   padding: $small-spacing 0 0 0;
   display: flex;
   flex-direction: row;
@@ -20,11 +55,7 @@ ul.main-navigation {
     text-transform: uppercase;
     color: $lightened-base-color;
     font-size: modular-scale(-1);
-    font-family: $strong-font-family;;
-
-    &:first-child {
-      flex-grow: 2;
-    }
+    font-family: $strong-font-family;
 
     &.active {
       border-bottom: 2px solid $blue;
@@ -32,7 +63,7 @@ ul.main-navigation {
     }
 
     a {
-      border-bottom: transparent;
+      border-bottom: 2px solid transparent;
       padding-bottom: $small-spacing / 2;
       display: block;
       color: $lightened-base-color;
@@ -42,18 +73,75 @@ ul.main-navigation {
         color: $action-color;
       }
     }
-
-    .link-with-logo {
-      border-bottom: none;
-
-      &:hover,
-      &:active{
-        border-bottom: none;
-      }
-    }
   }
+
+  @include media($mobile) { // makes links disappear on mobile
+    display: none;
+  }
+
 }
 
 .navigation-bar-logo {
   height: modular-scale(1);
 }
+
+// OVERLAY FOR MOBILE & TABLET SCREENS //
+
+.visible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: $white;
+  background-color: transparentize(#000, .2);
+  transition: opacity 0.5s, visibility 0s;
+
+  button.menu {
+
+    color: $white;
+    border: none;
+    @include mobile-font-scale(4);
+  }
+
+  ul.overlay-navigation {
+    @include media ($mobile) {
+      @include mobile-font-scale(4);
+      @include span-columns(2);
+      @include omega();
+      position: relative;
+      top: 30%;
+      height: 60%;
+
+
+      li {
+        text-align: center;
+        padding-bottom: $base-spacing;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

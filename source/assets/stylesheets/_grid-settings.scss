@@ -1,6 +1,6 @@
 @import "neat/neat-helpers";
 
-$visual-grid : true;
+$visual-grid : false;
 $column: modular-scale(5);
 $gutter: modular-scale(2);
 $max-width: em(980, 18);
