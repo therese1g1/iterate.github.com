@@ -14,6 +14,8 @@ footer {
   background-color: $dark-gray;
 }
 
+// LAYOUT CLASSES //
+
 .form-wrapper {
   background-color: $light-gray;
   @include outer-container(em(980, 18));
@@ -35,6 +37,16 @@ footer {
   @include outer-container(em(980, 18));
 }
 
+.inner-section {
+  margin: $base-spacing 0;
+}
+
+.ingress {
+  margin-top: $large-spacing;
+  @include media($mobile) {
+    margin-top: $small-spacing;
+  }
+}
 .two-thirds-layout {
   @include span-columns(9);
   @include media($mobile) {
@@ -95,19 +107,22 @@ footer {
   padding-right: $base-spacing; 
 }
 
-.ingress {
-  margin-top: $large-spacing;
-  @include media($mobile) {
-    margin-top: $small-spacing;
-  }
+.is-centered {
+  margin: 0 auto;
+}
+
+// PRESENTATION CLASSES //
+
+.is-hidden {
+  display: none;
 }
 
 .fills-parent {
   @include fill-parent;
 }
 
-.is-centered {
-  margin: 0 auto;
+.text-centered {
+  text-align: center;
 }
 
 .bullet-list {
@@ -124,11 +139,3 @@ ul.horizontal-list li {
   padding-right: 0.3em;
 }
 
-/* sections inside elements - used on bio element for example */
-.inner-section {
-  margin: $base-spacing 0;
-}
-
-.text-centered {
-  text-align: center;
-}
