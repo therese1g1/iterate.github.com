@@ -1,6 +1,13 @@
 .row
   = link_to '/', :class => 'link-with-logo' do
     %img{ :src => image_path('logo.png'), :class => 'navigation-bar-logo', :title => 'Iterate logo' }
+
+  -# Adds a link to skip navigation for screen-readers. Set to display:none
+  = link_to 'Skip navigation', '#main', :class => 'is-hidden'
+
+  =link_to '#', :class => 'menu-toggle' do
+    = button_tag 'Meny', :class => 'ghost-button'
+
   %ul.main-navigation
     %li{:class => 'link-to-home'} 
       = link_to 'Hjemme', '/'

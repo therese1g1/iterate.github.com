@@ -1,32 +1,33 @@
 .lean-cortado {
   #navigation-bar {
     background-color: $white;
+    height: $extra-large-spacing;
   }
 }
 
-button.menu {
-  @include media($landscape) {
-    position: absolute;
-    left: -999em;
-  }
-  @include media($mobile) { // makes menu button appear on mobile
+a.menu-toggle {
+  display: none;
+
+  @include media($toggle-navigation) {
     @include mobile-font-scale(-1);
-    line-height: 1.6;
-    height: auto;
-    font-family: $tiny-font-family;
-    font-weight: 400;
+    @include omega;
+    position: absolute;
+    top: $small-spacing;
+    right: $base-spacing;
     display: block;
-    color: $base-font-color;
-    text-shadow: none;
-    background-color: transparent;
-    border: 1px solid $medium-gray;
-    padding: $small-spacing;
-    float: right;
-    margin: $small-spacing $base-spacing;
+    margin: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    border-bottom: transparent;
   }
 }
 
 ul.main-navigation {
+  background-color: $white;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -34,6 +35,11 @@ ul.main-navigation {
   align-content: flex-start;
   flex-wrap: wrap;
   padding: $base-spacing 0;
+
+
+  @include media($toggle-navigation) {
+    display: none;
+  }
 
   li {
     margin: 0 $small-spacing;
@@ -47,8 +53,8 @@ ul.main-navigation {
       border-bottom: 2px solid $blue;
 
       @include media($toggle-navigation) {
-        border: none;
         color: $blue;
+        border-bottom: $base-border;
 
         &::before {
           content: '» ';
@@ -58,10 +64,21 @@ ul.main-navigation {
     }
 
     @include media($toggle-navigation) {
+      @include mobile-font-scale(1);
+      font-family: $base-font-family;
       width: 100%;
       text-align: right;
-      padding: 0 $small-spacing $small-spacing 0;
+      padding: $small-spacing;
+      border-bottom: $base-border;
+    }
 
+    &:first-child {
+      margin-top: $large-spacing;
+    }
+    &:last-child {
+      @include media($toggle-navigation) {
+        border: none;
+      }
     }
 
     a {
@@ -83,6 +100,14 @@ ul.main-navigation {
         border: none;
       }
     }
+  }
+}
+
+ul.is-visible {
+  display: flex !important;
+
+  li {
+    background-color: $white;
   }
 }
 

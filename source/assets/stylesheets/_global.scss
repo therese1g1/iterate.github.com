@@ -117,6 +117,10 @@ footer {
   display: none;
 }
 
+.is-visible {
+  display: block;
+}
+
 .fills-parent {
   @include fill-parent;
 }
@@ -139,3 +143,24 @@ ul.horizontal-list li {
   padding-right: 0.3em;
 }
 
+input.ghost-button {
+  background-color: transparent;
+  text-shadow: none;
+  color: $base-font-color;
+  border: $base-border;
+  border-color: $base-font-color;
+  font-family: $base-font-family;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: $action-color;
+    border-color: $action-color;
+    background-color: transparent;
+  }
+  &:focus {
+    border-color: $dark-gray;
+    box-shadow: 0 2px 2px transparentize($dark-gray, .2); 
+  }
+}
