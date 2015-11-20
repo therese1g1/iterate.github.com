@@ -4,23 +4,11 @@
   }
 }
 
-.link-with-logo,
-.navigation-bar-logo {
-  border-bottom: none;
-  margin-top: $base-spacing;
-
-  &:hover,
-  &:active{
-    border-bottom: none;
-  }
-
-  @include media($mobile) {
-    margin-left: $small-spacing;
-  }
-}
-
 button.menu {
-  display: none;
+  @include media($landscape) {
+    position: absolute;
+    left: -999em;
+  }
   @include media($mobile) { // makes menu button appear on mobile
     @include mobile-font-scale(-1);
     line-height: 1.6;
@@ -35,23 +23,21 @@ button.menu {
     padding: $small-spacing;
     float: right;
     margin: $small-spacing $base-spacing;
-
   }
 }
 
 ul.main-navigation {
-  @include span-columns(10);
-  @include shift(2);
-  padding: $small-spacing 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
   flex-wrap: wrap;
+  padding: $base-spacing 0;
 
   li {
     margin: 0 $small-spacing;
-    padding: $small-spacing 0;
+    padding: 0 0 $extra-small-spacing 0;
     text-transform: uppercase;
     color: $lightened-base-color;
     font-size: modular-scale(-1);
@@ -59,73 +45,73 @@ ul.main-navigation {
 
     &.active {
       border-bottom: 2px solid $blue;
-      padding-bottom: $small-spacing / 2;
+
+      @include media($toggle-navigation) {
+        border: none;
+        color: $blue;
+
+        &::before {
+          content: '» ';
+          color: $blue;
+        }
+      }
+    }
+
+    @include media($toggle-navigation) {
+      width: 100%;
+      text-align: right;
+      padding: 0 $small-spacing $small-spacing 0;
+
     }
 
     a {
       border-bottom: 2px solid transparent;
-      padding-bottom: $small-spacing / 2;
+      padding-bottom: $extra-small-spacing;
       display: block;
       color: $lightened-base-color;
 
       &:hover {
         border-bottom: 2px solid $action-color;
         color: $action-color;
+
+        @include media($toggle-navigation) {
+          border: none;
+        }
+      }
+
+      @include media($toggle-navigation) {
+        border: none;
       }
     }
   }
+}
 
-  @include media($mobile) { // makes links disappear on mobile
-    display: none;
+.link-with-logo {
+  border-bottom: none;
+  position: relative;
+  top: modular-scale(2);
+  padding-bottom: 0;
+  float: left;
+  display: inline-block;
+
+  &:hover,
+  &:active{
+    border-bottom: none;
   }
-
 }
 
 .navigation-bar-logo {
-  height: modular-scale(1);
+  height: modular-scale(2);
 }
 
-// OVERLAY FOR MOBILE & TABLET SCREENS //
+.link-to-home {
+  display: none;
 
-.visible {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: $white;
-  background-color: transparentize(#000, .2);
-  transition: opacity 0.5s, visibility 0s;
-
-  button.menu {
-
-    color: $white;
-    border: none;
-    @include mobile-font-scale(4);
-  }
-
-  ul.overlay-navigation {
-    @include media ($mobile) {
-      @include mobile-font-scale(4);
-      @include span-columns(2);
-      @include omega();
-      position: absolute;
-      top: 15%;
-      height: 100%;
-
-
-      li {
-        text-align: center;
-        padding-bottom: $base-spacing;
-      }
-    }
+  @include media($toggle-navigation) {
+    display: list-item;
   }
 }
+
 
 
 
