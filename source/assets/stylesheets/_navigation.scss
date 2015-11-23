@@ -5,6 +5,12 @@
   }
 }
 
+.row {
+  @include media($toggle-navigation) {
+    padding: 0 $small-spacing;
+  }
+}
+
 a.menu-toggle {
   display: none;
 
@@ -27,7 +33,6 @@ a.menu-toggle {
 }
 
 ul.main-navigation {
-  background-color: $white;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -39,6 +44,7 @@ ul.main-navigation {
 
   @include media($toggle-navigation) {
     display: none;
+    z-index: 99;
   }
 
   li {
@@ -70,6 +76,8 @@ ul.main-navigation {
       text-align: right;
       padding: $small-spacing;
       border-bottom: $base-border;
+      background-color: $white;
+      z-index: 99;
     }
 
     &:first-child {
