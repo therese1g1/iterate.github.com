@@ -19,6 +19,20 @@
   line-height: 1.6;
 }
 
+.customer-portrait {
+  height: em(200, 18);
+  width: em(200, 18);
+
+  @include media($mobile) {
+    height: em(200, 15);
+    width: em(200, 15);
+  }
+
+  & img{
+  border-radius: 100%;
+  }
+}
+
 .customer-name {
   text-transform: uppercase;
   color: $medium-gray;
@@ -26,4 +40,11 @@
 
 .customer-jobtitle {
   color: $action-color;
+}
+
+.quote,
+.customer {
+  @include media($mobile) {
+    margin: $base-spacing;
+  }
 }
