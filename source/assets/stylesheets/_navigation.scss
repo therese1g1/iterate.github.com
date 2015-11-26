@@ -1,13 +1,14 @@
 .lean-cortado {
   #navigation-bar {
     background-color: $white;
-    height: $extra-large-spacing;
   }
 }
 
 .row {
   @include media($toggle-navigation) {
     padding: 0 $small-spacing;
+    background-color: $white;
+    min-height: em(100);
   }
 }
 
