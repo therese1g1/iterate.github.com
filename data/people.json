@@ -45,7 +45,7 @@
         "linkedin" : "",
         "github" : "",
         "year" : "2014",
-        "mugshot" : "magnusDaehlen.jpeg",
+        "mugshot" : "magnusDaehlen.jpg",
         "bio" : "The maddest and baddest codeslinger you'll ever meet.",
         "skills" : ["React", "JavaScript", "web"],
         "clients" : ["Amedia", "HFN"],
@@ -60,7 +60,7 @@
         "linkedin" : "https://no.linkedin.com/in/erikassum",
         "github" : "",
         "year" : "1970",
-        "mugshot" : "https://en.gravatar.com/userimage/47572737/ad9e31ef761cd3b4c3e841ae0a33ffb9.jpeg",
+        "mugshot" : "erik.jpg",
         "bio" : "",
         "skills" : [],
         "clients" : [],
@@ -105,7 +105,7 @@
         "linkedin" : "https://no.linkedin.com/in/sindrejohansen",
         "github" : "",
         "year" : "2015",
-        "mugshot" : "sindre.jpeg",
+        "mugshot" : "sindre.jpg",
         "bio" : "",
         "skills" : ["fullstack", "development", "javascript"],
         "clients" : ["Amedia"],
@@ -150,7 +150,7 @@
         "linkedin" : "http://#",
         "github" : "",
         "year" : "2012",
-        "mugshot" : "susanne.jpg",
+        "mugshot" : "susannmo.jpg",
         "bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
         "skills" : ["javascript", "front-end", "mobil"],
         "clients" : ["HFN", "Aller", "Telenor"],
@@ -352,7 +352,7 @@
         "clients" : ["Gjensidige", "Statnett", "Veidekke", "Color Line"],
         "photo" : "rune.jpg"
     },
-    "brynjar": {
+    "rongved": {
         "name" : "Brynjar Rongved",
         "title" : "Systemutvikler",
         "email" : "brynjar@iterate.no",
@@ -367,7 +367,7 @@
         "clients" : ["SOL", "Telenor", "Amedia", "Apps AS"],
         "photo" : "brynjar.jpg"
     },
-    "ivaruf": {
+    "fredriksen": {
         "name" : "Ivar Fredriksen",
         "title" : "Systemutvikler",
         "email" : "ivar@iterate.no",
@@ -442,7 +442,7 @@
         "clients" : ["SPK"],
         "photo" : ""
     },
-    "andy": {
+    "swift": {
         "name" : "Andrew Swift",
         "title" : "Systemutvikler",
         "email" : "andy@iterate.no",
