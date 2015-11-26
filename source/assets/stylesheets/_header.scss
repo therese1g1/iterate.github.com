@@ -1,10 +1,4 @@
 .header { 
-
-  background-image: url(image_path('banners/lean-cortado-banner.jpg')); 
-  /* TODO automate based on either frontmatter or page classes */
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
 
   @include media($mobile) {
@@ -19,6 +13,17 @@
     }
   }
 }
+
+// ARRANGEMENT-STYLES
+
+.lean-cortado-hero {
+  background-image: url(image_path('headers/lean-cortado-banner.jpg'));
+  background-color: $light-blue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* TODO automate based on either frontmatter or page classes */
+
 
 .header h2 {
   padding-bottom: $base-spacing;
@@ -38,4 +43,24 @@
   }
   color: $lightened-base-color;
   line-height: 1.6;
+}
+
+// MENNESKER-STYLES
+
+.mennesker-hero {
+  background-image: url(image_path('headers/mennesker.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: em(-100, 18);
+  @include media($mobile) {
+    margin-top: 0;
+    height: 80vh;
+  }
+}
+
+#hero {
+  position: relative;
+  top: 35vh;
 }
