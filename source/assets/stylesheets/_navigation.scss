@@ -4,7 +4,7 @@
   }
 }
 
-.row {
+#navigation-bar .row {
   @include media($toggle-navigation) {
     padding: 0 $small-spacing;
     background-color: $white;
