@@ -4,7 +4,8 @@
 
   %section
     .employee-details
-      %h2= headline
+      - if headline.length > 0
+        %h2= headline
 
       %h3= data.people[employee].name
 

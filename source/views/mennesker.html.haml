@@ -40,3 +40,11 @@ title: Mennesker
                 %li
                   %a{:href => employee.github, :class => 'icon'}
                     %i.fa.fa-github
+
+  - employees = data.people.sort.to_h # moves data into a hash and sorts alphabetically by object key
+
+  - employees.each do | e |
+    - employee = e[1] # moves all object data into an array
+  
+    .is-hidden
+      = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }
