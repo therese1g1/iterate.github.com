@@ -19,7 +19,8 @@ title: Mennesker
         - employee = e[1] # moves all object data into an array
 
         %div.employee-card
-          %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
+          = link_to '#' do
+            %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
           %ul.card-content.text-centered
             %li.employee-name= employee.name
             %li.employee-title= employee.title
