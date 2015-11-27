@@ -14,14 +14,25 @@
   &:hover,
   &:active {
     box-shadow: 0 2px 6px transparentize($base-font-color, 0.5);
+  
+    .mugshot {
+      clip-path: circle(150px at center);
+    }
   }
 }
 
 .mugshot {
   clip-path: circle(80px at center);
+  transition: all .7s ease-in-out;
   height: 160px;
   margin: $small-spacing auto $base-spacing auto;
   display: block;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &:hover {
+    clip-path: circle(150px at center);
+  }
 }
 
 ul.card-content {
