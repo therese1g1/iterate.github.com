@@ -151,6 +151,13 @@ ul.horizontal-list li {
   padding-right: 0.3em;
 }
 
+.cards {
+  @include display(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
 input.ghost-button {
   background-color: transparent;
   text-shadow: none;

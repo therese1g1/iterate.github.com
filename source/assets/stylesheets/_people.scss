@@ -1,3 +1,46 @@
+
+.employee-card {
+  margin-bottom: $base-spacing;
+  list-style-type: none;
+  background-color: $white;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  padding: $base-spacing;
+  @include flex-basis(em(300,18));
+  @include flex-grow(0);
+  @include transition (all 0.2s ease-in-out);
+}
+
+.mugshot {
+  border-radius: 100%;
+  height: em(150, 18);
+  width: em(150, 18);
+  margin: $small-spacing auto $base-spacing auto;
+  display: block;
+}
+
+ul.card-content {
+
+  .employee-name {
+    font-family: $strong-font-family;
+  }
+
+  .employee-title {
+    text-transform: uppercase;
+    color: $medium-gray;
+    padding-bottom: $extra-small-spacing;
+  }
+
+  .employee-title,
+  .contact-details {
+    @include desktop-font-scale(-1);
+  }
+
+  ul.horizontal-list {
+    padding-top: $small-spacing;
+  }
+}
+
 .people-bio-box{
   background-color: $white;
   width: 100vw;
@@ -56,5 +99,5 @@
   &:first-child:after {
   content: '|';
   padding-left: 0.3em
-}
+  }
 }

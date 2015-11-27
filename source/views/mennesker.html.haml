@@ -11,20 +11,32 @@ title: Mennesker
   = partial 'partials/customer-quote-single', :locals => { :background_color => 'white' } 
    
   %section
-    %ul
-    - employees = data.people.sort.to_h
-    - employees.each do | e |
-    -   employee = e[1]
+    %div.cards
 
-      %li.card
-        %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
-        %ul
-          %li= employee.name
-          %li= employee.title
-          %li= employee.email
-          %li= employee.phone
+      - employees = data.people.sort.to_h # moves data into a hash and sorts alphabetically by object key
 
-          %ul
-            %li= employee.twitter
-            %li= employee.linkedin
-            %li= employee.github
+      - employees.each do | e |
+        - employee = e[1] # moves all object data into an array
+
+        %div.employee-card
+          %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
+          %ul.card-content.text-centered
+            %li.employee-name= employee.name
+            %li.employee-title= employee.title
+            %li.contact-details
+              %a{:href => 'mailto:' + employee.email}= employee.email
+            %li.contact-details= employee.phone
+
+            %ul.horizontal-list
+              - if employee.twitter.length > 0
+                %li
+                  %a{:href => employee.twitter, :class => 'icon'}
+                    %i.fa.fa-twitter
+              - if employee.linkedin.length > 0
+                %li
+                  %a{:href => employee.linkedin, :class => 'icon'}
+                    %i.fa.fa-linkedin-square
+              - if employee.github.length > 0
+                %li
+                  %a{:href => employee.github, :class => 'icon'}
+                    %i.fa.fa-github
