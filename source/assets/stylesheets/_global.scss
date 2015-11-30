@@ -155,7 +155,7 @@ ul.horizontal-list li {
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
-  @include justify-content(space-between);
+  @include justify-content(center);
 }
 
 input.ghost-button {
