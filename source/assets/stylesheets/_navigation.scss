@@ -1,6 +1,17 @@
 .lean-cortado {
   #navigation-bar {
     background-color: $white;
+    a {
+    color: $base-font-color;
+    text-shadow: none;
+    }
+    li {
+      color: $lightened-base-color;
+
+      &.active {
+        border-bottom: 2px solid $blue;
+      }
+    }
   }
 }
 
@@ -52,12 +63,14 @@ ul.main-navigation {
     margin: 0 $small-spacing;
     padding: 0 0 $extra-small-spacing 0;
     text-transform: uppercase;
-    color: $lightened-base-color;
+    color: $white;
     font-size: modular-scale(-1);
     font-family: $strong-font-family;
+    text-shadow: 1px 1px 2px transparentize($base-font-color, .8);
 
     &.active {
-      border-bottom: 2px solid $blue;
+      border-bottom: 2px solid $white;
+      text-shadow: none;
 
       @include media($toggle-navigation) {
         color: $blue;
@@ -94,7 +107,7 @@ ul.main-navigation {
       border-bottom: 2px solid transparent;
       padding-bottom: $extra-small-spacing;
       display: block;
-      color: $lightened-base-color;
+      color: $white;
 
       &:hover {
         border-bottom: 2px solid $action-color;
