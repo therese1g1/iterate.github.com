@@ -11,7 +11,7 @@ header-img: mennesker
   - # set to gray or white to control background-color of the partial
   = partial 'partials/customer-quote-single', :locals => { :background_color => 'white' } 
    
-  %div.cards
+  %div.cards.has-large-padding-top-bottom
 
     - employees = data.people.sort.to_h # moves data into a hash and sorts alphabetically by object key
 
@@ -46,6 +46,3 @@ header-img: mennesker
 
       .is-hidden
         = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }, :class => 'people-bio', :id => e[0]
-
-
-

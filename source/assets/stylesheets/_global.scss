@@ -110,6 +110,10 @@ footer {
   padding: $large-spacing 0;
 }
 
+.has-large-padding-top-bottom {
+  padding: $extra-large-spacing 0; 
+}
+
 .has-padding-left-right {
   padding-left: $base-spacing;
   padding-right: $base-spacing; 
