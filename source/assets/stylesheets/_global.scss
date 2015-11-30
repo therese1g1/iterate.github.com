@@ -165,10 +165,10 @@ ul.horizontal-list li {
 input.ghost-button {
   background-color: transparent;
   text-shadow: none;
-  color: $base-font-color;
+  color: $white;
   border: $base-border;
-  border-color: $base-font-color;
-  font-family: $base-font-family;
+  border-color: $white;
+  font-family: $strong-font-family;
 
   &:hover,
   &:active,
@@ -179,7 +179,7 @@ input.ghost-button {
     background-color: transparent;
   }
   &:focus {
-    border-color: $dark-gray;
+    border-color: $action-color;
     box-shadow: 0 2px 2px transparentize($dark-gray, .2); 
   }
 }
