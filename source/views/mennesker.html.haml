@@ -18,7 +18,7 @@ header-img: mennesker
     - employees.each do | e |
       - employee = e[1] # moves all object data into an array
 
-      %div.employee-card
+      %div{:class => 'employee-card', :id => e[0]}
         = link_to '#' do
           %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
         %ul.card-content.text-centered
@@ -44,5 +44,5 @@ header-img: mennesker
                 %a{:href => employee.github, :class => 'icon'}
                   %i.fa.fa-github
 
-      .is-hidden
-        = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }, :class => 'people-bio', :id => e[0]
+      %div{:class => 'is-hidden people-bio', :id => e[0] + '-bio'}
+        = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }
