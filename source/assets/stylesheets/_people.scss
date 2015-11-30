@@ -1,6 +1,6 @@
 
 .employee-card {
-  margin-bottom: $base-spacing;
+  margin: $base-spacing $small-spacing;
   list-style-type: none;
   background-color: $white;
   border: $base-border;
@@ -13,7 +13,7 @@
   &:focus,
   &:hover,
   &:active {
-    box-shadow: 0 2px 6px transparentize($base-font-color, 0.5);
+     box-shadow: 0 2px 6px transparentize($base-font-color, 0.5);
   
     .mugshot {
       clip-path: circle(150px at center);
@@ -46,6 +46,18 @@ ul.card-content {
     color: $medium-gray;
     padding-bottom: $extra-small-spacing;
   }
+
+  .employee-name a,
+  .employee-title a {
+      color: $base-font-color;
+      border: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border: none;
+      }
+    }
 
   .employee-title,
   .contact-details {
