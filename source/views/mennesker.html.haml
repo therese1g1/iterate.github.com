@@ -20,7 +20,8 @@ header-img: mennesker
 
       %div{:class => 'employee-card', :id => e[0]}
         = link_to '#' do
-          %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot) }
+          %img{:class => 'mugshot', :title => employee.name, :src => 'http://loremflickr.com/300/240/people' + '?random=' + rand(1...100).to_s} 
+          -# image_path('mugshots/' + employee.mugshot)
         %ul.card-content.text-centered
           %li.employee-name
             %a{:href => '#'}= employee.name
