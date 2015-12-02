@@ -20,8 +20,7 @@ header-img: mennesker
 
       %div{:class => 'employee-card', :id => e[0]}
         = link_to '#' do
-          %img{:class => 'mugshot', :title => employee.name, :src => 'http://loremflickr.com/300/240/people' + '?random=' + rand(1...100).to_s} 
-          -# image_path('mugshots/' + employee.mugshot)
+          %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
         %ul.card-content.text-centered
           %li.employee-name
             %a{:href => '#'}= employee.name
@@ -45,5 +44,5 @@ header-img: mennesker
                 %a{:href => employee.github, :class => 'icon'}
                   %i.fa.fa-github
 
-      %div{:class => 'is-hidden people-bio', :id => e[0] + '-bio'}
+      %div{:class => 'is-hidden people-bio has-margin-bottom', :id => e[0] + '-bio'}
         = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }
