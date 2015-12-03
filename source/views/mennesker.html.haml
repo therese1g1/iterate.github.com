@@ -11,38 +11,62 @@ header-img: mennesker
   - # set to gray or white to control background-color of the partial
   = partial 'partials/customer-quote-single', :locals => { :background_color => 'white' } 
    
-  %div.cards.has-large-padding-top-bottom
+  .cards.has-large-padding-top-bottom
 
     - employees = data.people.sort.to_h # moves data into a hash and sorts alphabetically by object key
 
     - employees.each do | e |
       - employee = e[1] # moves all object data into an array
 
-      %div{:class => 'employee-card', :id => e[0]}
-        = link_to '#' do
-          %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
-        %ul.card-content.text-centered
-          %li.employee-name
-            %a{:href => '#'}= employee.name
-          %li.employee-title
-            %a{:href => '#'}= employee.title
-          %li.contact-details
-            %a{:href => 'mailto:' + employee.email}= employee.email
-          %li.contact-details= employee.phone
+      .employee-card
+        .employee-basic-info
+          = link_to '#' do
+            .employee-card-header
+              %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
+              %ul.card-content.text-centered
+                %li.employee-name= employee.name
+                %li.employee-title= employee.title
 
-          %ul.horizontal-list
-            - if employee.twitter.length > 0
-              %li
-                %a{:href => employee.twitter, :class => 'icon'}
-                  %i.fa.fa-twitter
-            - if employee.linkedin.length > 0
-              %li
-                %a{:href => employee.linkedin, :class => 'icon'}
-                  %i.fa.fa-linkedin-square
-            - if employee.github.length > 0
-              %li
-                %a{:href => employee.github, :class => 'icon'}
-                  %i.fa.fa-github
+          %ul.card-content.text-centered
+            %li.contact-details
+              %a{:href => 'mailto:' + employee.email}= employee.email
+            %li.contact-details= employee.phone
 
-      %div{:class => 'is-hidden people-bio has-margin-bottom', :id => e[0] + '-bio'}
-        = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }
+            %ul.horizontal-list
+              - if employee.twitter.length > 0
+                %li
+                  %a{:href => employee.twitter, :class => 'icon'}
+                    %i.fa.fa-twitter
+              - if employee.linkedin.length > 0
+                %li
+                  %a{:href => employee.linkedin, :class => 'icon'}
+                    %i.fa.fa-linkedin-square
+              - if employee.github.length > 0
+                %li
+                  %a{:href => employee.github, :class => 'icon'}
+                    %i.fa.fa-github
+        .employee-extended-info.is-hidden
+          - if employee.bio.length > 3
+            %p= employee.bio
+          - else
+            - 2.times do
+              %p= lorem.sentences 2
+          .inner-section
+            .skills
+              %i.fa.fa-tags
+              %span= employee.skills.join(', ')
+
+            .clients
+              %i.fa.fa-tags
+              %span= employee.clients.join(', ')
+
+            - work_experience = (Date.today.year.to_i - employee.year.to_i).to_s + ' år med arbeidserfaring'
+
+            .experience
+              %i.fa.fa-briefcase
+              = work_experience
+
+      
+
+      -# %div{:class => 'is-hidden people-bio has-margin-bottom', :id => e[0] + '-bio'}
+        -# = partial 'partials/people-bio', :locals => { :employee => e[0], :headline => '' }
