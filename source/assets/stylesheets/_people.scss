@@ -4,18 +4,23 @@
   background-color: $white;
   border: $base-border;
   border-radius: $base-border-radius;
-  padding-bottom: $base-spacing;
+  overflow: hidden;
   @include display(flex);
-  @include flex-grow(1);
+  @include flex-grow(0);
   @include flex-basis(inherit);
-  @include transition (all 0.2s ease-in-out);
   @include flex-wrap(nowrap);
   @include flex-direction(row);
+  @include transition (all 0.2s ease-in-out);
 
   &:focus,
   &:hover,
   &:active {
      box-shadow: 0 2px 6px transparentize($base-font-color, 0.5);
+  }
+
+  @include media($mobile) {
+    @include flex-wrap(wrap);
+    @include flex-grow(1);
   }
 }
 
@@ -23,6 +28,8 @@
   @include display(flex);
   @include flex-direction(column);
   @include flex-grow(1);
+  @include animation(slide 0.5s ease);
+  padding-bottom: $base-spacing;
 
   & a,
   & a:hover,
@@ -33,29 +40,30 @@
 }
 
 .employee-extended-info {
+  @include animation(slide 0.5s ease);
   @include flex-grow(2);
   @include flex-basis(auto);
   @include flex-direction(row);
-  padding: $large-spacing $base-spacing $base-spacing $base-spacing;
+  padding: $base-spacing;
+  margin: 0 0 0 $base-spacing;
   max-width: em(500);
 }
 
 .employee-card-header {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 
 .mugshot {
-  /*clip-path: circle(80px at center);*/
-  transition: all .7s ease-in-out;
-  width: 100%;
+  min-width: em(280, 18);
   margin: 0 0 $base-spacing 0;
-  display: block;
-  border-top-left-radius: $base-border-radius;
-  border-top-right-radius: $base-border-radius;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  overflow: hidden;
+  position: relative;
+  top: 0;
+
+  @include media($mobile){
+    width: 100%;
+  }
 }
 
 ul.card-content {
@@ -92,10 +100,6 @@ ul.card-content {
   ul.horizontal-list {
     padding-top: $small-spacing;
   }
-}
-
-.employee-extended-info {
-
 }
 
 .skills, 

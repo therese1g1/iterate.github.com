@@ -164,6 +164,7 @@ ul.horizontal-list li {
   @include flex-direction(row);
   @include flex-wrap(wrap);
   @include justify-content(center);
+  min-width: em(320, 18);
 }
 
 input.ghost-button {

@@ -1,3 +1,3 @@
-$('.employee-card').click(function (eventData) { 
-  $('.employee-extended-info', this).toggleClass('is-visible'); 
+$('.employee-card').click(function (eventData) {
+ $('.employee-extended-info', this).toggleClass('is-visible');
 });
