@@ -20,12 +20,11 @@ header-img: mennesker
 
       .employee-card
         .employee-basic-info
-          = link_to '#' do
-            .employee-card-header
-              %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
-              %ul.card-content.text-centered
-                %li.employee-name= employee.name
-                %li.employee-title= employee.title
+          .employee-card-header
+            %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
+            %ul.card-content.text-centered
+              %li.employee-name= employee.name
+              %li.employee-title= employee.title
 
           %ul.card-content.text-centered
             %li.contact-details

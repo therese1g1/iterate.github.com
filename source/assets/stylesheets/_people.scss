@@ -7,7 +7,7 @@
   padding-bottom: $base-spacing;
   @include display(flex);
   @include flex-grow(1);
-  @include flex-basis(em(300,18));
+  @include flex-basis(inherit);
   @include transition (all 0.2s ease-in-out);
   @include flex-wrap(nowrap);
   @include flex-direction(row);
@@ -37,6 +37,7 @@
   @include flex-basis(auto);
   @include flex-direction(row);
   padding: $large-spacing $base-spacing $base-spacing $base-spacing;
+  max-width: em(500);
 }
 
 .employee-card-header {
