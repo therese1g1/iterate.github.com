@@ -1,6 +1,6 @@
 # iterate.github.io
 
-Iterate website build on Middleman, Bourbon, Neat and Bitter via [Proteus](http://github.com/thoughtbot/proteus)
+Iterate website build on Middleman, Bourbon, Neat and Bitter
 
 ## Includes
 
@@ -13,6 +13,11 @@ Iterate website build on Middleman, Bourbon, Neat and Bitter via [Proteus](http:
 * [Middleman Live Reload](https://github.com/middleman/middleman-livereload)
 * [Middleman Deploy](https://github.com/karlfreeman/middleman-deploy)
 
+## Dependencies
+
+* [Puma](http://puma.io/)
+* [rack-contrib](https://github.com/rack/rack-contrib)
+
 ## Getting Started
 
 Install dependencies:
@@ -22,13 +27,12 @@ bundle install
 
 Run the server
 ```
-proteus server
+middleman server
 ```
 
-Deploy to Github Pages
-```
-proteus deploy
-```
+## Deploying
+
+Currently, pushing to this branch will automatically kick off a build on a [Heroku test instance](http://infinite-ridge-2775.herokuapp.com/).
 
 ## Directories
 
