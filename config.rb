@@ -13,6 +13,8 @@ set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"
 set :fonts_dir, "assets/fonts"
 set :layout, "layouts/application"
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
 
 configure :development do
  activate :livereload
