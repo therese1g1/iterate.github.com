@@ -1,6 +1,14 @@
 ---
-title: Lean Cortado
-
+title: Organisering og ansvarsområder 
+subtitle: Lean Cortado del 2 
+presenter: indahl
+date: 26. 10. 2015
+time: 08:00 - 08:45
+short_description: 'Frokostseminaret er det andre i en serie på syv seminarer om Lean Startup og Garasjen - Iterate sitt konsept for entreprenørskap i norske virksomheter. Vi kommer med ferske caser, ferske bakevarer, faglige anbefalinger og kruttsterk kaffe.'
+banner: 'lean-cortado-banner.jpg'
+thumbnail: 
+featured: true
+registration_open: true
 ---
 
 #main
@@ -37,7 +45,7 @@ title: Lean Cortado
   = partial 'partials/customer-quotes-events', :locals => { :background_color => 'gray' } 
 
   - # fetches employee data from people.json and sets a headline where approriate
-  = partial 'partials/people-bio', :locals => { :employee => 'indahl', :headline => 'om foredragsholderen' } 
+  = partial 'partials/people-bio', :locals => { :employee => current_resource.data['presenter'], :headline => 'om foredragsholderen' } 
 
   %section
     .two-columns
