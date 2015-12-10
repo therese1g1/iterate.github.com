@@ -15,10 +15,13 @@ Iterate website build on Middleman, Bourbon, Neat and Bitter
 
 ## Dependencies
 
+* Ruby version 2.2.2 or newer
 * [Puma](http://puma.io/)
 * [rack-contrib](https://github.com/rack/rack-contrib)
 
 ## Getting Started
+
+_If you need to install Ruby first, read this for less pain: [Installing Ruby the correct way](https://cbednarski.com/articles/installing-ruby/) or this: [Setting up and installing rbenv, ruby-build, rubies, rbenv-gemset, and bundler](https://gist.github.com/MicahElliott/2407918)
 
 Install dependencies:
 ```
