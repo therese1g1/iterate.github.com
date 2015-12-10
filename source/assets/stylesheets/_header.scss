@@ -14,6 +14,7 @@
   }
 }
 
+
 // ABOUT STYLES
 
 .about-hero {
@@ -58,6 +59,13 @@
   }
   color: $lightened-base-color;
   line-height: 1.6;
+}
+
+// HOME STYLES
+
+.home-hero {
+  @extend .about-hero;
+  background-image: url(image_path('headers/start.jpg'));
 }
 
 // PEOPLE-STYLES
