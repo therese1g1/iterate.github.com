@@ -14,7 +14,22 @@
   }
 }
 
-// ARRANGEMENT-STYLES
+// ABOUT STYLES
+
+.about-hero {
+  background-image: url(image_path('headers/om-oss.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: em(-120, 18);
+  @include media($mobile) {
+    margin-top: em(-20, 18);
+    height: 80vh;
+  }
+}
+
+// EVENT-STYLES
 
 .lean-cortado-hero {
   background-image: url(image_path('headers/lean-cortado-banner.jpg'));
@@ -45,19 +60,11 @@
   line-height: 1.6;
 }
 
-// MENNESKER-STYLES
+// PEOPLE-STYLES
 
 .mennesker-hero {
+  @extend .about-hero;
   background-image: url(image_path('headers/mennesker.jpg'));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-top: em(-120, 18);
-  @include media($mobile) {
-    margin-top: em(-20, 18);
-    height: 80vh;
-  }
 }
 
 #hero {
