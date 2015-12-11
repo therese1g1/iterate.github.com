@@ -1,12 +1,13 @@
 #navigation-bar .row {
   @include media($toggle-navigation) {
     padding: 0 $small-spacing;
-    background-color: $dark-gray;
     min-height: em(100);
   }
 }
 
 #navigation-bar {
+  background-color: $dark-gray;
+  
   a.menu-toggle {
     display: none;
 
