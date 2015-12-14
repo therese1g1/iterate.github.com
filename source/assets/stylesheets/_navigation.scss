@@ -36,7 +36,7 @@
     align-items: baseline;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding: $base-spacing 0;
+    padding: $base-spacing 0 $small-spacing 0;
 
 
     @include media($toggle-navigation) {
@@ -120,7 +120,7 @@
   .link-with-logo {
     border-bottom: none;
     position: relative;
-    top: modular-scale(2);
+    top: $base-spacing;
     padding-bottom: 0;
     float: left;
     display: inline-block;

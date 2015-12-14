@@ -1,6 +1,7 @@
 .people-bio-box
 
-  %img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/' + data.people[employee].photo) }
+  .employee-portrait-box
+    %img{:class => 'employee-full-portrait', :title => data.people[employee].name, :src => image_path('portraits/' + data.people[employee].photo) }
 
   %section
     .employee-details

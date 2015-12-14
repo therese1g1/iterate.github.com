@@ -137,10 +137,20 @@ ul.card-content {
   }
 }
 
-.employee-full-portrait {
+.employee-portrait-box {
   float: right;
   margin-right: 0;
-  width: 38vw;
+  height: em(800, 18);
+  max-width: 33%;
+  overflow: hidden;
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+.employee-full-portrait {
+  object-fit: cover;
+  height: em(800, 18);
   @include media($mobile) {
     display: none;
   }

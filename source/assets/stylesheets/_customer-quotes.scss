@@ -44,7 +44,13 @@
 
 .quote,
 .customer {
+  margin-right: $base-spacing;
   @include media($mobile) {
     margin: $base-spacing;
   }
+}
+
+.two-columns:first-child .quote,
+.two-columns:first-child .customer, {
+  margin-right: $extra-large-spacing;
 }
