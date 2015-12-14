@@ -1,13 +1,13 @@
 .cards.has-large-padding-top-bottom
   
   - employees = data.people.to_h
-  - employees.each do | e |
-  - employee = e[1]
+  - current_resource.data.people.each do | p |
+    - employee = employees[p]
 
     .employee-card
 
       .employee-basic-info 
-        = link_to '/people#' + e[0] do
+        = link_to '/people#' + p do
           .employee-card-header
             %img{:class => 'mugshot', :title => employee.name, :src => image_path('mugshots/' + employee.mugshot)}
             %ul.card-content.text-centered
