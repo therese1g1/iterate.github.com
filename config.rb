@@ -4,6 +4,10 @@ activate :views
 activate :directory_indexes
 activate :autoprefixer
 
+# Specified custom layouts
+# page "events/index.html", :layout => "application"
+page "events/*", :layout => "events"  
+
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 

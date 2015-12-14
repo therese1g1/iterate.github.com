@@ -1,12 +1,13 @@
 ---
 title: Arrangementer
+layout: application
 ---
 
 #main
   .white
     %section
       - current_resource.children.each do | page |
-        %ul
+        %ul.has-padding-bottom
           %li
             %h4= link_to page.data.title + ' – ' + page.data.subtitle, page.url
             

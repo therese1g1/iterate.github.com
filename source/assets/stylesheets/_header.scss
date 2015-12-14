@@ -1,5 +1,6 @@
 .header { 
   width: 100%;
+  background-color: $white;
 
   @include media($mobile) {
     background-image: none;
@@ -7,7 +8,7 @@
   }
 
   section {
-    padding: $large-spacing 0 $extra-large-spacing 0;
+    padding: $large-spacing 0 $large-spacing 0;
     @include media($mobile) {
       padding: $large-spacing $base-spacing $extra-large-spacing $base-spacing;
     }
@@ -32,14 +33,27 @@
 
 // EVENT-STYLES
 
-.lean-cortado-hero {
-  background-image: url(image_path('headers/lean-cortado-banner.jpg'));
-  background-color: $light-blue;
-  background-position: center;
-  background-repeat: no-repeat;
+.banner {
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 0;
+  min-width:1200px;
+  max-width: 1200px;
+  height: 100%;
+
 }
 /* TODO automate based on either frontmatter or page classes */
 
+.events .header {
+  position: relative;
+  overflow: hidden;
+}
+
+.events .header section {
+  position: relative;
+  z-index: 99;
+}
 
 .header h2 {
   padding-bottom: $base-spacing;
@@ -60,6 +74,15 @@
   color: $lightened-base-color;
   line-height: 1.6;
 }
+
+.lean-cortado .header{
+  background-color: $light-blue;
+}
+
+.dark li {
+  color: $white !important;
+}
+
 
 // HOME STYLES
 

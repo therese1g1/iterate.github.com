@@ -1,0 +1,9 @@
+.events {
+  .description p:first-child {
+    @extend .ingress;
+  }
+
+  .description ul {
+    @extend .bullet-list;
+  }
+}
