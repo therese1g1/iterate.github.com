@@ -1,9 +1,6 @@
 ---
 title: Lanseringen var ikke død 
 subtitle: Alt om produktlansering på 45 minutter
-serie: ''
-serie_title: ''
-serie_subtitle: ''
 presenter: 'kornli'
 date: '30. 6. 2015'
 time: '08:00 - 09:00'
