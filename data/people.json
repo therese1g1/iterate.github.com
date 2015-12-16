@@ -20,7 +20,22 @@
 /////////////////////////////////////////////////////////////////////////
 */
 
-{
+{   
+    "barstad": {
+        "name" : "Sigve Barstad ",
+        "title" : "Forretningsutvikler",
+        "email" : "sigve@iterate.no",
+        "phone" : "+47 995 86 317",
+        "twitter" : "",
+        "linkedin" : "",
+        "github" : "",
+        "year" : "",
+        "mugshot" : "sigve.jpg",
+        "bio" : "",
+        "skills" : [""],
+        "clients" : ["Gjensidige"],
+        "photo" : "sigve.jpg"
+    },
     "vraalsen": {
         "name" : "Fredrik Vraalsen",
         "title" : "Systemutvikler",
