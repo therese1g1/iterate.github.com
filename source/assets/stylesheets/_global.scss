@@ -94,6 +94,17 @@ footer {
   }
 }
 
+.ten-columns-centered {
+  @include span-columns(10);
+  @include shift(1);
+  @include media($mobile){
+    @include span-columns(2);
+    @include shift(0);
+    @include omega();
+    padding: 0 $base-spacing;
+  }
+}
+
 .has-table-context {
   @include display-context(table);
 }
@@ -110,8 +121,15 @@ footer {
   padding: $large-spacing 0;
 }
 
+.has-large-padding-top {
+  padding-top: $large-spacing;
+}
+.has-large-padding-bottom {
+  padding-bottom: $large-spacing;
+}
+
 .has-large-padding-top-bottom {
-  padding: $extra-large-spacing 0; 
+  padding: $large-spacing 0; 
 }
 
 .has-padding-left-right {

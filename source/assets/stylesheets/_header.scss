@@ -31,7 +31,7 @@
   }
 }
 
-// EVENT-STYLES
+// EVENT & CASE STYLES
 
 .banner {
   position: absolute;
@@ -41,16 +41,21 @@
   min-width:1200px;
   max-width: 1200px;
   height: 100%;
-
 }
-/* TODO automate based on either frontmatter or page classes */
 
-.events .header {
+.cases .banner {
+  top: 20%;
+  height: auto;
+}
+
+.events .header,
+.cases .header {
   position: relative;
   overflow: hidden;
 }
 
-.events .header section {
+.events .header section,
+.cases .header section {
   position: relative;
   z-index: 99;
 }

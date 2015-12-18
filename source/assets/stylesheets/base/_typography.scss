@@ -44,7 +44,6 @@ h2 {
   text-transform: uppercase;
   letter-spacing: .02em;
   line-height: $heading-line-height;
-  padding-bottom: $large-spacing;
 }
 
 h3 {
@@ -60,9 +59,9 @@ h3 {
 }
 
 h4 {
-  @include desktop-font-scale(2);
+  @include desktop-font-scale(3);
   @include media($mobile) {
-      @include mobile-font-scale(2);
+      @include mobile-font-scale(3);
     }
   line-height: $heading-line-height;
   font-family: $base-font-family;
@@ -76,6 +75,7 @@ p {
   line-height: $long-form-line-height;
   color: $base-font-color;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  @include desktop-font-scale(1);
   @include media($mobile) {
     @include mobile-font-scale(0);
   }
@@ -89,7 +89,7 @@ ul {
 }
 
 .ingress {
-  @include desktop-font-scale(1);
+  @include desktop-font-scale(2);
   @include media($mobile) {
       @include mobile-font-scale(1);
     }
@@ -99,9 +99,9 @@ ul {
 }
 
 .quote {
-  font-size: modular-scale(2);
+  @include desktop-font-scale(2);
   @include media($mobile) {
-      @include mobile-font-scale(2);
+      @include mobile-font-scale(1);
     }
   color: $base-font-color;
 }

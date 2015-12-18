@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %meta{name: "description", content: "."}  
+
+    %title= current_page.data.title "| Iterate"
+    = stylesheet_link_tag "application"
+    = stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+
+  %body{class: page_classes + ' ' + current_resource.data.serie}
+    %nav#navigation-bar
+      = partial 'partials/navigation'
+
+    = yield
+
+  %footer
+    = partial 'partials/footer'
+  = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"

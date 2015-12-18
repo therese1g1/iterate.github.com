@@ -1,0 +1,62 @@
+---
+title: SATS ELIXIA Online Personlig Trener
+logofile: ''
+people:
+  - 'kornli'
+  - 'barstad'
+  - 'indahl'
+  - 'dæhlen'
+  - 'skeie'
+  - 'maheswaran'
+  - 'leisse'
+image1: 'online-pt-mockup.png'
+---
+#main
+  .header
+    %img{:src => image_path('cases/online-pt-goals-mockup.png')}
+    -#%img{:src => image_path('logos/sats-elixia-logo.svg'), :class => 'logo-in-header'}
+
+  .white
+    %section
+      %h2.text-centered digitalisering
+      %h3.text-centered Online Personlig Trener
+
+      .ten-columns-centered
+
+        -# %h4 Kundens utfordring
+
+        %p.ingress SATS ELIXIA ønsket å kunne tilby sine tjenester også til mennesker som ikke har et av deres sentre i umiddelbar nærhet. Dermed var det å kunne tilby tjenester online en mulig løsning. Utfordringen de tok med seg til Iterate var derfor om de kunne levere mer verdi til eksisterende kunder og nå flere kunder ved å tilby tjenester online? Og hvilke tjenester skulle dette da være? 
+
+  = partial 'partials/customer-quote-single-no-pic', :locals => { :background_color => 'gray' }
+
+  .white  
+    %section 
+
+      .ten-columns-centered
+        %h4.has-padding-top Vår tilnærming
+
+        %p Ved å undersøke ønsker og behov blant SATS ELIXIAs eksisterende kundebase identifiserte vi hvilke tjenester kundene ønsket seg og følte de hadde behov for. Det ble kartlagt at personlig treningsplan, kostholdstips og oppfølging av trener var av størst interesse. For å lære mer om kundebehovene og betalingsvillighet for en slik tjeneste bygget Iterate sammen med et team av ti personlige trenere, et minimum viable produkt som skulle testes mot et begrenset antall kunder. 
+
+        %p Løsningen ble bygget på 4 uker, og ble markedsført mot en utvalgt gruppe kunder til et testantall på 30 betalende kunder var nådd. Iløpet av halvannen måned fra første kodelinje var skrevet hadde vi personlige trenere og betalende kunder på plass i løsningen. 
+
+        %P I løpet av testperioden på tre måneder ble løsningen og verdibudskap kontinuerlig iterert rundt basert på tilbakemeldinger fra kunder og trenere inne i løsningen, men også basert på en rekke intervjuer og eksperimenter ut mot potensielle kunder. Løsning og budskap ble endret fire ganger i løpet av perioden før vi fant et konsept som flyter godt, og gir verdi til både PT og kunde. På kort tid hadde vi lærte hvilke deler av tjenesten som var viktige for kundene, hva som ikke ble benyttet og hva som kunne vært bedre.
+
+  %img{:src => image_path('cases/' + current_resource.data.image1), :class => 'image-full-width'}
+
+  .white  
+    %section
+      .two-thirds-layout       
+        %h4.has-padding-top Resultater
+
+        %p Etter tre måneder hadde vi et konkret konsept på bordet, med implementeringsplan, bekreftet prispunkt, invisteringsoversikt og strategiske anbefalinger. Utfordringer rundt kompetansebygging og opplæring av trenere var kartlagte. Vi haddeidentifisert hvordan SATS ELIXIA best kan levere sine personlig trener tjenester online, og redusert risiko betraktelig dersom dette er noe de ønsker å gå videre med.
+
+      .one-third-layout
+        %h4.has-padding-top Nøkkeltall
+
+        %ul
+          %li 4 iterasjoner 
+          %li 30 betalende kunder
+          %li 4 uker MVP
+
+  %h2.text-centered.has-large-padding-top-bottom Teamet vårt
+  = partial 'partials/people-card'
