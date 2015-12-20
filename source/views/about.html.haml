@@ -13,13 +13,13 @@ people:
 
   .white
     %section
-      %h2.text-centered= lorem.sentence
+      %h2.is-hidden om oss
       %h3.text-centered Iterate &mdash; En skapelsesberetning
       
-      .eight-columns-centered
+      .ten-columns-centered
         .ingress.has-padding-bottom Tre ingeniører og illusjoner som brast. Fra dette oppstår Iterate - et sted der menneskene er valutaen og verdiskaping er resultatet
 
-        %h4 Målløs fokusering
+        %h4.has-padding-top Målløs fokusering
 
         %p Iterate DNA’et kommer fra en kollisjon mellom virkeligheten, og et genuint ønske om å skape verdier. Vi møtte sviktende forutsetninger, stress og fortvilelse - tross iherdig innsats. Det var alle oss kunnskapsarbeidere som betalte kostnadene.
 
@@ -39,7 +39,7 @@ people:
 
   %section
     - # set to gray or white to control background-color of the partial
-    = partial 'partials/customer-quotes-events', :locals => { :background_color => 'grey' }
+    = partial 'partials/customer-quote-single', :locals => { :background_color => 'grey' }
 
   .white
     %section  
