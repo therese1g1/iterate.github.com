@@ -1,0 +1,50 @@
+.key-points {
+  padding: $small-spacing 0;
+
+  .cards {
+    @include media($mobile) {
+      @include flex-direction(column);
+    }
+  }
+}
+
+.key-points-card {
+  @include flex-grow(1);
+  @include flex-basis(auto);
+  @include flex-wrap(nowrap);
+  margin: .2em;
+  background-color: $action-color;
+  color: $white;
+  padding: $base-spacing $base-spacing $large-spacing $base-spacing;
+  @include media($mobile) {
+    padding: $small-spacing;
+  }
+
+  &:last-child {
+    @include media($mobile) {
+      padding-bottom: $large-spacing;
+    }
+  }
+}
+
+.key-number {
+  font-family: $hero-font-family;
+  @include responsive-font(15vw, 60px, 97.08px);
+  padding: $base-spacing 0 $extra-small-spacing 0;
+  line-height: 1;
+}
+
+.key-caption {
+  text-transform: uppercase;
+}
+
+.logo-in-header {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 40vw;
+  @include media($mobile) {
+    width: 80vw;
+    bottom: 15%;
+  }
+}

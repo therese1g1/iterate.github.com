@@ -14,7 +14,7 @@ image1: 'online-pt-mockup.png'
 #main
   .header
     %img{:src => image_path('cases/online-pt-goals-mockup.png')}
-    -#%img{:src => image_path('logos/sats-elixia-logo.svg'), :class => 'logo-in-header'}
+    %img{:src => image_path('logos/sats-elixia-logo-white.svg'), :class => 'logo-in-header'}
 
   .white
     %section
@@ -31,7 +31,6 @@ image1: 'online-pt-mockup.png'
 
   .white  
     %section 
-
       .ten-columns-centered
         %h4.has-padding-top Vår tilnærming
 
@@ -45,18 +44,27 @@ image1: 'online-pt-mockup.png'
 
   .white  
     %section
-      .two-thirds-layout       
+      .ten-columns-centered
         %h4.has-padding-top Resultater
 
         %p Etter tre måneder hadde vi et konkret konsept på bordet, med implementeringsplan, bekreftet prispunkt, invisteringsoversikt og strategiske anbefalinger. Utfordringer rundt kompetansebygging og opplæring av trenere var kartlagte. Vi haddeidentifisert hvordan SATS ELIXIA best kan levere sine personlig trener tjenester online, og redusert risiko betraktelig dersom dette er noe de ønsker å gå videre med.
 
-      .one-third-layout
-        %h4.has-padding-top Nøkkeltall
-
-        %ul
-          %li 4 iterasjoner 
-          %li 30 betalende kunder
-          %li 4 uker MVP
+  .bright
+    %section.key-points
+      .ten-columns-centered
+        .cards
+          .key-points-card
+            %ul.text-centered
+              %li.key-number 4 
+              %li.key-caption iterasjoner 
+          .key-points-card
+            %ul.text-centered
+              %li.key-number 30 
+              %li.key-caption betalende kunder
+          .key-points-card
+            %ul.text-centered
+              %li.key-number 4 
+              %li.key-caption uker til MVP
 
   %h2.text-centered.has-large-padding-top-bottom Teamet vårt
   = partial 'partials/people-card'
