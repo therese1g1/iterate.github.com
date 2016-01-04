@@ -21,6 +21,21 @@
 */
 
 {   
+	"singh": {
+        "name" : "Rana Ranjit Singh",
+        "title" : "Systemutvikler",
+        "email" : "singh@iterate.no",
+        "phone" : "+47 413 50 220",
+        "twitter" : "",
+        "linkedin" : "",
+        "github" : "",
+        "year" : "1980",
+        "mugshot" : "singh.jpg",
+        "bio" : "",
+        "skills" : [""],
+        "clients" : ["Gjensidige"],
+        "photo" : "singh.jpg"
+    },
     "barstad": {
         "name" : "Sigve Barstad ",
         "title" : "Forretningsutvikler",
