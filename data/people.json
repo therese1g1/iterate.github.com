@@ -477,14 +477,28 @@
         "title" : "Systemutvikler",
         "email" : "karine@iterate.no",
         "phone" : "+47 950 80 838",
-        "twitter" : "",
-        "linkedin" : "https://no.linkedin.com/in/karinegranvifstad",
-        "github" : "https://github.com/karinevifstad",
-        "year" : "2015",
+        "twitter" : "https://twitter.com/theengen",
+        "linkedin" : "https://no.linkedin.com/in/thereseengen",
+        "github" : "https://github.com/therese1g1",
+        "year" : "2005",
         "mugshot" : "karine.jpg",
         "bio" : "Jeg startet i Iterate i høst og har allerede fått Lage, Leke og Lære masse. Mitt beste eksempel på dette: Da vi lagde et piano av fem bananer, et Arduino-kit og noen linjer med Clojure. Fordi vi kan. Fun fact: Drev aktivt med klatring i 3 år for å bli kvitt høydeskrekken. Funka ikke særlig kjempebra.",
         "skills" : ["web", "frontend", "javascript", "java"],
         "clients" : ["Telenor Digital", "S-OL"],
         "photo" : "karine.jpg"
     }
+       "engen": {
+        "name" : "Therese Engen",
+        "title" : "Partner, Prosjektleder",
+        "email" : "therese@iterate.no",
+        "phone" : "+47 922 77 077",
+        "twitter" : "tengen",
+        "linkedin" : "https://no.linkedin.com/in/karinegranvifstad",
+        "github" : "https://github.com/karinevifstad",
+        "year" : "2015",
+        "mugshot" : "therese.jpg",
+        "bio" : "",
+        "skills" : ["Prosjekteldelse", "Scrum", "Kanban", "Smidig/Agile"],
+        "clients" : ["Telenor", "Rapp Marine", "Statnett"],
+        "photo" : "therese.jpg" 
 }
