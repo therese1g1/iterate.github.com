@@ -1,9 +1,10 @@
 - # set :locals => { :background_color => "$COLOR" } to gray or white to toggle background color when calling the partial
+- # set :locals => { :title => "$SOMETHING SMART"} to change what is displayed as title
 
 %div{ :class => background_color }
 
   %section
-    %h2.text-centered Dette sier deltakerne
+    %h2.text-centered= title
 
     .two-columns
       %p.quote
