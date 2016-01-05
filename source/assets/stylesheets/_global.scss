@@ -62,6 +62,15 @@ footer {
   }
 }
 
+.two-thirds-layout-offset {
+  @include span-columns(8);
+  @include shift(4);
+  @include media($mobile) {
+    @include span-columns(2);
+    @include shift(1);
+  }
+}
+
 .two-columns {
   @include span-columns(6);
   @include media($mobile){
@@ -164,6 +173,8 @@ footer {
   width: 100%
 }
 
+// toggles visibility
+
 .is-hidden {
   display: none;
 }
@@ -172,9 +183,7 @@ footer {
   display: block;
 }
 
-.fills-parent {
-  @include fill-parent;
-}
+// text styles
 
 .text-centered {
   text-align: center;
@@ -188,7 +197,8 @@ footer {
   }
 }
 
-/* list of font awesome icons linking to twitter etc */
+// horizontal list used for icons and logos
+
 ul.horizontal-list li {
   display: inline;
   padding-right: 0.3em;
@@ -221,5 +231,18 @@ input.ghost-button {
   &:focus {
     border-color: $action-color;
     box-shadow: 0 2px 2px transparentize($dark-gray, .2); 
+  }
+}
+
+// ADD FREDERIK TO ANY SECTION //
+
+.freddy {
+  background-image: url(image_path('freddy.jpg'));
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  height: 35rem;
+  @include media($mobile) {
+    background-image: url(image_path('freddy.jpg')); // TODO: make small version for mobile
   }
 }

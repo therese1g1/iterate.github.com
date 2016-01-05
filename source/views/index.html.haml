@@ -1,5 +1,5 @@
 ---
-title: Start
+title: Hjemmeside
 ---
 
 #main
@@ -11,4 +11,42 @@ title: Start
 
   .white
     %section
-      %p= lorem.paragraph
+      %h2.is-hidden Hjemmeside
+      %h3.text-centered.has-large-padding-bottom Vi gjør ting på en bedre måte
+      .two-columns
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/p6qPfI1QK3k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+      .two-columns
+        %p Iterate ble startet av en Anders, Simen og Kim, IT-ingenører som mente at det måtte gå an å jobbe på en bedre måte enn det de gjorde i dag.
+
+        %p Dette DNA’et lever sterkt i Iterate. 
+        
+        %p Vi er et mellomstort konsulenthus, med 45 ansatte. Vi har rådgivere, systemutviklere og prosjektledere.
+
+        %p
+          = link_to 'Ta kontakt og få en kopp med kaffe', './', :anchor => 'freddy'
+
+  %section
+    %h2.text-centered noen av dem vi jobber med
+    %p.eight-columns-centered 
+      Iterate jobbet med alle de store Norske selskapene. 
+      = lorem.sentences 3
+    %ul.horizontal-list.text-centered
+      %li= image_tag image_path('logos/gjensidige.png')
+      %li= image_tag image_path('logos/telenor.png')
+
+  .white
+    %section
+      = partial 'partials/customer-quotes-events', :locals => { :background_color => 'white', :title => 'Dette sier kundene våre' }
+
+  .freddy
+    %section
+      %h2.text-centered Ta en prat med Fredrik
+      .two-thirds-layout-offset
+        %p
+          = lorem.sentences 2
+        %ul
+          %li Ring +47 408 409 76
+          %li 
+            Send epost til 
+            = link_to 'fredrik@iterate.no', 'mailto:fredrik@iterate.no'
