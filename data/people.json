@@ -98,17 +98,17 @@
     },
     "indahl": {
         "name" : "Torve Indahl",
-        "title" : "Partner, entreprenør",
+        "title" : "Partner",
         "email" : "torve@iterate.no",
         "phone" : "+47 91 35 22 99",
         "twitter" : "http://twitter.no/torve",
-        "linkedin" : "",
+        "linkedin" : "https://no.linkedin.com/in/torve-indahl-458396",
         "github" : "",
-        "year" : "1990",
+        "year" : "2001",
         "mugshot" : "torve.jpg",
-        "bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-        "skills" : ["lean", "forretningsmodell", "joint ventures"],
-        "clients" : ["HFN", "Aller", "Telenor"],
+        "bio" : "Torve har en MSc i Business fra NHH, har bakgrunn fra McKinsey, Telenor Mobil, BEKK og en serie med startups. Han leder Iterate Ventures sine investeringer innen Corporate Ventures og Venture Capaital.",
+        "skills" : ["Strategi", "Organisasjon", "Ledelse", "Enterprenørskap", "Startups", "Corporate Ventures", "Venture Capital"],
+        "clients" : ["Telenor mCommerce (2001)", "Mobilia (2003)", "Active Loop (2006)", "More (2008)", "Iterate Grasjen (2013)", "Iterate Ventures (2016)"],
         "photo" : "torve-portrait.jpg"
     },
     "haugeto": {
