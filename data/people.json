@@ -59,11 +59,11 @@
         "twitter" : "https://www.twitter.com/fredriv",
         "linkedin" : "",
         "github" : "",
-        "year" : "1976",
+        "year" : "1997",
         "mugshot" : "fredrikv.jpg",
         "bio" : "Dad, Scala developer, sci-fi fan, photo geek, cycling enthusiast, member of The Secret World Illuminati",
         "skills" : ["Scala", "Java", "functional programming"],
-        "clients" : ["Hafslund", "Amedia", "Veidekke", "Bertel O. Steen"],
+        "clients" : ["Get", "Hafslund", "Amedia", "Veidekke", "Bertel O. Steen"],
         "photo" : "fredrikv.jpg"
     },
     "dæhlen": {
