@@ -509,9 +509,9 @@
         "phone" : "41687447",
         "twitter" : "",
         "linkedin" : "",
-        "github" : "https://github.com/jraregris"
+        "github" : "https://github.com/jraregris",
         "year" : "2012",
-        "mugshot" : "x.jpg",
+        "mugshot" : "oddmund.jpg",
         "bio" : "Jeg er en sørlending som liker å få datamaskiner til å gjøre ting datamaskiner er gode til slik at mennesker kan få mer tid til å gjøre ting mennesker er gode til.",
         "skills" : ["devops", "java", "ruby"],
         "clients" : ["amedia", "sparebank1", " "],
