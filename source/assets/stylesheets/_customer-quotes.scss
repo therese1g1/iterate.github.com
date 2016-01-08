@@ -12,14 +12,21 @@
 .customer-portrait {
   height: em(200, 18);
   width: em(200, 18);
+  border-radius: 100%;
+  overflow: hidden;
 
   @include media($mobile) {
     height: em(200, 15);
     width: em(200, 15);
   }
 
-  & img{
-  border-radius: 100%;
+  & img {
+    object-fit: cover;
+    min-height: em(200,18);
+
+    @include media($mobile) {
+      min-height: em(200,15); 
+    }
   }
 }
 
