@@ -89,11 +89,11 @@
         "twitter" : "http://twitter.no/slipset",
         "linkedin" : "https://no.linkedin.com/in/erikassum",
         "github" : "",
-        "year" : "1970",
+        "year" : "1995",
         "mugshot" : "erik.jpg",
-        "bio" : "",
-        "skills" : [],
-        "clients" : [],
+        "bio" : "Giver of f*cks. Constantly annoyed by stuff that could have been better. Even more annoyed if he can't make it so",
+        "skills" : ["Clojure", "Java", "JavaScript", "sh", "Scala"],
+        "clients" : ["Gjensidige"],
         "photo" : ""
     },
     "indahl": {
