@@ -42,7 +42,7 @@ footer {
 }
 
 .ingress {
-  margin-top: $large-spacing;
+  margin-top: $base-spacing;
   @include media($mobile) {
     margin-top: $small-spacing;
   }
@@ -77,10 +77,6 @@ footer {
     @include span-columns(2);
     @include omega();
     padding: 0 $base-spacing;
-
-    &:last-child{
-      margin-top: $large-spacing;
-    }
   }
 }
 
@@ -111,6 +107,14 @@ footer {
     @include shift(0);
     @include omega();
     padding: 0 $base-spacing;
+  }
+}
+
+.spans-twelve-columns {
+  @include span-columns(12);
+  @include media($mobile){
+    @include span-columns(2);
+    @include omega();
   }
 }
 

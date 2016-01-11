@@ -1,0 +1,96 @@
+---
+title: Karriere
+---
+
+#main
+  .header.carreer-hero
+    %section
+      %h1#hero.text-centered Leter du etter nye utfordringer?
+
+  .white
+    %section
+      .ten-columns-centered
+        %h2.text-centered Det er oss
+        %h3.text-centered En familie  med fagnerder
+
+        %p.ingress.text-centered 
+          Vi har en spennende <span class="strikethrough">arbeids</span>lekeplass for erfarne systemutviklere.  
+
+        %p.text-centered Iterate er et konsulentfirma med forretningsutviklere, systemutviklere, prosjektledere og designere. Vi ønsker å forbedre verden. Vårt favorittverktøy er Lean Startup.
+
+        %p.text-centered.has-padding-top
+          =button_to 'Bli en av oss', '#apply', :class => 'text-centered'
+
+  %section
+    %h2.text-centered Noen av våre kunder
+
+
+
+  .freedom.has-background-image
+    %section
+      .spans-twelve-columns
+        %h2 Lei av å være tannhjul?
+        %h3 Her får du stor frihet til å forme din egen stilling
+
+        %p Iterate har ingen store eksterne eiere. 42 mennesker jobber her med zero byråkrati, flat struktur og frihet under ansvar.
+
+        %p 
+          Her du kan bli "Incognito Ninja" eller  
+          = link_to '"Giver of f@cks"', 'http://markmanson.net/not-giving-a-fuck'
+  
+  .white.has-large-padding-top-bottom
+    %section
+      %h2.text-centered Dette sier vi om oss selv
+      .one-third-layout
+        .customer-portrait.is-centered
+          %img{ :src => image_path('mugshots/palru.jpg'), :alt => 'Photo of Paal', :class => 'is-centered' }
+      .two-thirds-layout
+        %p.quote "Vi er som en skoleklasse uten lærer, men istedenfor å ha utetime hele tiden, sitter vi inne og leker med datamaskiner."
+        %ul.customer
+          %li.customer-name Pål Ruud
+          %li.customer-jobtitle Systemutvikler, Head of Operations
+
+  .speaking.has-background-image
+    %section
+      .two-thirds-layout  
+        %h2 Er det på tide å tørre?
+        %h3 Vi hjelper deg å utvikle dine skjulte talenter
+
+        %p Vi er mer opptatt av hvem du kan bli enn hvem du er i dag.
+        %p 67% av våre kolleger har holdt foredrag på konferanser. Har du lyst til det? Da vi gir deg all hjelp du trenger til å få det til!
+
+  .white
+    %section
+      .spans-twelve-columns
+        %h2.text-centered Dette venter deg
+        %h3.text-centered Hva skjer når du blir en av oss?
+
+      
+      .two-columns
+        %h4.has-padding-top 🎒 Mye god læring
+        %p Retorikkurs, faggrupper, Lean Startup-kurs, konferanser og fagkvelder
+
+        %h4.has-padding-top 🍻 Sosialt
+        %p I 2015 hadde vi 87 sosiale eventer: Fester, ølbrygging, rebusløp, frokostmøter, squashturnering, fredagspils, hyttetur og mye mer
+
+      .two-columns
+        %h4.has-padding-top ⛺ Camp Iterate
+        %p Vår årlige camp for nyansatte for å bli kjent med hverandre
+
+        %h4.has-padding-top ⭐ Engasjerende oppdrag
+        %p Vi jobber hardt for å skaffe deg oppdrag som du trives i. Det er viktig at du også har det gøy når du er ute hos kunden!
+
+  %section{:id => 'apply'}
+    %h2.text-centered Søk da vel
+    %h3.text-centered Interessert i å jobbe hos oss?
+
+    = button_to 'Ta testen', 'https://docs.google.com/a/iterate.no/forms/d/1VBa3JTZokLqxuyQ1MdyEDCB7AzIOgDif_yG0Dj7afNA/viewform', :class => 'text-centered'
+
+    %p.smallscript.has-padding-top.text-centered Det tar vanligvis 10 minutter for folk for å fylle det ut.
+    %p.text-centered Vi er din beste match hvis du liker å dele kunnskap og liker å hjelpe andre.
+
+  .mafia.has-background-image
+    %section
+      .spans-twelve-columns
+        %h2.is-hidden Iterate familien
+        %h3.text-centered I iterate er vi alle en stor familie

@@ -106,21 +106,7 @@ ul {
   color: $base-font-color;
 }
 
-.name-small, 
-.title-small {
-  text-transform: uppercase;
-  color: $medium-gray;
-  font-family: $tiny-font-family;
-  font-weight: 700;
-  @include desktop-font-scale(-2);
-  @include media($mobile) {
-      @include mobile-font-scale(-1);
-    }
-  line-height: $base-line-height;
-  letter-spacing: 2px;
-}
-
-.contact-information-tiny {
+.smallscript {
   @include desktop-font-scale(-2);
   @include media($mobile) {
       @include mobile-font-scale(-1);
@@ -128,6 +114,23 @@ ul {
   font-family: $tiny-font-family;
   font-weight: 400;
   line-height: $base-line-height;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.name-small, 
+.title-small {
+  @extend .smallscript;
+  text-transform: uppercase;
+  color: $medium-gray;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-information-tiny {
+  @extend .smallscript;
 }
 
 // Link styles

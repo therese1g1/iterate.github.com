@@ -1,0 +1,42 @@
+// BACKGROUND IMAGES //
+
+.has-background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 45vw;
+  padding-top: $extra-large-spacing;
+}
+
+.mafia {
+  @include background-image (
+    linear-gradient(transparentize($action-color, .8), transparentize($action-color, .8)), 
+    url(image_path('mafia.jpg'))
+  );
+}
+
+.speaking {
+  @include background-image (
+    linear-gradient(transparentize($blue, .6), transparentize(darken($blue, 40%), .6)), 
+    url(image_path('speaking_paal.jpg'))
+  );
+}
+
+.freedom {
+  @include background-image (
+    linear-gradient(transparentize($action-color, .6), transparentize(darken($action-color, 40%), .6)), 
+    url(image_path('freedom.jpg'))
+  );
+}
+
+// COMMON TEXT STYLES //
+
+.has-background-image *:not(a) {
+  color: $white;
+  text-shadow: 1px 1px 5px transparentize($dark-gray, .7);
+}
+
+// MISC STYLES FOR SPECIFIC SECTIONS //
+
+.mafia h3 {
+  margin-top: $large-spacing;
+}

@@ -31,6 +31,32 @@
   }
 }
 
+// HOME STYLES
+
+.home-hero {
+  @extend .about-hero;
+  background-image: url(image_path('headers/start.jpg'));
+}
+
+// PEOPLE-STYLES
+
+.mennesker-hero {
+  @extend .about-hero;
+  background-image: url(image_path('headers/mennesker.jpg'));
+}
+
+#hero {
+  position: relative;
+  top: 35vh;
+}
+
+// CARREER STYLES
+
+.carreer-hero {
+  @extend .about-hero;
+  background-image: url(image_path('headers/karriere.jpg'));
+}
+
 // EVENT & CASE STYLES
 
 .banner {
@@ -88,22 +114,3 @@
   color: $white !important;
 }
 
-
-// HOME STYLES
-
-.home-hero {
-  @extend .about-hero;
-  background-image: url(image_path('headers/start.jpg'));
-}
-
-// PEOPLE-STYLES
-
-.mennesker-hero {
-  @extend .about-hero;
-  background-image: url(image_path('headers/mennesker.jpg'));
-}
-
-#hero {
-  position: relative;
-  top: 35vh;
-}
