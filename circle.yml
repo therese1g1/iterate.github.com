@@ -6,9 +6,14 @@ test:
   override:
     - echo "OK. We have no tests"
 
-#deployment:
-#  master:
-#    branch: master
-#    commands:
-#      - git push dokku@app.iterate.no:www $CIRCLE_SHA1:master
+deployment:
+  master:
+    branch: master
+    commands:
+      - git push dokku@app.iterate.no:www $CIRCLE_SHA1:master
+  dev:
+    branch: shinies
+    commands:
+      - git push dokku@app.iterate.no:www-dev $CIRCLE_SHA1:master
+
       
