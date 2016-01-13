@@ -14,6 +14,6 @@ deployment:
   dev:
     branch: shinies
     commands:
-      - git push dokku@app.iterate.no:www-dev $CIRCLE_SHA1:master
+      - git push dokku@app.iterate.no:www-dev shinies:master
 
       
