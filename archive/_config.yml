@@ -1,5 +1,0 @@
-destination: ./www
-markdown: kramdown
-encoding: utf-8
-gems: ['kramdown']
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
