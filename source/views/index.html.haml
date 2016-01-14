@@ -19,7 +19,7 @@ title: Hjemmeside
       %p &quot;Building the right thing and building the thing right&quot; - fra en  skapende hverdag i Iterate
 
       %p
-        = link_to 'Ta kontakt og få en kopp med kaffe', './', :anchor => 'freddy'
+        = link_to 'Ta kontakt og få en kopp med kaffe', '#freddy'
 
   %section
     %h2.text-centered noen av dem vi jobber med
@@ -35,7 +35,7 @@ title: Hjemmeside
       = partial 'partials/customer-quote-double', :locals => { :background_color => 'white', :title => 'Dette sier kundene våre' }
 
   .freddy
-    %section
+    %section#freddy
       %h2.text-centered Ta en prat med Fredrik
       .two-thirds-layout-offset
         %p
