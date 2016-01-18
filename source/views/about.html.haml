@@ -13,8 +13,28 @@ people:
 
   .white
     %section
+      .ten-columns-centered        
+        %h3.text-centered Vi er gode på
+      
+        %h4.has-padding-top Systemutvikling
+        %p Vårt mantra har alltid vært at dyktige systemutviklere står på to ben: Teknologibenet og metodebenet. Bena må være like lange om du skal kunne løpe raskt. Vi koder mest open source, i Java, JavaScript, HTML5, Python og Clojure. Vi er også pådrivere for devops og continuous deployment.
+      
+        %h4.has-padding-top Prosjekt- og utviklingsledelse
+        %p Vi leder både prosjekter og produktutvikling. Vi kombinerer tankegang fra japansk bilproduksjon med kreativ galskap fra digitale entreprenører. Vi benytter smidige metoder og raske iterasjoner for å få effektive tilbakemeldinger. Først og fremst er vi opptatt av å få ting gjort.
+        
+      
+        %h4.has-padding-top Rådgivning og kompetanseheving
+        %p Vi hjelper deg og din bedrift utvikle ferdigheter på smidig tankegang, digital innovasjon og entreprenørskap. Vi tilbyr kurs, workshops og coaching, eller kanskje har du lyst til å kjøre din egen interne Startup Week sammen med oss?
+      
+        %h4.has-padding-top Corporate Ventures
+        %p Corporate Ventures er en mulighet for kunder som tenker langsiktig og ønsker å forankre arbeidet og læringen i et skjebnefelleskap der alle jobber for ett og samme mål: Maksimal verdiskapning
+
+  - # set to gray or white to control background-color of the partial
+  = partial 'partials/customer-quote-single', :locals => { :background_color => 'grey' }
+
+  .white
+    %section
       %h2.is-hidden om oss
-      %h3.text-centered Iterate &mdash; En skapelsesberetning
       
       .ten-columns-centered
         .ingress.has-padding-bottom Ferske ingeniører og illusjoner som brast. Fra dette oppstår Iterate - et sted der menneskene er valutaen og verdiskaping er resultatet
@@ -35,26 +55,4 @@ people:
 
         %p Iterate er et eksperiment og en dannelsesreise. Vi jobber fokusert uten mål. Vi <strong>lager</strong> ved å <strong>leke</strong> og <strong>lære</strong> fra hverandre og fra omverdenen. 
 
-        %p Nøkkelen til å lykkes er hva du selv ønsker.
-
-  - # set to gray or white to control background-color of the partial
-  = partial 'partials/customer-quote-single', :locals => { :background_color => 'grey' }
-
-  .white
-    %section
-      .ten-columns-centered        
-        %h3.text-centered Vi er gode på
-      
-        %h4.has-padding-top Systemutvikling
-        %p Noe om systemutvikling
-      
-        %h4.has-padding-top Prosjekt- og utviklingsledelse
-        %p Noe om Prosjekt- og utviklingsledelse
-        
-      
-        %h4.has-padding-top Rådgivning og kompetanseheving
-        %p Vi hjelper deg og din bedrift utvikle ferdigheter på smidig tankegang, Lean Startup og Lean Software Development. Vi tilbyr kurs, workshops og coaching, eller kanskje har du lyst til å kjøre din egen interne Startup Week sammen med oss?
-      
-        %h4.has-padding-top Corporate Ventures
-        %p Noe om Corporate Ventures
-    
+        %p Nøkkelen til å lykkes er hva du selv ønsker.    
