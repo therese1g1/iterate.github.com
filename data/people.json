@@ -226,8 +226,8 @@
         "linkedin" : "https://no.linkedin.com/in/mortenberg",
         "year" : "2005",
         "mugshot" : "morten.jpg",
-        "bio" : ".",
-        "skills" : ["java", "development", "integration", "change"],
+        "bio" : "Systemutvikler som blander seg inn i det meste på de prosjektene han jobber. Liker å jobbe med alt fra kravspesifisering til testdrevet utvikling og hyppige leveranser.",
+        "skills" : ["java", "development", "integration", "change", "Specification by example"],
         "clients" : ["Statens pensjonskasse", "Sparebank 1", "Color Line"],
         "photo" : "morten.jpg"
     },
