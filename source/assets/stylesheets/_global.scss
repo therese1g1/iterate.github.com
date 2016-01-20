@@ -30,7 +30,7 @@ section {
 
 .row {
   @include row();
-  @include clearfix;
+  @include outer-container(em(980, 18));
 }
 
 .inner-section {
