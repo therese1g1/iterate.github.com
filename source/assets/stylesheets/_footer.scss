@@ -4,7 +4,6 @@
 .blog {
   @extend .four-columns;
   @extend .contact-information-tiny;
-  color: lighten($medium-gray, 20%);
   
   @include media($mobile) {
     @include span-columns(2);
@@ -29,6 +28,7 @@
 }
 
 .blog {
+  color: $secondary-text-color;
   @include media($mobile) {
     @include span-columns(2);
 
@@ -36,19 +36,19 @@
 }
 
 footer .title-small {
-  color: $white;
+  color: $primary-text-color;
   font-weight: 400;
 }
 
 .logo p {
-  color: $white;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
+  line-height: 1;
+  margin-top: -.3em;
   @include desktop-font-scale(1);
   @include media($mobile) {
       @include mobile-font-scale(2);
     }
-  letter-spacing: .7px;
   @include media($mobile) {
     margin-top: -($small-spacing);
   }
@@ -60,23 +60,34 @@ footer .title-small {
 .linkedin,
 .facebook,
 .instagram {
-  color: lighten($medium-gray, 20%);
-  border-bottom: 1px solid transparent;
+  color: $primary-text-color;
+  border-bottom: none;
+  transition: color 0.3s ease-in-out;
 
   &:active,
   &:focus,
   &:hover {
     color: $action-color;
-    border-bottom: 1px solid transparent;
+    border-bottom: none;
+    transition: color 0.3s ease-in-out;
   }
 }
 .some-icons {
   font-family: 'FontAwesome';
+  color: $secondary-text-color;
+  transition: color 0.3s ease-in-out;
   @include desktop-font-scale(-1);
   @include media($mobile) {
       @include mobile-font-scale(0);
     }
   margin-right: modular-scale(-1);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $action-color;
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 .twitter::before {

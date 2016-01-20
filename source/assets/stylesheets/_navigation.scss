@@ -14,11 +14,9 @@
     @include media($toggle-navigation) {
       @include mobile-font-scale(-1);
       @include omega;
-      position: absolute;
-      top: $small-spacing;
-      right: $base-spacing;
       display: block;
-      margin: 0;
+      margin: 1em 0 0 0;
+      float: right;
     }
 
     &:hover,
@@ -118,15 +116,18 @@
   }
 
   .link-with-logo {
+    font-size: modular-scale(2);
+    color: $white;
     border-bottom: none;
     position: relative;
-    top: $base-spacing;
     padding-bottom: 0;
     float: left;
-    display: inline-block;
+    line-height: 1;
+    padding: $small-spacing 0 $small-spacing 0;
 
     &:hover,
     &:active{
+      color: $white;
       border-bottom: none;
     }
   }

@@ -8,7 +8,7 @@ presenter: ruud
 date: '26. 10. 2015'
 time: '08:00 - 09:00'
 short_description: 'Frokostseminaret er det andre i en serie på syv seminarer om Lean Startup og Garasjen - Iterate sitt konsept for entreprenørskap i norske virksomheter. Vi kommer med ferske caser, ferske bakevarer, faglige anbefalinger og kruttsterk kaffe.'
-banner: 'lean-cortado-banner.jpg'
+banner: 'lean-cortado-banner.png'
 thumbnail: 
 featured: true
 registration_open: true
