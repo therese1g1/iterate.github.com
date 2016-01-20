@@ -1,11 +1,11 @@
-//
-// 'flavor' determines the layout of the form implemented in CSS. 
-// It can be set to either registration-form-horizontal or regstration-form-vertical like this directly from the page (check views/events.html.haml to see it in action).
-// = partial 'partials/registration-form', :class => 'has-table-context', :locals => { :flavor => 'registration-form-horizontal' }
-// The partial can easily be used in a variety of page-layouts.
-// 
-// IMPORTANT NOTE: 
-// All input ends up in the same table so don't use the same form-URL in two different places.
+-#
+-# 'flavor' determines the layout of the form implemented in CSS. 
+-# It can be set to either registration-form-horizontal or regstration-form-vertical like this directly from the page (check views/events.html.haml to see it in action).
+-# = partial 'partials/registration-form', :class => 'has-table-context', :locals => { :flavor => 'registration-form-horizontal' }
+-# The partial can easily be used in a variety of page-layouts.
+-# 
+-# IMPORTANT NOTE: 
+-# All input ends up in the same table so don't use the same form-URL in two different places.
 
 %div{ :class => flavor } 
 
