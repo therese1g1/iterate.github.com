@@ -1,9 +1,13 @@
+footer {
+  background-color: $primary-color;
+  color: $primary-color-text;
+}
+
 .logo,
 .address,
 .social-media,
 .blog {
   @extend .four-columns;
-  @extend .contact-information-tiny;
   
   @include media($mobile) {
     @include span-columns(2);
@@ -13,9 +17,26 @@
   }
 
   li {
-    @include desktop-font-scale(-2);
+    @include desktop-font-scale(-1);
     @include media($mobile) {
       @include mobile-font-scale(-1);
+    }
+  }
+}
+
+.address,
+.blog {
+  a {
+    color: $primary-color-text;
+    border-bottom: 1px solid $primary-color-text;
+    transition: all 0.3s ease-in-out;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $action-color;
+      border-bottom: 1px solid $action-color;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
@@ -27,25 +48,13 @@
   }
 }
 
-.blog {
-  color: $secondary-text-color;
-  @include media($mobile) {
-    @include span-columns(2);
-
-  }
-}
-
-footer .title-small {
-  color: $primary-text-color;
-  font-weight: 400;
-}
-
 .logo p {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   line-height: 1;
+  color: $primary-color-text;
   margin-top: -.3em;
-  @include desktop-font-scale(1);
+  @include desktop-font-scale(2);
   @include media($mobile) {
       @include mobile-font-scale(2);
     }
@@ -54,13 +63,26 @@ footer .title-small {
   }
 }
 
+.blog {
+
+}
+
+.blog-post-date {
+  @include desktop-font-scale(-1);
+  @include media($mobile) {
+      @include mobile-font-scale(-1);
+  };
+  color: transparentize($primary-color-text, 0.25);
+}
+
+
 /* SoMe links + icons */
 
 .twitter,
 .linkedin,
 .facebook,
 .instagram {
-  color: $primary-text-color;
+  color: $primary-color-text;
   border-bottom: none;
   transition: color 0.3s ease-in-out;
 
@@ -74,7 +96,7 @@ footer .title-small {
 }
 .some-icons {
   font-family: 'FontAwesome';
-  color: $secondary-text-color;
+  color: $primary-color-text;
   transition: color 0.3s ease-in-out;
   @include desktop-font-scale(-1);
   @include media($mobile) {

@@ -70,6 +70,18 @@ h4 {
   color: $base-font-color;
 }
 
+h5 {
+  @include desktop-font-scale(0);
+  @include media($mobile) {
+      @include mobile-font-scale(0);
+    }
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 p {
   margin: 0 0 $small-spacing;
   line-height: $long-form-line-height;

@@ -1,10 +1,10 @@
 %section.footer
-  .row.first
+  .row.has-margin-bottom
     .logo 
       %p iterate
 
     .address  
-      %h5.title-small.has-padding-bottom
+      %h5.has-padding-bottom
         Besøksadresse
       %ul
         %li Iterate AS
@@ -13,7 +13,7 @@
         %li= mail_to 'mail@iterate.no'
 
     .social-media
-      %h5.title-small.has-padding-bottom
+      %h5.has-padding-bottom
         Følg oss
       %ul
         %li= link_to 'Twitter','https://twitter.com/iterate_no', :class => 'twitter'
@@ -21,16 +21,10 @@
         %li= link_to 'Facebook', 'https://www.facebook.com/iteratenorge', :class => 'facebook'
         %li= link_to 'Instagram', 'http://instagram.com/iterate_no', :class => 'instagram'
 
-    // TODO: 
-    //
-    // Make this list fetch stuff from the blog on page-load rather than statically displaying nonsense
-    // Last list-item should always link to the blog (as shown below)
-
     .blog
-      %h5.title-small.has-padding-bottom
+      %h5.has-padding-bottom
         Det siste fra bloggen
-
 
       %ul.blog-list
         %li
-          = link_to 'Les mer', 'http://blog.iterate.no/'
+          = link_to 'Les flere', 'http://blog.iterate.no/'

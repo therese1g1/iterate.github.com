@@ -10,10 +10,6 @@ section {
   }
 }
 
-footer {
-  background-color: desaturate($primary-color-light, 20%);
-}
-
 // LAYOUT CLASSES //
 
 .form-wrapper {
@@ -34,7 +30,7 @@ footer {
 
 .row {
   @include row();
-  @include outer-container(em(980, 18));
+  @include clearfix;
 }
 
 .inner-section {
