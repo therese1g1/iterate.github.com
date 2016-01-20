@@ -43,11 +43,12 @@ footer .title-small {
 .logo p {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
+  line-height: 1;
+  margin-top: -.3em;
   @include desktop-font-scale(1);
   @include media($mobile) {
       @include mobile-font-scale(2);
     }
-  letter-spacing: .7px;
   @include media($mobile) {
     margin-top: -($small-spacing);
   }
