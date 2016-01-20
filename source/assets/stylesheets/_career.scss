@@ -4,31 +4,38 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 45vw;
-  padding-top: $extra-large-spacing;
 }
 
 .mafia {
   @include background-image (
-    linear-gradient(transparentize($action-color, .8), transparentize($action-color, .8)), 
+    linear-gradient(transparentize($action-color, .8), transparentize(darken($action-color, 50%), .4)), 
     url(image_path('mafia.jpg'))
   );
 }
 
 .speaking {
   @include background-image (
-    linear-gradient(transparentize($blue, .6), transparentize(darken($blue, 40%), .6)), 
+    linear-gradient(transparentize($blue, .6), transparentize(darken($blue, 50%), .4)), 
     url(image_path('speaking_paal.jpg'))
   );
 }
 
 .freedom {
   @include background-image (
-    linear-gradient(transparentize($action-color, .6), transparentize(darken($action-color, 40%), .6)), 
+    linear-gradient(transparentize($action-color, .6), transparentize(darken($action-color, 50%), .3)), 
     url(image_path('freedom.jpg'))
   );
 }
 
-// COMMON TEXT STYLES //
+// COMMON STYLES //
+
+.has-background-image {
+  
+  .two-thirds-layout,
+  .spans-twelve-columns {
+    margin-top: modular-scale(9);
+  }
+}
 
 .has-background-image *:not(a) {
   color: $white;
