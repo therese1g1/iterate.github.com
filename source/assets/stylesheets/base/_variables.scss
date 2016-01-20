@@ -1,75 +1,86 @@
 // Body Font Styles
-$base-font-family: "Planer-Regular", sans-serif;
-$base-font-weight: normal;
-$base-font-style: normal;
-$base-font-size: 18px;
+$base-font-family:    "Planer-Regular", sans-serif;
+$base-font-weight:    normal;
+$base-font-style:     normal;
+$base-font-size:      18px;
 
-$em-font-family: "Planer-Italic", sans-serif;
-$em-font-weight: normal;
-$em-font-style: italic;
+$em-font-family:      "Planer-Italic", sans-serif;
+$em-font-weight:      normal;
+$em-font-style:       italic;
 
-$strong-font-family: "Planer-DemiBold", sans-serif;
-$strong-font-weight: normal;
-$strong-font-style: normal;
+$strong-font-family:  "Planer-DemiBold", sans-serif;
+$strong-font-weight:  normal;
+$strong-font-style:   normal;
 
 // Hero Font Styles
-$hero-font-family: "NoyhBold", Futura, sans-serif;
-$hero-font-weight: normal;
-$hero-font-style: normal;
+$hero-font-family:    "NoyhBold", Futura, sans-serif;
+$hero-font-weight:    normal;
+$hero-font-style:     normal;
 
 // Tiny Font Styles
-$tiny-font-family: "Open Sans", sans-serif;
-$tiny-font-style: normal;
+$tiny-font-family:  "Open Sans", sans-serif;
+$tiny-font-style:   normal;
 // set weight to 400 for normal and 700 for bold
 
 // Deco Font Styles
-$deco-font-family: $base-font-family;
-$deco-font-weight: $base-font-weight;
-$deco-font-style: $base-font-style;
+$deco-font-family:  $base-font-family;
+$deco-font-weight:  $base-font-weight;
+$deco-font-style:   $base-font-style;
 
 // Responsive Typography 
 // Viewport sizes and font ranges
-$min_width: 400; 
-$max_width: 960;
-$min_font: 16;   
-$max_font: 24;
+$min_width:   400; 
+$max_width:   960;
+$min_font:    16;   
+$max_font:    24;
 
 // Line height
-$base-line-height: 1.4;
-$heading-line-height: 1.2;
+$base-line-height:      1.4;
+$heading-line-height:   1.2;
 $long-form-line-height: 1.6;
 
 // Other Sizes
-$base-border-radius: 4px;
-$base-spacing: modular-scale(2);
-$extra-small-spacing: modular-scale(-4);
-$small-spacing: modular-scale(0);
-$large-spacing: modular-scale(5);
-$extra-large-spacing: modular-scale(7);
-$base-z-index: 0;
+$base-border-radius:    4px;
+$base-spacing:          modular-scale(2);
+$extra-small-spacing:   modular-scale(-4);
+$small-spacing:         modular-scale(0);
+$large-spacing:         modular-scale(5);
+$extra-large-spacing:   modular-scale(7);
+$base-z-index:          0;
 
 // Colors
-$blue: #0077C0;
-$light-blue: #B2D6EC;
-$dark-gray: #45494D;
-$medium-gray: #7C7F82;
-$light-gray: #F5F6F7;
-$white: #FFF;
-$orange: #F56A2A;
+$primary-color-dark:    #0097A7;
+$primary-color:         #00BCD4;
+$primary-color-light:   #B2EBF2;
+$primary-color-text:    #FFFFFF;
+$accent-color:          #FF5722;
+$primary-text-color:    #212121;
+$secondary-text-color:  #727272;
+$divider-color:         #B6B6B6;
+
+/* should probably be refactored at some point, legacy from palette change from here on */
+$blue:                  $primary-color; /* #0077C0;*/
+$light-blue:            $primary-color-light; /*#B2D6EC;*/
+$dark-gray:             $primary-text-color; /*#45494D;*/
+$medium-gray:           $secondary-text-color; /*#7C7F82;*/
+$light-gray:            #F5F6F7;
+$white:                 #FFF;
+$orange:                $accent-color; /*#F56A2A;*/
+
 
 $base-background-color: $light-gray;
-$base-font-color: $dark-gray;
-$action-color: $orange;
-$lightened-base-color: lighten($base-font-color, 10%);
+$base-font-color:       $primary-text-color;
+$action-color:          $accent-color;
+$lightened-base-color:  lighten($base-font-color, 10%);
 
 // Border
-$base-border-color: #C4CFD4;
-$base-border: 1px solid $base-border-color;
-$base-divider: 1px solid transparentize($base-border-color, 0.2);
+$base-border-color:     $divider-color; /*#C4CFD4;*/
+$base-border:           1px solid $base-border-color;
+$base-divider:          1px solid transparentize($base-border-color, 0.2);
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-$form-box-shadow-focus-dark: $form-box-shadow, 0 0 5px adjust-color($dark-gray, $lightness: 5%);
+$form-box-shadow:             inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus:       $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow-focus-dark:  $form-box-shadow, 0 0 5px adjust-color($dark-gray, $lightness: 5%);
 
 

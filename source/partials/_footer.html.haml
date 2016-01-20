@@ -10,7 +10,7 @@
         %li Iterate AS
         %li Grensen 9B, 0159 Oslo
         %li + 47 22 44 79 18
-        %li mail@iterate.no
+        %li= mail_to 'mail@iterate.no'
 
     .social-media
       %h5.title-small.has-padding-bottom
@@ -20,6 +20,11 @@
         %li= link_to 'Linkedin', 'https://www.linkedin.com/company/iterate', :class => 'linkedin'
         %li= link_to 'Facebook', 'https://www.facebook.com/iteratenorge', :class => 'facebook'
         %li= link_to 'Instagram', 'http://instagram.com/iterate_no', :class => 'instagram'
+
+    // TODO: 
+    //
+    // Make this list fetch stuff from the blog on page-load rather than statically displaying nonsense
+    // Last list-item should always link to the blog (as shown below)
 
     .blog
       %h5.title-small.has-padding-bottom
