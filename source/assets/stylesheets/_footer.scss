@@ -1,6 +1,7 @@
 footer {
   background-color: $primary-color;
   color: $primary-color-text;
+  font-family: $tiny-font-family;
 }
 
 .logo,
@@ -34,9 +35,10 @@ footer {
     &:active,
     &:focus,
     &:hover {
-      color: $action-color;
-      border-bottom: 1px solid $action-color;
+      color: $blue;
+      border-bottom: 1px solid $white;
       transition: all 0.3s ease-in-out;
+      background-color: $white;
     }
   }
 }
@@ -84,14 +86,15 @@ footer {
 .instagram {
   color: $primary-color-text;
   border-bottom: none;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:active,
   &:focus,
   &:hover {
-    color: $action-color;
+    color: $blue;
     border-bottom: none;
     transition: color 0.3s ease-in-out;
+    background-color: $white;
   }
 }
 .some-icons {
@@ -107,7 +110,7 @@ footer {
   &:hover,
   &:active,
   &:focus {
-    color: $action-color;
+    color: $blue;
     transition: color 0.3s ease-in-out;
   }
 }
