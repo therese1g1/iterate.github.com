@@ -19,12 +19,15 @@
 // ABOUT STYLES
 
 .about-hero {
-  background-image: url(image_path('headers/om-oss.jpg'));
+  @include background-image (
+      linear-gradient(transparentize($action-color, .9), transparentize(darken($action-color, 10%), .8)), 
+    url(image_path('headers/om-oss.jpg'))
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  margin-top: em(-120, 18);
+  margin-top: em(-85, 18);
   @include media($mobile) {
     margin-top: em(-20, 18);
     height: 80vh;
@@ -35,14 +38,20 @@
 
 .home-hero {
   @extend .about-hero;
-  background-image: url(image_path('headers/start.jpg'));
+    @include background-image (
+      linear-gradient(transparentize(darken($blue, 20%), .7), transparentize($action-color, .9)), 
+    url(image_path('headers/start.jpg'))
+  );
 }
 
 // PEOPLE-STYLES
 
 .mennesker-hero {
   @extend .about-hero;
-  background-image: url(image_path('headers/mennesker.jpg'));
+  @include background-image (
+    linear-gradient(transparentize(darken($blue, 80%), .8), transparentize($action-color, 1)), 
+    url(image_path('headers/mennesker.jpg'))
+  );
 }
 
 #hero {
@@ -54,7 +63,10 @@
 
 .career-hero {
   @extend .about-hero;
-  background-image: url(image_path('headers/karriere.jpg'));
+  @include background-image (
+      linear-gradient(transparentize($action-color, .9), transparentize($action-color, .9)), 
+    url(image_path('headers/karriere.jpg'))
+  );
 }
 
 // EVENT & CASE STYLES
