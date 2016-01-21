@@ -10,10 +10,6 @@ section {
   }
 }
 
-footer {
-  background-color: $primary-color-light;
-}
-
 // LAYOUT CLASSES //
 
 .form-wrapper {
@@ -57,6 +53,7 @@ footer {
 
 .two-thirds-layout {
   @include span-columns(8);
+  @include clearfix;
   @include media($mobile) {
     @include span-columns(2);
   }
@@ -91,6 +88,7 @@ footer {
 .eight-columns-centered {
   @include span-columns(8);
   @include shift(2);
+  @include clearfix;
   @include media($mobile){
     @include span-columns(2);
     @include shift(0);
@@ -148,6 +146,10 @@ footer {
 .has-padding-left-right {
   padding-left: $base-spacing;
   padding-right: $base-spacing; 
+}
+
+.has-large-margin-top {
+  margin-top: $large-spacing;
 }
 
 .has-margin-bottom {
@@ -208,11 +210,15 @@ ul.horizontal-list li {
   padding-right: 0.3em;
 }
 
-.cards {
+.flex-container {
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
   @include justify-content(center);
+}
+
+.cards {
+  @extend .flex-container;
   min-width: em(320, 18);
 }
 

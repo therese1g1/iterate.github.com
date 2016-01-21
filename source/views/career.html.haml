@@ -23,12 +23,11 @@ title: Karriere
 
   %section
     %h2.text-centered Noen av våre kunder
-
-
+    = partial 'partials/customer-logos'
 
   .freedom.has-background-image
     %section
-      .spans-twelve-columns
+      .two-thirds-layout
         %h2 Fra tannhjul til rock star
         %h3 Frihet til å forme din egen stilling
 
@@ -36,7 +35,8 @@ title: Karriere
   
   .white.has-large-padding-top-bottom
     %section
-      %h2.text-centered Dette sier vi om oss selv
+      .two-thirds-layout-offset
+        %h2 Dette sier vi om oss selv
       .one-third-layout
         .customer-portrait.is-centered
           %img{ :src => image_path('mugshots/palru.jpg'), :alt => 'Photo of Paal', :class => 'is-centered' }
@@ -59,7 +59,6 @@ title: Karriere
       .spans-twelve-columns
         %h2.text-centered Dette venter deg
         %h3.text-centered Hva skjer når du blir en av oss?
-
       
       .two-columns
         %h4.has-padding-top 🎒 Mye god læring
@@ -78,11 +77,11 @@ title: Karriere
   %section{:id => 'apply'}
     %h2.text-centered Søk da vel
     %h3.text-centered Interessert i å jobbe hos oss?
+    %p.text-centered For deg som aldri blir lei av å utvikle nye ferdigheter, dele kunnskap, og hjelpe andre.
 
-    = button_to 'Ta testen', 'https://docs.google.com/a/iterate.no/forms/d/1VBa3JTZokLqxuyQ1MdyEDCB7AzIOgDif_yG0Dj7afNA/viewform', :class => 'text-centered'
+    = button_to 'Ta testen', 'https://docs.google.com/a/iterate.no/forms/d/1VBa3JTZokLqxuyQ1MdyEDCB7AzIOgDif_yG0Dj7afNA/viewform', :class => 'text-centered has-large-margin-top'
 
     %p.smallscript.has-padding-top.text-centered Det tar vanligvis 10 minutter for folk for å fylle det ut.
-    %p.text-centered For deg som aldri blir lei av å utvikle nye ferdigheter, dele kunnskap, og hjelpe andre.
 
   .mafia.has-background-image
     %section

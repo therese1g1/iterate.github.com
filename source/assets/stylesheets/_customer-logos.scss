@@ -1,0 +1,11 @@
+.customer-logo {
+  padding-right: $large-spacing;
+
+  & img {
+    height: modular-scale(5);
+    width: auto;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
