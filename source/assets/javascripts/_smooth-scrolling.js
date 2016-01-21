@@ -1,4 +1,4 @@
-$('#anchor-button a').click(function(event) {
+$('#anchor a').click(function(event) {
   event.preventDefault();
 
   var anchorID = $(this).attr("href");
