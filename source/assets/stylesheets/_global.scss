@@ -75,6 +75,13 @@ section {
     @include omega();
     padding: 0 $base-spacing;
   }
+
+  &:first-child {
+    padding-right: $small-spacing;
+  }
+  &:last-child {
+    padding-left: $small-spacing;
+  }
 }
 
 .three-columns {
@@ -161,6 +168,27 @@ section {
 }
 
 // PRESENTATION CLASSES //
+
+// background images
+
+.has-background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 45vw;
+}
+.has-background-image {
+  
+  .two-thirds-layout,
+  .spans-twelve-columns {
+    margin-top: modular-scale(9);
+  }
+}
+
+.has-background-image *:not(a) {
+  color: $white;
+  text-shadow: 1px 1px 5px transparentize($dark-gray, .7);
+}
+
 
 // toggles background color
 
