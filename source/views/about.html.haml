@@ -9,31 +9,41 @@ title: Om oss
 
   .white
     %section
-      .ten-columns-centered        
+      .spans-twelve-columns
         %h3.text-centered Vi er gode på
       
-        %h4.has-padding-top Systemutvikling
-        %p Vi er opptatt både av teknologien og virkningen den har. Vi liker å kode i Java, JavaScript, Clojure og Scala, og kombinerer det gjerne med devops, continuous deployment og inkrementell utvikling.
-      
-        %h4.has-padding-top Prosjekt- og utviklingsledelse
-        %p Vi kombinerer filosofien fra japansk bilproduksjon med kreativ galskap fra digitale entreprenører. Først og fremst er vi opptatt av å skape noe nyttig og verdifullt.
+      .row
+        .two-columns
+          %h4.has-padding-top 🚀 Systemutvikling
+          %p Vi er opptatt både av teknologien og virkningen den har. Vi liker å kode i Java, JavaScript, Clojure og Scala, og kombinerer det gjerne med devops, continuous deployment og inkrementell utvikling.
+        .two-columns
+          %h4.has-padding-top 🎯 Prosjekt- og utviklingsledelse
+          %p Vi kombinerer filosofien fra japansk bilproduksjon med kreativ galskap fra digitale entreprenører. Først og fremst er vi opptatt av å skape noe nyttig og verdifullt.
+
+      .row
+        .two-columns        
+          %h4.has-padding-top 🎓 Kompetanseheving og transformasjoner
+          %p Vi hjelper deg skape bevegelse mot smidigere tankegang og entreprenørskap. Vi tilbyr kurs, workshops og coaching, eller kanskje har du lyst til å kjøre din egen Startup Week med oss?
+        .two-columns
+          %h4.has-padding-top 🏢 Corporate Ventures
+          %p For kunder som vil skape nye forretningsområder hvor IT er sentralt. Når du ønsker oss inn på et venture-team for maksimal kreativitet og verdiskapning
         
-        %h4.has-padding-top Kompetanseheving og transformasjoner
-        %p Vi hjelper deg skape bevegelse mot smidigere tankegang og entreprenørskap. Vi tilbyr kurs, workshops og coaching, eller kanskje har du lyst til å kjøre din egen Startup Week med oss?
-      
-        %h4.has-padding-top Corporate Ventures
-        %p For kunder som vil skape nye forretningsområder hvor IT er sentralt. Når du ønsker oss inn på et venture-team for maksimal kreativitet og verdiskapning
 
   - # set to gray or white to control background-color of the partial
   = partial 'partials/customer-quote-single', :locals => { :background_color => 'grey' }
 
+  .kent.has-background-image
+    %section
+      .two-thirds-layout
+        %h2 ung og lovende
+        %h3 Ferske ingeniører og illusjoner som brast.
+        %p Fra dette oppstår Iterate - et sted der menneskene er valutaen og verdiskaping er resultatet
+
   .white
     %section
       %h2.is-hidden om oss
-      
+     
       .ten-columns-centered
-        .ingress.has-padding-bottom Ferske ingeniører og illusjoner som brast. Fra dette oppstår Iterate - et sted der menneskene er valutaen og verdiskaping er resultatet
-
         %h4.has-padding-top Målløs fokusering
 
         %p Iterate DNA’et kommer fra en kollisjon mellom virkeligheten, og et ønske om å skape verdier. Vi møtte sviktende forutsetninger, stress og fortvilelse - tross iherdig innsats. Kunnskapsarbeiderne betalte kostnadene.
@@ -48,4 +58,8 @@ title: Om oss
 
         %p Iterate er et eksperiment og en dannelsesreise. Vi jobber fokusert uten mål. Vi <em>lager</em> ved å <em>leke</em> og <em>lære</em> fra hverandre og fra omverdenen. 
 
-        %p Nøkkelen til å lykkes er hva du selv ønsker.    
+  .mary.has-background-image
+    %section
+      .spans-twelve-columns        
+        %h2.is-hidden fasit 
+        %h3.text-centered Nøkkelen til å lykkes er hva du selv ønsker.    

@@ -1,0 +1,13 @@
+.kent {
+    @include background-image (
+      linear-gradient(transparentize($blue, .9), transparentize(darken($blue, 20%), .8)), 
+    url(image_path('kent.jpg'))
+  );
+}
+
+.mary {
+    @include background-image (
+      linear-gradient(transparentize($action-color, .9), transparentize(darken($blue, 20%), .8)), 
+    url(image_path('mary.jpg'))
+  );
+}
