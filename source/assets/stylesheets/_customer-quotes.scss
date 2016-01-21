@@ -30,6 +30,14 @@
   }
 }
 
+.overlay {
+  @include background-image (
+    linear-gradient(transparentize($action-color, .9), transparentize($action-color, .9))
+  );
+  @include position(absolute, 0px 0px 0px 0px);
+
+}
+
 .customer-name {
   text-transform: uppercase;
   color: $medium-gray;
@@ -50,4 +58,9 @@
 .two-columns:first-child .quote,
 .two-columns:first-child .customer, {
   margin-right: $extra-large-spacing;
+}
+
+
+.position-relative {
+  position: relative;
 }
