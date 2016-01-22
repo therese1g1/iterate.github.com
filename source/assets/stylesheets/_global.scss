@@ -64,7 +64,7 @@ section {
   @include shift(4);
   @include media($mobile) {
     @include span-columns(2);
-    @include shift(1);
+    @include shift(0);
   }
 }
 
@@ -176,13 +176,6 @@ section {
   background-repeat: no-repeat;
   min-height: 45vw;
 }
-.has-background-image {
-  
-  .two-thirds-layout,
-  .spans-twelve-columns {
-    margin-top: modular-scale(9);
-  }
-}
 
 .has-background-image *:not(a) {
   color: $white;
@@ -192,19 +185,18 @@ section {
 
 // toggles background color
 
-.white {
-  background-color: $white;
-  width: 100%;
-}
+$bg-colors: (
+  white: $white,
+  gray: $light-gray,
+  bright: $action-color,
+  light-colored: $light-blue
+);
 
-.gray {
-  background-color: $light-gray;
-  width: 100%;
-}
-
-.bright {
-  background-color: $action-color;
-  width: 100%
+@each $name, $bg-color in $bg-colors {
+  .#{$name} {
+    background-color: $bg-color;
+    width: 100%;   
+  }
 }
 
 // toggles visibility

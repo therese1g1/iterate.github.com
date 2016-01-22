@@ -7,3 +7,34 @@
     @extend .bullet-list;
   }
 }
+
+.featured-event * {
+  text-shadow: none !important;
+}
+
+.featured-event p {
+  width: 70%;
+  color: $primary-text-color;
+
+  @include media($mobile) {
+    width: 100%;
+  }
+}
+
+.events_index .white {
+  border-bottom: $base-border;
+}
+
+.eric-riess {
+  @include background-image (
+    linear-gradient(transparentize($blue, .8), transparentize(darken($blue, 50%), .4)), 
+    url(image_path('eric-in-oslo.jpg'))
+  );
+}
+
+.intrapreneur {
+  @include background-image (
+    linear-gradient(transparentize($action-color, .8), transparentize(darken($action-color, 50%), .5)), 
+    url(image_path('intrapreneur.jpg'))
+  );
+}

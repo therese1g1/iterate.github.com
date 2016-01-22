@@ -166,6 +166,15 @@ a {
   }
 }
 
+// There MUST be a better way than this.
+// TODO: refactor to remove all repetition
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover,
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active,
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus
+ {
+  border-bottom: 1px solid transparent;
+}
+
 // Link styles for font awesome icons - used on employee cards and bio sections
 .icon {
   color: $medium-gray;
