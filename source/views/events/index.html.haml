@@ -11,8 +11,8 @@ layout: application
         %h3 One day conference with Eric Riess
         %p Oslo, 08. 02. 2016
         %p The digital revolution has no borders. We see innovative business models appear everywhere around us. Established rules are being challenged by new companies that do things differently.
-        .has-padding-top
-          =button_to 'Get your ticket', 'http://unbouncepages.com/eric-ries-oslo/'
+        %p.has-padding-top
+          =link_to 'Get your ticket', 'http://unbouncepages.com/eric-ries-oslo/', :class => 'button'
 
   .intrapreneur.has-background-image
     %section
@@ -21,8 +21,8 @@ layout: application
         %h3 Intraprenørdagene 2016
         %p Oslo, 09. — 10. 05. 2016
         %p Intraprenørdagene er en konferanse om innovasjon og nyskapning innen etablerte virksomheter i privat og offentlig sektor. Her kåres også "Norges mest Innovative Selskap" og "Årets Intraprenør".
-        .has-padding-top
-          =button_to 'Meld deg på', 'http://unbouncepages.com/eric-ries-oslo/'
+        %p.has-padding-top
+          =link_to 'Meld deg på', 'http://unbouncepages.com/eric-ries-oslo/', :class => 'button'
 
   -# AUTOMAGIC PART -- only touch if you know what you're doing =)
   -# Magic is based on meta data provided in the front matter headers of the single event pages,
