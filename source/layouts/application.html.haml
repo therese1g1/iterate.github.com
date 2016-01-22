@@ -18,4 +18,10 @@
       = partial 'partials/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
     :javascript
-      $.get("https://blogfeed.app.iterate.no/").then(function (data) { data.slice(0,3).forEach(function(e) { $('.blog-list').prepend($("<li><a href=\""+e.Link+"\">"+e.Title+"</a><br><span class=\"blog-post-date\">"+new Date(e.PubDate).toDateString()+"</span></li>")); }); }).fail(function() { console.log("blast"); });
+      $.get("https://blogfeed.app.iterate.no/").then(function (data) {
+          var articles = data.slice(0,3);
+          articles.reverse();
+          articles.forEach(function(e) {
+            $('.blog-list').prepend($("<li><a href=\""+e.Link+"\">"+e.Title+"</a><br><span class=\"blog-post-date\">"+new Date(e.PubDate).toDateString()+"</span></li>"));
+          });
+          }).fail(function() { console.log("Something went wrong when fetching blog articles. Talk to Klette."); });
