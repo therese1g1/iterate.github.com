@@ -246,21 +246,19 @@ input.ghost-button {
   background-color: transparent;
   text-shadow: none;
   color: $white;
-  border: $base-border;
-  border-color: $white;
+  border: 1px solid $white;
   font-family: $strong-font-family;
 
   &:hover,
   &:active,
-  &:visited,
   &:focus {
-    color: $action-color;
-    border-color: $action-color;
-    background-color: transparent;
+    color: $blue;
+    border-color: $white;
+    background-color: $white;
   }
   &:focus {
-    border-color: $action-color;
-    box-shadow: 0 2px 2px transparentize($dark-gray, .2); 
+    border-color: $white;
+    box-shadow: 0 0 5px transparentize($blue, .2); 
   }
 }
 
