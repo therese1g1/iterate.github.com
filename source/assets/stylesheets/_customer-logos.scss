@@ -1,9 +1,14 @@
 .customer-logo {
   padding-right: $large-spacing;
+  padding: 0 $large-spacing $large-spacing 0;
 
   & img {
     height: modular-scale(5);
     width: auto;
+
+    @include media($mobile) {
+      height: modular-scale(2);
+    };
   }
   &:last-child {
     padding-right: 0;
