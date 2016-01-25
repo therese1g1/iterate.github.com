@@ -19,7 +19,13 @@ people:
 
         %p.ingress Telenor ønsket å utforske hvordan WebRTC-teknologi kunne hjelpe dem å bygge fremtidends kommunikasjonstjenester. De trengte en eksperimentell prosess, hvor de raskest mulig kunne lære hva som gir kundene verdi. 
 
-  = partial 'partials/customer-quote-single', :locals => { :background_color => 'gray' }
+  .gray
+    %section
+      .row
+        .two-thirds-layout-offset
+          %h2 Lorem ipsum
+      .row
+        = partial 'partials/customer-quote-single', :locals => { :customer => 'ruud'} # placeholder
 
   .white  
     %section 

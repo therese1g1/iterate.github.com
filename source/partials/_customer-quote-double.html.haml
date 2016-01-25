@@ -1,21 +1,7 @@
-- # set :locals => { :background_color => "$COLOR" } to gray or white to toggle background color when calling the partial
-- # set :locals => { :title => "$SOMETHING SMART"} to change what is displayed as title
-
-%div{ :class => background_color }
-
-  %section
-    %h2.text-centered= title
-
-    .two-columns
-      %p.quote
-        Iterate er i øverste sjikt i å få folkene sine til å trives. De er til for kunden, men egentlig like mye for sine egne ansatte.
-      %ul.customer
-        %li.customer-name Simen Graff Jenssen
-        %li.customer-jobtitle Head Of Technical Operations, Amedia
-
-    .two-columns
-      %p.quote
-        Iterate sin tilnærming ligger i navnet. De er eksplorative og utforskende, og genuint opptatt av å få til noe for kunden.
-      %ul.customer
-        %li.customer-name Torgeir Hovden
-        %li.customer-jobtitle CTO, Telenor Digital
+- customer[0..1].each do | customer |
+  .two-columns
+    %p.quote
+      = data.quotes[customer].quote
+    %ul.customer
+      %li.customer-name= data.quotes[customer].name
+      %li.customer-jobtitle= data.quotes[customer].title

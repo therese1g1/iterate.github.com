@@ -7,8 +7,13 @@ title: Mennesker
     %section
       %h1#hero.text-centered Vi er Iterate
 
-  - # set to gray or white to control background-color of the partial
-  = partial 'partials/customer-quote-single', :locals => { :background_color => 'white' } 
+  .white
+    %section
+      .row
+        .two-thirds-layout-offset
+          %h2 Teamet som gjør forskjellen
+      .row
+        = partial 'partials/customer-quote-single', :locals => { :customer => 'syversen' } 
    
   .cards.has-large-padding-top-bottom
   

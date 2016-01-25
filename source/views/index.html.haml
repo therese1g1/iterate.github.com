@@ -27,11 +27,14 @@ title: Hjemmeside
 
   .white
     %section
-      = partial 'partials/customer-quote-double', :locals => { :background_color => 'white', :title => 'Dette sier kundene våre' }
+      .row
+        %h2.text-centered.has-large-padding-bottom Dette sier kundene våre
+      .row
+        = partial 'partials/customer-quote-double', :locals => { :customer => ['jenssen', 'hovden']}
 
   .freddy
     %section#freddy
-      %h2.text-centered Vår salgsjef
+      %h2.text-centered Ta en prat med vår salgsjef
       .two-thirds-layout-offset
         %p
           Fredrik er opptatt av å koble kloke hoder. Kunder med viktige ting på gang, konsulenter med energi og evner for oppgaven. Ta en prat med Fredrik! 
