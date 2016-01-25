@@ -1,0 +1,31 @@
+{
+
+  "syversen": {
+    "quote" : "Iterate er min leverandør av løsninger som gjør det enklere å være meg. De er vår partner, som har en verdi utover innskutte konsulenter.",
+    "name" : "Lill Kristin Syversen",
+    "title" : "Produktdirektør, SOL / Aller",
+    "photo" : "lill.jpg"
+    },
+
+  "ruud" : {
+    "quote" : "Vi er som en skoleklasse uten lærer, men istedenfor å ha utetime hele tiden, sitter vi inne og leker med datamaskiner.",
+    "name" : "Pål Ruud",
+    "title" : "Systemutvikler, Head of Operations",
+    "photo" : "palru.jpg"
+    },
+
+  "jenssen" : {
+    "quote" : "Iterate er i øverste sjikt i å få folkene sine til å trives. De er til for kunden, men egentlig like mye for sine egne ansatte.",
+    "name" : "Simen Graff Jenssen",
+    "title" : "Head Of Technical Operations, Amedia",
+    "photo" : ""
+    },
+
+  "hovden" : {
+    "quote" : "Iterate sin tilnærming ligger i navnet. De er eksplorative og utforskende, og genuint opptatt av å få til noe for kunden.",
+    "name" : "Torgeir Hovden",
+    "title" : "CTO, Telenor Digital",
+    "photo" : ""
+    }
+
+}

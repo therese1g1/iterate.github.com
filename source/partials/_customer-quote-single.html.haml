@@ -1,16 +1,10 @@
-- # set :locals => { :background_color => "$COLOR" } to gray or white to toggle background color when calling the partial
-
-%div{ :class => background_color } 
-  %section
-    .two-thirds-layout-offset
-      %h2 Teamet som gjør forskjellen
-    .one-third-layout
-      .customer-portrait.is-centered.position-relative
-        %img{ :src => image_path('customer-mugshots/lill.jpg'), :alt => 'Photo of Lill Syversen', :class => 'is-centered' }
-        .overlay
-    .two-thirds-layout
-      %p.quote
-        Iterate er min leverandør av løsninger som gjør det enklere å være meg. De er vår partner, som har en verdi utover innskutte konsulenter.
-      %ul.customer
-        %li.customer-name Lill Kristin Syversen
-        %li.customer-jobtitle Produktdirektør, SOL / Aller
+.one-third-layout
+  .customer-portrait.is-centered.position-relative
+    %img{ :src => image_path('customer-mugshots/' + data.quotes[customer].photo), :alt => ('Photo of' + data.quotes[customer].name), :class => 'is-centered' }
+    .overlay
+.two-thirds-layout
+  %p.quote
+    = data.quotes[customer].quote
+  %ul.customer
+    %li.customer-name= data.quotes[customer].name
+    %li.customer-jobtitle= data.quotes[customer].title

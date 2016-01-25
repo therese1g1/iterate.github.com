@@ -35,16 +35,11 @@ title: Karriere
   
   .white.has-large-padding-top-bottom
     %section
-      .two-thirds-layout-offset
-        %h2 Dette sier vi om oss selv
-      .one-third-layout
-        .customer-portrait.is-centered
-          %img{ :src => image_path('mugshots/palru.jpg'), :alt => 'Photo of Paal', :class => 'is-centered' }
-      .two-thirds-layout
-        %p.quote "Vi er som en skoleklasse uten lærer, men istedenfor å ha utetime hele tiden, sitter vi inne og leker med datamaskiner."
-        %ul.customer
-          %li.customer-name Pål Ruud
-          %li.customer-jobtitle Systemutvikler, Head of Operations
+      .row
+        .two-thirds-layout-offset
+          %h2 Dette sier vi om oss selv
+      .row
+        = partial 'partials/customer-quote-single', :locals => { :customer => 'ruud' } 
 
   .speaking.has-background-image
     %section

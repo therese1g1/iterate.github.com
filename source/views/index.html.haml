@@ -30,12 +30,15 @@ title: Hjemmeside
 
   .white
     %section
-      = partial 'partials/customer-quote-double', :locals => { :background_color => 'white', :title => 'Dette sier kundene våre' }
+      .row
+        %h2.text-centered.has-large-padding-bottom Dette sier kundene våre
+      .row
+        = partial 'partials/customer-quote-double', :locals => { :customer => ['jenssen', 'hovden']}
 
   .freddy
     %section#freddy
-      %h2.text-centered Ta en prat med vår salgsjef
       .two-thirds-layout-offset
+        %h2 Ta en prat med vår salgsjef
         %p
           Fredrik kom fra rekruttering, men hørte aldri noe mer fra de han sendte til oss. Han rekrutterte like godt seg selv inn. Bransjen vår forblir Fredrik sitt store fagområde.
         %ul
