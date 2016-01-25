@@ -12,6 +12,9 @@
 
       - if data.people[employee].bio.length > 0
         %p= data.people[employee].bio
+      - else 
+        - 2.times do
+          %p= lorem.sentences 2
 
       .inner-section
         .skills
