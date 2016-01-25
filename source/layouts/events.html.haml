@@ -43,7 +43,7 @@
         .row
           %h2.text-centered.has-padding-bottom Dette sier deltakerne
         .row
-          = partial 'partials/customer-quote-double'
+          = partial 'partials/customer-quote-double', :locals => { :customer => []} # TODO add keys to nonsensical quotes.
       - else 
         = partial 'partials/featured-event'
 
