@@ -19,7 +19,7 @@
 
 .about-hero {
   @include background-image (
-      linear-gradient(transparentize($action-color, .9), transparentize(darken($action-color, 10%), .8)), 
+    linear-gradient(transparentize($action-color, .9), transparentize(darken($action-color, 10%), .8)), 
     url(image_path('headers/om-oss.jpg'))
   );
   background-size: cover;
@@ -37,8 +37,8 @@
 
 .home-hero {
   @extend .about-hero;
-    @include background-image (
-      linear-gradient(transparentize(darken($blue, 20%), .7), transparentize($action-color, .9)), 
+  @include background-image (
+    linear-gradient(transparentize(darken($blue, 20%), .7), transparentize($action-color, .9)), 
     url(image_path('headers/start.jpg'))
   );
 }
@@ -63,12 +63,24 @@
 .career-hero {
   @extend .about-hero;
   @include background-image (
-      linear-gradient(transparentize($action-color, .9), transparentize($action-color, .9)), 
+    linear-gradient(transparentize($action-color, .9), transparentize($action-color, .9)), 
     url(image_path('headers/karriere.jpg'))
   );
 }
 
 // EVENT & CASE STYLES
+
+.telenor-hero {
+  @extend .about-hero;
+  @include background-image (
+    url(image_path('cases/cloudphone.png'))
+  );
+  height: 100vh;
+
+  @include media($mobile) {
+    height: em(300,15);
+  }
+}
 
 .banner {
   position: absolute;
@@ -85,14 +97,12 @@
   height: auto;
 }
 
-.events .header,
-.cases .header {
+.events .header {
   position: relative;
   overflow: hidden;
 }
 
-.events .header section,
-.cases .header section {
+.events .header section {
   position: relative;
   z-index: 99;
 }

@@ -38,18 +38,23 @@
   text-transform: uppercase;
 }
 
-.case-logo {
+.logo-wrapper {
   position: relative;
-  min-height: em(100,18);
 }
 
-.logo-in-header {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 20vw;
+.case-logo {
+  display: block;
+  margin: 0 auto;
+  width: em(200,18);
   @include media($mobile) {
     width: 80vw;
-    bottom: 15%;
+  }
+}
+
+// TELENOR CASE
+
+.cases_telenor {
+  .has-background-image {
+    height: 20vh !important;
   }
 }

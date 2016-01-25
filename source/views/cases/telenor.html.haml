@@ -7,19 +7,18 @@ people:
   - 'indahl'
 ---
 #main
-  .header.white
-    %section
-      .case-logo
-        %img{:src => image_path('logos/Telenor_logo.png'), :class => 'logo-in-header'}
+  .header.telenor-hero
 
   .white
     %section
+      .logo-wrapper.has-padding-bottom
+        %img{:src => image_path('logos/Telenor_logo.png'), :class => 'case-logo'}
       %h2.text-centered.is-hidden Telenor
       %h3.text-centered Fremtidens kommunikasjonstjenester
 
       .ten-columns-centered
 
-        %h4 WebRTC og vanlige folk sine problemer
+        %h4.text-centered WebRTC og vanlige folk sine problemer
 
         %p.ingress Telenor ønsket å utforske hvordan WebRTC-teknologi kunne hjelpe dem å bygge fremtidends kommunikasjonstjenester. De trengte en eksperimentell prosess, hvor de raskest mulig kunne lære hva som gir kundene verdi. 
 
@@ -40,15 +39,6 @@ people:
               %li.key-number 4 
               %li.key-caption uker pilotfase
 
-  -# TODO: When quote is ready for publication, add this section back in
-  -# .gray
-  -#   %section
-  -#     .row
-  -#       .two-thirds-layout-offset
-  -#         %h2 Lorem ipsum
-  -#     .row
-  -#       = partial 'partials/customer-quote-single', :locals => { :customer => 'CHANGE THIS TO CORRECT KEY'} 
-
   .white  
     %section 
       .ten-columns-centered
@@ -62,8 +52,18 @@ people:
 
         %p Ved hjelp av en eksperimentell tilnærming identifiserte vi et reelt brukerbehov i markedet. I dag har Phoneline aktive brukere i 12 ulike land som bruker og er godt fornøyd med tjenesten.
 
+  -# TODO: When quote is ready for publication, add this section back in
+  -# .gray
+  -#   %section
+  -#     .row
+  -#       .two-thirds-layout-offset
+  -#         %h2 Lorem ipsum
+  -#     .row
+  -#       = partial 'partials/customer-quote-single', :locals => { :customer => 'CHANGE THIS TO CORRECT KEY'} 
+  
+  -# BONUS MATERIAL for when the quote comes in 
+  -# .has-background-image{ :style => 'background-image: url(' + image_path('cases/telenor-ws.jpg') + ');'}
+
 
   %h2.text-centered.has-large-padding-top-bottom Teamet vårt
   = partial 'partials/people-card'
-
-  .has-background-image{ :style => 'background-image: url(' + image_path('cases/telenor-ws.jpg') + ');'}
