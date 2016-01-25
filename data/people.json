@@ -234,14 +234,14 @@
     "lien": {
         "name" : "Magnus Lien",
         "title" : "Systemutvikler",
-        "email" : "magnus.lien@iterate.no",
+        "email" : "magnlien@iterate.no",
         "phone" : "+47 41 41 95 94",
         "twitter" : "https://twitter.com/limagnus",
-        "linkedin" : "",
-        "github" : "",
+        "linkedin" : "https://no.linkedin.com/in/lienmagnus",
+        "github" : "https://github.com/magnli10",
         "year" : "2015",
         "mugshot" : "magnusl.jpg",
-        "bio" : "Utvikler med fokus på hele prossessen, fra ide til kunde. Fun-fact: Født for sent og klarte aldri å ta det igjen.  ",
+        "bio" : "Utvikler med fokus på hele prossessen, fra ide til kunde. Født for sent og klarte aldri å ta det igjen.  ",
         "skills" : ["javascript", "frontend", "mobil"],
         "clients" : ["Amedia", "Remove", "S-OL"],
         "photo" : "magnusl.jpg"
