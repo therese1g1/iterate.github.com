@@ -27,7 +27,7 @@
 
 .eric-riess {
   @include background-image (
-    linear-gradient(transparentize($blue, .8), transparentize(darken($blue, 50%), .4)), 
+    linear-gradient(transparentize($blue, .9), transparentize(darken($blue, 60%), .2)), 
     url(image_path('eric-in-oslo.jpg'))
   );
 }
