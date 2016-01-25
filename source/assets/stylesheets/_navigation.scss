@@ -82,7 +82,7 @@
       }
 
       &:first-child {
-        margin-top: $large-spacing;
+        margin-top: $base-spacing;
       }
       &:last-child {
         @include media($toggle-navigation) {

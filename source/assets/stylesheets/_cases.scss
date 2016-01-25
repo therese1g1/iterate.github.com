@@ -47,7 +47,7 @@
   margin: 0 auto;
   width: em(200,18);
   @include media($mobile) {
-    width: 80vw;
+    width: em(120,15);
   }
 }
 
