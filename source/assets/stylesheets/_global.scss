@@ -248,6 +248,8 @@ input.ghost-button {
   color: $white;
   border: 1px solid $white;
   font-family: $strong-font-family;
+  height: auto;
+  padding: $extra-small-spacing $small-spacing;
 
   &:hover,
   &:active,

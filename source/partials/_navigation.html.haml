@@ -1,5 +1,6 @@
 .row
-  = link_to 'iterate', '/', :class => 'link-with-logo'
+  = link_to '/', :class => 'link-with-logo' do
+    = image_tag image_path('logos/iterate_logo.svg')
 
   -# Adds a link to skip navigation for screen-readers. Set to display:none
   = link_to 'Skip navigation', '#main', :class => 'is-hidden'
