@@ -36,6 +36,21 @@
         "clients" : ["Gjensidige"],
         "photo" : "singh.jpg"
     },
+    "tjensvold": {
+        "name" : "Ole Schilling Tjensvold",
+        "title" : "Systemutvikler",
+        "email" : "ole@iterate.no",
+        "phone" : "+47 99 69 06 06",
+        "twitter" : "",
+        "linkedin" : "",
+        "github" : "",
+        "year" : "2005",
+        "mugshot" : "ole.jpg",
+        "bio" : "M.Sci. i informatikk fra NTNU(2005). Har jobbet i konsulentbransjen ever since. Mye variert erfaring fra bank/finans, energi/kraft, statlige etater. Jobbet mye på Web-baserte løsninger med mye Front End, via tykk-klient applikasjoner til SOA-arkitektur. Ellers liker jeg å være på hytta i helgen, og dra på ski med min familie.", 
+        "skills" : ["Java", "JavaScript", "Integrasjon", "Spring", "WebServices", "REST"], 
+        "clients" : ["Gjensidige"],
+        "photo" : "ole.jpg"
+    },
     "barstad": {
         "name" : "Sigve Barstad ",
         "title" : "Forretningsutvikler, Rådgiver",
