@@ -359,12 +359,12 @@
         "phone" : "+47 988 66 209",
         "twitter" : "http://twitter.com/jorgenaaberg",
         "linkedin" : "https://no.linkedin.com/in/jorgenaaberg",
-        "github" : "",
+        "github" : "https://github.com/jaaberg",
         "year" : "2014",
         "mugshot" : "jorgen.jpg",
-        "bio" : "...",
-        "skills" : ["web", "javascript", "lean startup", "mvp"],
-        "clients" : ["Telenor", "S-OL", "SpareBank 1"],
+        "bio" : "Brenner for å gjøre ideer til virelighet billig, raskt, og eksperimentelt. Liker å løpe. Sakte. Lenge.",
+        "skills" : ["javascript", "lean", "lean startup", "prototyping", "mvp"],
+        "clients" : ["Telenor", "S-OL", "SpareBank 1", "Startsiden"],
         "photo" : "jorgen.jpg"
     },
     "larsen": {
