@@ -39,10 +39,10 @@
 }
 
 .logo-in-header {
-  position: absolute;
+/*  position: absolute;
   bottom: 10%;
-  right: 10%;
-  width: 40vw;
+  right: 10%;*/
+  width: 20vw;
   @include media($mobile) {
     width: 80vw;
     bottom: 15%;
