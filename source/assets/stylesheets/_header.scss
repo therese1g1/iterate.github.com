@@ -1,18 +1,17 @@
 .header { 
   width: 100%;
-/*  background-color: $white;*/
 
   @include media($mobile) {
     background-image: none;
     background-color: $light-blue;
   }
 
-  section {
+/*  section {
     padding: $large-spacing 0 $large-spacing 0;
     @include media($mobile) {
       padding: $large-spacing $base-spacing $extra-large-spacing $base-spacing;
     }
-  }
+  }*/
 }
 
 
@@ -27,7 +26,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  margin-top: em(-85, 18);
+  margin-top: em(-70, 18);
   @include media($mobile) {
     margin-top: 0;
     height: 80vh;
@@ -56,7 +55,7 @@
 
 #hero {
   position: relative;
-  top: 35vh;
+  top: 30vh;
 }
 
 // CARREER STYLES
