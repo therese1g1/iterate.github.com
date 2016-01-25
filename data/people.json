@@ -117,13 +117,13 @@
         "email" : "haugeto@iterate.no",
         "phone" : "+47 95 02 03 37",
         "twitter" : "http://twitter.no/hauge2",
-        "linkedin" : "",
+        "linkedin" : "https://no.linkedin.com/in/haugeto",
         "github" : "",
-        "year" : "1990",
+        "year" : "2004",
         "mugshot" : "haugeto.jpg",
-        "bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-        "skills" : ["lean", "forretningsmodell", "joint ventures"],
-        "clients" : ["HFN", "Aller", "Telenor"],
+        "bio" : "Rådgiver og systemutvikler, med bakgrunn fra datateknikk NTNU og over 10 år erfaring med systemutvikling og digital innovasjon. Med-grunnlegger av Iterate.",
+        "skills" : ["agile", "lean", "lean startup", "prototyping", "systemutvikling"],
+        "clients" : ["LEGO", "Amedia", "Aller", "Telenor", "Pearson Education"],
         "photo" : "haugeto.jpg"
     },
     "johansen": {
