@@ -38,10 +38,15 @@
   text-transform: uppercase;
 }
 
+.case-logo {
+  position: relative;
+  min-height: em(100,18);
+}
+
 .logo-in-header {
-/*  position: absolute;
-  bottom: 10%;
-  right: 10%;*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 20vw;
   @include media($mobile) {
     width: 80vw;

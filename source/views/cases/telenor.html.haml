@@ -3,14 +3,18 @@ title: Telenor - fremtidens kommunikasjonstjenester
 people:
   - 'haugeto'
   - 'aaberg'
+  - 'kornli'
+  - 'indahl'
 ---
 #main
-  .header
-    %img{:src => image_path('logos/Telenor_logo.png'), :class => 'logo-in-header'}
-
-  .white
+  .light-colored.header
     %section
-      %h2.text-centered Telenor
+      .case-logo
+        %img{:src => image_path('logos/Telenor_logo.png'), :class => 'logo-in-header'}
+
+  .light-colored
+    %section
+      %h2.text-centered.is-hidden Telenor
       %h3.text-centered Fremtidens kommunikasjonstjenester
 
       .ten-columns-centered
@@ -19,13 +23,14 @@ people:
 
         %p.ingress Telenor ønsket å utforske hvordan WebRTC-teknologi kunne hjelpe dem å bygge fremtidends kommunikasjonstjenester. De trengte en eksperimentell prosess, hvor de raskest mulig kunne lære hva som gir kundene verdi. 
 
-  .gray
-    %section
-      .row
-        .two-thirds-layout-offset
-          %h2 Lorem ipsum
-      .row
-        = partial 'partials/customer-quote-single', :locals => { :customer => 'ruud'} # placeholder
+  -# TODO: When quote is ready for publication, add this section back in
+  -# .gray
+  -#   %section
+  -#     .row
+  -#       .two-thirds-layout-offset
+  -#         %h2 Lorem ipsum
+  -#     .row
+  -#       = partial 'partials/customer-quote-single', :locals => { :customer => 'CHANGE THIS TO CORRECT KEY'} 
 
   .white  
     %section 
