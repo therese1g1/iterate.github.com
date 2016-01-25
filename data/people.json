@@ -20,7 +20,7 @@
 /////////////////////////////////////////////////////////////////////////
 */
 
-{   
+{
     "singh": {
         "name" : "Rana Ranjit Singh",
         "title" : "Systemutvikler",
@@ -163,10 +163,10 @@
         "phone" : "+47 92 65 35 67",
         "twitter" : "https://twitter.no/barlindh",
         "linkedin" : "https://no.linkedin.com/in/larsbarlindhaug",
-        "github" : "",
-        "year" : "2010",
+        "github" : "https://github.com/barlindhaug",
+        "year" : "2012",
         "mugshot" : "barlindhaug.jpg",
-        "bio" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+        "bio" : "Allsidig utvikler med en dragning mot funksjonelle språk. Står gjerne på ski på sommeren og sykler om vinteren.",
         "skills" : ["clojure", "javascript", "web"],
         "clients" : ["Hafslund", "Telenor", "CERN"],
         "photo" : "barlindhaug-portrait.jpg"
