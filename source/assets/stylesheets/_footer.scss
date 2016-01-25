@@ -44,26 +44,17 @@ footer {
 }
 
 .logo {
+  margin-top: -.3em;
   @include media($mobile) {
     @include span-columns(2);
     @include omega();
+    margin-top: -($small-spacing);
+  }
+  img {
+    height: em(30,18);
   }
 }
 
-.logo p {
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  line-height: 1;
-  color: $primary-color-text;
-  margin-top: -.3em;
-  @include desktop-font-scale(2);
-  @include media($mobile) {
-      @include mobile-font-scale(2);
-    }
-  @include media($mobile) {
-    margin-top: -($small-spacing);
-  }
-}
 
 .blog {
 
