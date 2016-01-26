@@ -17,7 +17,11 @@
     %footer
       = partial 'partials/footer'
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", "application"
+
     :javascript
+      $(document).ready(function(){
+        $("#video-embed").fitVids();
+      });
       $.get("https://blogfeed.app.iterate.no/").then(function (data) {
           var articles = data.slice(0,3);
           articles.reverse();
