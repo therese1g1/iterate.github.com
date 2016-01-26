@@ -270,7 +270,10 @@ input.ghost-button {
 // ADD FREDERIK TO ANY SECTION //
 
 .freddy {
-  background-image: url(image_path('freddy.jpg'));
+  @include background-image (
+    linear-gradient(120deg, transparentize($action-color, 1), transparentize(darken($action-color, 10%), .8) 60%), 
+    url(image_path('freddy.jpg'))
+  );
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
