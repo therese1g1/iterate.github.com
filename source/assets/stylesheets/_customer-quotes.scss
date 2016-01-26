@@ -1,5 +1,8 @@
 .quote {
   padding-bottom: $base-spacing;
+  @include media($mobile) {
+    padding-bottom: $extra-small-spacing;
+  }
 }
 
 .customer {
@@ -7,6 +10,10 @@
   padding-top: $small-spacing;
   font-size: modular-scale(-1);
   line-height: 1.6;
+
+  @include media($mobile) {
+    padding-bottom: $base-spacing;
+  }
 }
 
 .customer-portrait {
@@ -46,20 +53,6 @@
 .customer-jobtitle {
   color: $medium-gray;
 }
-
-.quote,
-.customer {
-  margin-right: $base-spacing;
-  @include media($mobile) {
-    margin: $base-spacing;
-  }
-}
-
-.two-columns:first-child .quote,
-.two-columns:first-child .customer, {
-  margin-right: $extra-large-spacing;
-}
-
 
 .position-relative {
   position: relative;

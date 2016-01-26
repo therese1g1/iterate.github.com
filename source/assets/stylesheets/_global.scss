@@ -6,7 +6,7 @@ section {
   @include outer-container(em(980, 18));
   padding: $extra-large-spacing 0;
   @include media($mobile) {
-    padding: $large-spacing 0;
+    padding: $large-spacing $small-spacing;
   }
 }
 
@@ -65,22 +65,24 @@ section {
   @include media($mobile) {
     @include span-columns(2);
     @include shift(0);
+
+    h2 {
+      text-align: center;
+    }
   }
 }
 
 .two-columns {
   @include span-columns(6);
+  @include omega(2n);
   @include media($mobile){
     @include span-columns(2);
-    @include omega();
-    padding: 0 $base-spacing;
+    @include omega(1n);
   }
-
-  &:first-child {
-    padding-right: $small-spacing;
-  }
-  &:last-child {
-    padding-left: $small-spacing;
+  &:not(:first-child) {
+    @include media($mobile) {
+      padding-top: $small-spacing;
+    }
   }
 }
 
@@ -100,7 +102,6 @@ section {
     @include span-columns(2);
     @include shift(0);
     @include omega();
-    padding: 0 $base-spacing;
   }
 }
 
@@ -111,7 +112,6 @@ section {
     @include span-columns(2);
     @include shift(0);
     @include omega();
-    padding: 0 $base-spacing;
   }
 }
 
@@ -144,6 +144,9 @@ section {
 }
 .has-large-padding-bottom {
   padding-bottom: $large-spacing;
+  @include media ($mobile) {
+    padding-bottom: $base-spacing;
+  }
 }
 
 .has-large-padding-top-bottom {
@@ -274,5 +277,6 @@ input.ghost-button {
   height: 35rem;
   @include media($mobile) {
     background-image: url(image_path('freddy.jpg')); // TODO: make small version for mobile
+    padding-top: em(200, 15)
   }
 }
