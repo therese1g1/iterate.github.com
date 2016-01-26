@@ -148,10 +148,10 @@
         "phone" : "+47 91 57 47 83",
         "twitter" : "https://twitter.com/sindreij",
         "linkedin" : "https://no.linkedin.com/in/sindrejohansen",
-        "github" : "",
+        "github" : "https://github.com/sindreij",
         "year" : "2015",
         "mugshot" : "sindre.jpg",
-        "bio" : "",
+        "bio" : "Fullstackutvikler som liker utfordringer, uansett om disse består i å lage en funksjonell applikasjon i JavaScript, eller bitflicking i C.",
         "skills" : ["fullstack", "development", "javascript"],
         "clients" : ["Amedia"],
         "photo" : "sindre.jpg"
