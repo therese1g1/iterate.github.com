@@ -37,3 +37,6 @@
             $('.blog-list').prepend($("<li><a href=\""+e.Link+"\">"+e.Title+"</a><br><span class=\"blog-post-date\">"+new Date(e.PubDate).toDateString()+"</span></li>"));
           });
           }).fail(function() { console.log("Something went wrong when fetching blog articles. Talk to Klette."); });
+
+    -# Google Analytics
+    = google_analytics_tag
