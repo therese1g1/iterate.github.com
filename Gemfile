@@ -11,3 +11,4 @@ gem "middleman-livereload"
 gem "bourbon"
 gem "neat"
 gem "redcarpet"
+gem 'middleman-google-analytics', '~> 2.0'

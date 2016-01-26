@@ -47,6 +47,15 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-2721053-1'
+
+  # Tracking across a domain and its subdomains (default = nil)
+  ga.domain_name = 'example.com'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  ga.allow_linker = false
+end
 
 helpers do
   def nav_link(link_text, page_url, options = {})
