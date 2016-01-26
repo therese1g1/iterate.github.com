@@ -6,12 +6,12 @@
     background-color: $light-blue;
   }
 
-/*  section {
+  section {
     padding: $large-spacing 0 $large-spacing 0;
-    @include media($mobile) {
+    @include media($tablet) {
       padding: $large-spacing $base-spacing $extra-large-spacing $base-spacing;
     }
-  }*/
+  }
 }
 
 
@@ -27,7 +27,8 @@
   background-repeat: no-repeat;
   height: 100vh;
   margin-top: em(-70, 18);
-  @include media($mobile) {
+  
+  @include media($toggle-navigation) {
     margin-top: 0;
     height: 80vh;
   }
