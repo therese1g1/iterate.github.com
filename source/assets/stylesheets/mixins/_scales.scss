@@ -6,5 +6,5 @@
 }
 
 @mixin mobile-font-scale($increment) { 
-  font-size: modular-scale($increment, 15px 60px, $perfect-fourth);
+  font-size: modular-scale($increment, 18px 60px, $perfect-fourth);
 }

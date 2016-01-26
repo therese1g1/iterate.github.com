@@ -4,8 +4,8 @@ body {
 
 section {
   @include outer-container(em(980, 18));
-  padding: $extra-large-spacing 0;
-  @include media($mobile) {
+  padding: $extra-large-spacing $base-spacing;
+  @include media($tablet) {
     padding: $large-spacing $small-spacing;
   }
 }
@@ -84,6 +84,17 @@ section {
       padding-top: $small-spacing;
     }
   }
+  &:nth-child(odd) {
+    @include media($tablet){
+      padding-right: $small-spacing;
+    }
+  }
+  &:nth-child(even) {
+    @include media($tablet){
+      padding-left: $small-spacing;
+    }
+  }
+
 }
 
 .three-columns {
@@ -271,7 +282,7 @@ input.ghost-button {
 
 .freddy {
   @include background-image (
-    linear-gradient(120deg, transparentize($action-color, 1), transparentize(darken($action-color, 10%), .8) 60%), 
+    linear-gradient(140deg, transparentize($action-color, 1), darken(transparentize($action-color, .8), 40%) 70%), 
     url(image_path('freddy.jpg'))
   );
   background-size: cover;
@@ -280,6 +291,6 @@ input.ghost-button {
   height: 35rem;
   @include media($mobile) {
     background-image: url(image_path('freddy.jpg')); // TODO: make small version for mobile
-    padding-top: em(200, 15)
+    padding-top: em(100, 15)
   }
 }

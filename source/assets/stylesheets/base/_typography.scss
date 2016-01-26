@@ -36,7 +36,7 @@ h1 {
 h2 {
   @include desktop-font-scale(-1);
   @include media($mobile) {
-      @include mobile-font-scale(0);
+      @include mobile-font-scale(-1);
     }
   color: $blue;
   font-family: $strong-font-family;
@@ -73,7 +73,7 @@ h4 {
 h5 {
   @include desktop-font-scale(-1);
   @include media($mobile) {
-      @include mobile-font-scale(0);
+      @include mobile-font-scale(-1);
     }
   line-height: $heading-line-height;
   font-family: $strong-font-family;
@@ -89,7 +89,7 @@ p {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   @include desktop-font-scale(1);
   @include media($mobile) {
-    @include mobile-font-scale(0);
+    @include mobile-font-scale(1);
   }
 }
 
@@ -103,7 +103,7 @@ ul {
 .ingress {
   @include desktop-font-scale(2);
   @include media($mobile) {
-      @include mobile-font-scale(1);
+      @include mobile-font-scale(2);
     }
   font-family: $em-font-family;
   font-style: $em-font-style;
@@ -113,7 +113,7 @@ ul {
 .quote {
   @include desktop-font-scale(2);
   @include media($mobile) {
-      @include mobile-font-scale(1);
+      @include mobile-font-scale(2);
     }
   color: $base-font-color;
 }
