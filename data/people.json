@@ -359,12 +359,12 @@
         "phone" : "+47 938 44 501",
         "twitter" : "http://twitter.com/henrik_gs",
         "linkedin" : "https://no.linkedin.com/pub/henrik-glasø-skifjeld/50/818/aba",
-        "github" : "",
+        "github" : "https://github.com/henrikgs",
         "year" : "2014",
         "mugshot" : "Henrik.jpg",
-        "bio" : "...",
+        "bio" : "",
         "skills" : ["frontend", "web", "javascript", "java"],
-        "clients" : ["Røde Kors", "Gjensidige"],
+        "clients" : ["Røde Kors", "Get", "Gjensidige"],
         "photo" : "Henrik.jpg"
     },
     "aaberg": {
