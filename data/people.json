@@ -531,5 +531,20 @@
         "skills" : ["devops", "java", "ruby"],
         "clients" : ["amedia", "sparebank1", " "],
         "photo" : " "
+    },
+    "rita": {
+        "name" : "Rita Jonyer",
+        "title" : "Markedsfører",
+        "email" : "rita@iterate.no",
+        "phone" : "40975306",
+        "twitter" : "https://twitter.com/not4funcomics",
+        "linkedin" : "",
+        "github" : "https://github.com/manzare",
+        "year" : "2012",
+        "mugshot" : "rita.jpg",
+        "bio" : "Working to make Iterate more known in Oslo. Drawing webcomics in my freetime.",
+        "skills" : ["prosjektledelse", "marketsføring", "tegneserier"],
+        "clients" : "",
+        "photo" : ""
     }
 }
