@@ -46,8 +46,8 @@
         "github" : "",
         "year" : "2005",
         "mugshot" : "ole.jpg",
-        "bio" : "M.Sci. i informatikk fra NTNU(2005). Har jobbet i konsulentbransjen ever since. Mye variert erfaring fra bank/finans, energi/kraft, statlige etater. Jobbet mye på Web-baserte løsninger med mye Front End, via tykk-klient applikasjoner til SOA-arkitektur. Ellers liker jeg å være på hytta i helgen, og dra på ski med min familie.", 
-        "skills" : ["Java", "JavaScript", "Integrasjon", "Spring", "WebServices", "REST"], 
+        "bio" : "M.Sci. i informatikk fra NTNU(2005). Har jobbet i konsulentbransjen ever since. Mye variert erfaring fra bank/finans, energi/kraft, statlige etater. Jobbet mye på Web-baserte løsninger med mye Front End, via tykk-klient applikasjoner til SOA-arkitektur. Ellers liker jeg å være på hytta i helgen, og dra på ski med min familie.",
+        "skills" : ["Java", "JavaScript", "Integrasjon", "Spring", "WebServices", "REST"],
         "clients" : ["Gjensidige"],
         "photo" : "ole.jpg"
     },
@@ -61,8 +61,8 @@
         "github" : "",
         "year" : "2000",
         "mugshot" : "sigve.jpg",
-        "bio" : "Født 1976, utdannet ved Handelshøyskolen BI, The University of Auckland, New Zealand og Edinburgh Business School, Scotland. Gift med Marianne og pappaen til Marius, bor på Stabekk.", 
-        "skills" : ["Forretningsutvikling", "salg", "prosjektledelse", "testledelse", "idéutvikling", "innovasjonsprosesser", "teknologiutvikling", "prosessutvikling", "Lean Startup og Intraprenørskap"], 
+        "bio" : "Født 1976, utdannet ved Handelshøyskolen BI, The University of Auckland, New Zealand og Edinburgh Business School, Scotland. Gift med Marianne og pappaen til Marius, bor på Stabekk.",
+        "skills" : ["Forretningsutvikling", "salg", "prosjektledelse", "testledelse", "idéutvikling", "innovasjonsprosesser", "teknologiutvikling", "prosessutvikling", "Lean Startup og Intraprenørskap"],
         "clients" : ["Gjensidige"],
         "photo" : "sigve.jpg"
     },
